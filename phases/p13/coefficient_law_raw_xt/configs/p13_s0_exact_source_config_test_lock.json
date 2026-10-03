@@ -1,0 +1,158 @@
+{
+  "S0_K3_semantic_output_digest": "5f5c72825de4ec0f740471266d72247682669ab92bb2926d95bd8429a5ad4526",
+  "files": [
+    {
+      "bytes": 7376,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k0_protocol.json",
+      "sha256": "309def6302722762ddb12fe8f6c93565b8a563cf75d49bc0c661952a13295efb"
+    },
+    {
+      "bytes": 4793,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k1_protocol.json",
+      "sha256": "71c9aa38e5c53133a09baff88e9319362cd5a9b7e6fcfe9bb1d641702f39f528"
+    },
+    {
+      "bytes": 5795,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2_protocol.json",
+      "sha256": "d3e405cc72c3259c06b7606be8f0f637b62a057a658847359eaa9edc005a107c"
+    },
+    {
+      "bytes": 5701,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r2_protocol.json",
+      "sha256": "79b5e16f971222bc75cd1199593aa048311894f783dcce5850a58f838f0c6fae"
+    },
+    {
+      "bytes": 4995,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r3_protocol.json",
+      "sha256": "3ecd8c920161416a42fddb8c1d66b4448527030e7c54cf222ea4827dd3f9c430"
+    },
+    {
+      "bytes": 5416,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r4_protocol.json",
+      "sha256": "1fbe8da343ab56906231ecc13d7f4503f1ac944b9e7250eadbd0bd48833604d3"
+    },
+    {
+      "bytes": 2950,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k3_protocol.json",
+      "sha256": "47c45bcdbaa4e000c99728f1d570a57462a11084576197f9b7d186667148c5f7"
+    },
+    {
+      "bytes": 78,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/__init__.py",
+      "sha256": "cf0ba0e8280625681b1b9962d37c401109890b9f670251d524acadd8421268ef"
+    },
+    {
+      "bytes": 11261,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/ast_runtime.py",
+      "sha256": "792734959b23383db69038ec2e8034f6628e01ee9eb9b44ac56e83b066175620"
+    },
+    {
+      "bytes": 8154,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/calibration_instruments.py",
+      "sha256": "d68effff0c6bbafbbbb7a20013fc89e9118f28ee236be3f93efe95337737c6b4"
+    },
+    {
+      "bytes": 9625,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/causal_calibration.py",
+      "sha256": "cd2481d984342f32352014f64c3ed64b1c640a6b01e08b7fe874dbae91e69c0f"
+    },
+    {
+      "bytes": 12649,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/coefficients.py",
+      "sha256": "78f4b703d6ebe6ec6a153c4793169588cba94ce1068a6fc772461ecbb0b9a8cf"
+    },
+    {
+      "bytes": 16211,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/family_evaluator.py",
+      "sha256": "08db7ab9dc066d9995e2abc6ea1a36a19906440384589e38078aa1eb8ab66fa8"
+    },
+    {
+      "bytes": 2224,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/gauge.py",
+      "sha256": "33d410f107837f935de5c7eb20f636bb4982c87360df8a7be49714bebbc2a514"
+    },
+    {
+      "bytes": 15029,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k0_lock.py",
+      "sha256": "fa9f7261a406b1a6183460bc0e3ba5a93325d5b97b74074f986c1e32df262950"
+    },
+    {
+      "bytes": 25542,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k1_commit.py",
+      "sha256": "ea61a0c9c69d810e614358d282cae99bfb728fda818d4a7e7d2e219ad49a642a"
+    },
+    {
+      "bytes": 55333,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2_qualification.py",
+      "sha256": "4f47eeacc505574e34368996b5f061c5471e4bf9f620248e1121d9173202e233"
+    },
+    {
+      "bytes": 36868,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2r2_attainment_repair.py",
+      "sha256": "b95b74e2a86109d0945323ecc8e3a9cfeb922983bf332fb94daaa06c8f91cb88"
+    },
+    {
+      "bytes": 29998,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2r3_capacity_continuation.py",
+      "sha256": "55acc74244ba477e7c00100e57eb0bf8c164005ecc532aa5c371a96a117cd5b7"
+    },
+    {
+      "bytes": 41558,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2r4_operational_fitter.py",
+      "sha256": "44520a730a9d64f1dae786217a319ea91e2386ef41870fb21062dae83c5c4462"
+    },
+    {
+      "bytes": 23265,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k3_s0_freeze.py",
+      "sha256": "f110bee4dbbe81f5cc07002f90cb991809adc1d4713e6b288eae98614b2b3826"
+    },
+    {
+      "bytes": 2291,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/proposal_geometry.py",
+      "sha256": "6d7357a72f0f64b6fedcacdea4c79fc2b5ba7940873a55615f1d4073c95cc6e3"
+    },
+    {
+      "bytes": 7118,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/reference_optimizer_v2.py",
+      "sha256": "7831214ea63192ae5837bda4e14ba529c693f6a29fbfe2a38516feab2aad6d0c"
+    },
+    {
+      "bytes": 2809,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k0.py",
+      "sha256": "cf859e184a50ff1df278ffd6c4206934e797d7c7af55f5b2955089e03ba32b22"
+    },
+    {
+      "bytes": 3088,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k1.py",
+      "sha256": "204b9f9d01a9ce480e2d7bc5c8e0ca7064a51f47a1ad5a199700eb69bdc204d1"
+    },
+    {
+      "bytes": 7017,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2.py",
+      "sha256": "dd5fb12c424f33a6d157d11ee6c192fdb9cbe609219e6e54a2cffdbaf261e1a7"
+    },
+    {
+      "bytes": 3971,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2r2.py",
+      "sha256": "2530618553cab72ed6bc5737e651386c5ad5a9dda62f0812838fcf503c7fd613"
+    },
+    {
+      "bytes": 4013,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2r3.py",
+      "sha256": "f9d9fe21e4a356b341e5c12569cf252240ec1ac24216286e1eaed92c31fade9b"
+    },
+    {
+      "bytes": 3411,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2r4.py",
+      "sha256": "ecdfd8219129a2cf2ef5a8b9bc22199312fe484c0359526833c2092a5226df52"
+    },
+    {
+      "bytes": 1518,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k3.py",
+      "sha256": "2375d186542df54aac674d11cdf8c8c3ad57948657ccde8f4c64d88c77b1054c"
+    }
+  ],
+  "role": "P13_S0_EXACT_FREEZE_SOURCE_CONFIG_TEST_LOCK",
+  "source_archive": "P13_S0_STAGE_FREEZE_HPC_EXACT_20260827T180558Z.tar.xz",
+  "source_archive_sha256": "c07b184297f9a8f469480f38f9190960c217aff534ff79510e9e445dba8844eb"
+}

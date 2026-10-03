@@ -1,0 +1,222 @@
+{
+  "program": "P13-Constructive-Coefficient-Law",
+  "stage": "P13-S3-K1",
+  "protocol_version": "SEALED_FINAL_COEFFICIENT_OPENING_AND_COMPLETE_ZERO_SHOT_OPERATOR_TRANSFER_V1",
+  "purpose": "Open only the committed SEALED_FINAL_COEF payload and measure zero-refit G33/G65 operator transfer for the complete frozen 1955 formal cohort plus the separately locked 348/4 diagnostic strata.",
+  "authorization": "EXPLICIT_USER_AUTHORIZATION_AFTER_K0_AUDIT_20260901",
+  "parent": {
+    "portable_freeze_filename": "P13_S0_S1_S2_FINAL_FREEZE_20260901T054122Z.tar.xz",
+    "portable_freeze_sha256": "9a5d3e122433e9f8028639929a4982606f9380af6ba4bc1624d86bb7b61e574f",
+    "k7_semantic_output_digest": "03d2904f93ebb777bf8d76f1cc9cebc4745563041e9e5274090e81af8f5bb215",
+    "k0_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S3_K0_RUN.txt",
+    "expected_k0_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock",
+    "k0_output_dir": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock",
+    "k0_semantic_output_digest": "5b4c58b85f007663c10fcc965a4b259f9f89b3d2f2508c1554ed516ec0dc9221",
+    "k0_files": [
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0_SCIENTIFIC_SUMMARY.json",
+        "sha256": "f206ddfcce9b34b3c5c37a6b8b621e0a8eafd1104a2635cbc1742bf5884c18ed"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0_SEMANTIC_OUTPUT_DIGEST.json",
+        "sha256": "2ece39b1f74cdfdf1b6159ed5b28d2b58c81def48c66e6920689fb0b7a3543e8"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0A_PARENT_REPRODUCIBILITY_LOCK.json",
+        "sha256": "33d26d5d788d50e74e30c3f01b231c56c13db724da175676e63eaafc03064752"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0B_POST_OPUS_CLAIM_BOUNDARY_LOCK.json",
+        "sha256": "60083ad1cae41c90b803057537fd6151ca9ee52b8234d53677219d7204088767"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0D_FORMAL_1955.jsonl",
+        "sha256": "ea647a7d954c6c1968fca738cfc2d765ec6449414601784b21a5c592c6ad017f",
+        "count": 1955,
+        "stratum": "FORMAL_1955"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0D_DIAGNOSTIC_DEV_FAIL_348.jsonl",
+        "sha256": "2f197b43ca1e4b4afe87a1db1ba63090131f2b1f101c3cdf7ef39ecd2d50b869",
+        "count": 348,
+        "stratum": "DIAGNOSTIC_DEV_FAIL_348"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0D_DIAGNOSTIC_DEV_UNRESOLVED_4.jsonl",
+        "sha256": "f815d29d29be229a7466acee22bc96148bba72dc1f11b632954a9765b90f1b7e",
+        "count": 4,
+        "stratum": "DIAGNOSTIC_DEV_UNRESOLVED_4"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0D_S3_REPORTING_DIAGNOSTIC_STRATA_LOCK.json",
+        "sha256": "f172ce98fb03ffff082b873bd33a1f87922db5d3219426815cf9eee232d69ea4"
+      },
+      {
+        "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock/K0_presealed_lock/K0_NO_SEALED_OPENING_GUARD.json",
+        "sha256": "22ec374e3a01fc6b1e986183d1f977ce458854e0eb0cb4b8de613705186da134"
+      }
+    ],
+    "s1_clear_locator": {
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+      "sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+      "count": 2307
+    },
+    "s2_formal_membership": {
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K5_complete_candidate_response_certification/K5_RESPONSE_PASS_MEMBERSHIP.jsonl",
+      "sha256": "2eea886fb4f63bbdec65f2c97377da64788c0820c09d6f5930715f4609286985",
+      "count": 1955
+    },
+    "s1_k3_active_input_manifest": {
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K3_freeze/K3_S2_ACTIVE_INPUT_MANIFEST.json",
+      "sha256": "f50fcd63a2b3e67413207a89ab123b69e1af73eaeaacc7090a42ab1b641f66de",
+      "sealed_guard_key": "sealed_final_coefficient_guard"
+    }
+  },
+  "inherited_live_source_locks": [
+    {
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2_protocol.json",
+      "sha256": "d3e405cc72c3259c06b7606be8f0f637b62a057a658847359eaa9edc005a107c"
+    },
+    {
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/family_evaluator.py",
+      "sha256": "08db7ab9dc066d9995e2abc6ea1a36a19906440384589e38078aa1eb8ab66fa8"
+    },
+    {
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/ast_runtime.py",
+      "sha256": "792734959b23383db69038ec2e8034f6628e01ee9eb9b44ac56e83b066175620"
+    },
+    {
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/coefficients.py",
+      "sha256": "78f4b703d6ebe6ec6a153c4793169588cba94ce1068a6fc772461ecbb0b9a8cf"
+    },
+    {
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/calibration_instruments.py",
+      "sha256": "d68effff0c6bbafbbbb7a20013fc89e9118f28ee236be3f93efe95337737c6b4"
+    },
+    {
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_search_primitives.py",
+      "sha256": "c3faa7e2f64bbfc6ef7fee997231d569d617b52a862ff465b9ecc055af594cd2"
+    },
+    {
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_operator.py",
+      "sha256": "f366c1c04d151e53a948926ee519cebbc3f1f45c1405e5a7ba7e427d8db12f4f"
+    },
+    {
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_validity.py",
+      "sha256": "4ee3a5cf96519e4eecd8a11dd28f0b951f64412772efa85c2d7c2ef1434f12e9"
+    }
+  ],
+  "sealed_final_coefficient_commitment": {
+    "role": "SEALED_FINAL_COEF",
+    "kind": "coefficient",
+    "archive_absolute_path": "/u/scratch/h/huqy/sMoEs_PDE_SR_solver_private/p13_s0_k1/p13_s0_k1_private_20260826T170957Z/P13_S0_K1_PRIVATE_COEFFICIENT_SEALED_FINAL_COEF.tar.xz",
+    "archive_bytes": 2503628,
+    "archive_sha256": "a17650bf096a00d5523d82fc71163382c944deed5fd9c6675c839fe919ad16af",
+    "payload_semantic_digest": "242bc12de28667443833696b7ebdb361c48d3b186b4161d899e5961a5bee269b",
+    "public_row_commitments_digest": "7f776fb63a9409cb45cde84b55926f5420414591a9320a56aafdcf9f2ba6b9ac",
+    "field_count": 4,
+    "field_ids": [
+      "P13_SEALED_FINAL_COEF_01",
+      "P13_SEALED_FINAL_COEF_02",
+      "P13_SEALED_FINAL_COEF_03",
+      "P13_SEALED_FINAL_COEF_04"
+    ],
+    "family": "mixed_plane_tensor_4term",
+    "expected_grids": [17, 33, 65],
+    "extract_only": "search_objects/*.npz",
+    "private_master_seed_persisted": false,
+    "private_generator_json_persisted": false
+  },
+  "cohort_contract": {
+    "formal": {
+      "stratum": "FORMAL_1955",
+      "count": 1955,
+      "membership_authority": true
+    },
+    "diagnostic_dev_fail": {
+      "stratum": "DIAGNOSTIC_DEV_FAIL_348",
+      "count": 348,
+      "membership_authority": false,
+      "promotion_or_rescue_authority": false
+    },
+    "diagnostic_dev_unresolved": {
+      "stratum": "DIAGNOSTIC_DEV_UNRESOLVED_4",
+      "count": 4,
+      "membership_authority": false,
+      "promotion_or_rescue_authority": false
+    },
+    "complete_execution_count": 2307,
+    "execution_order": "ORIGINAL_S1_K2A_LOCATOR_ORDER_NOT_DEVELOPMENT_RANKED"
+  },
+  "zero_shot_contract": {
+    "same_raw_AST": true,
+    "same_theta": true,
+    "same_deterministic_gauge": true,
+    "zero_refit": true,
+    "AST_refit": false,
+    "theta_refit": false,
+    "branch_reselection": false,
+    "amplitude_compensation": false
+  },
+  "operator_protocol": {
+    "base_protocol_path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2_protocol.json",
+    "field_count": 4,
+    "evaluation_grids": [33, 65],
+    "probe_grid": 65,
+    "family_ratio_boundary": 0.5,
+    "per_field_ratio_boundary": 1.0,
+    "tau_num": 0.005,
+    "tau_num_role": "NUMERICAL_AMBIGUITY_ONLY_NOT_THRESHOLD_RELAXATION",
+    "clear_pass_rule": "value < q*(1-tau_num)",
+    "unresolved_rule": "q*(1-tau_num) <= value <= q*(1+tau_num)",
+    "clear_fail_rule": "value > q*(1+tau_num)",
+    "K1_assigns_final_III_D_operator_decision": false,
+    "K2_assigns_final_III_D_operator_decision": true
+  },
+  "numerical_fidelity": {
+    "relative_grid_discrepancy_definition": "abs(J_G33-J_G65)/max(abs(J_G65),1e-15)",
+    "report_complete_census": true,
+    "count_gt_tau_num_is_automatic_repair_trigger": false,
+    "posthoc_unresolved_fraction_trigger_forbidden": true,
+    "tau_num_may_be_widened": false,
+    "candidate_specific_rescue": false,
+    "if_repair_is_required": "new explicit cohort-wide fidelity repair before K2 adjudication"
+  },
+  "data_boundary": {
+    "TRAIN_OPERATOR": "OPEN_READ_ONLY_FOR_FROZEN_CANDIDATE_PROVENANCE",
+    "DEVELOPMENT_COEF": "OPEN_READ_ONLY_FOR_PRELOCKED_STRATUM_LABELS_ONLY",
+    "DEVELOPMENT_RESPONSE": "OPENED_HISTORICALLY_IN_S2_BUT_NOT_READ_BY_K1",
+    "SEALED_FINAL_COEF": "FIRST_OPENING_AUTHORIZED_IN_K1",
+    "SEALED_FINAL_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "response_archive_access_in_K1": "NONE"
+  },
+  "forbidden": [
+    "SEALED_FINAL_RESPONSE read/open/extract/stat/hash",
+    "candidate refit or amplitude compensation",
+    "AST or theta modification",
+    "top-k, Pareto, percentile, weighted-score, or target-survivor narrowing",
+    "DEVELOPMENT ranking used for execution priority or formal membership",
+    "diagnostic-stratum promotion or rescue",
+    "new operator threshold or widened tau_num",
+    "candidate-specific numerical rescue",
+    "K1 final PASS/FAIL adjudication"
+  ],
+  "runtime": {
+    "default_workers": 16,
+    "coordinator_cpus": 1,
+    "blas_threads": 1,
+    "progress_every_completed": 32,
+    "progress_every_seconds": 60,
+    "restart_resume": true,
+    "walltime_design_hours": 20
+  },
+  "outputs": {
+    "run_subdir": "K1_sealed_coefficient_operator_transfer",
+    "opened_coefficient_subdir": "opened_sealed_final_coef",
+    "formal_ledger": "K1_FORMAL_1955_OPERATOR_LEDGER.jsonl",
+    "diagnostic_fail_ledger": "K1_DIAGNOSTIC_DEV_FAIL_348_OPERATOR_LEDGER.jsonl",
+    "diagnostic_unresolved_ledger": "K1_DIAGNOSTIC_DEV_UNRESOLVED_4_OPERATOR_LEDGER.jsonl"
+  },
+  "next_on_pass": "STOP_AFTER_K1_AWAIT_AUDIT_AND_EXPLICIT_AUTHORIZATION_FOR_S3_K2_OPERATOR_ADJUDICATION",
+  "next_on_failure": "STOP_AND_AUDIT_S3_K1_PROVENANCE_OPENING_OR_IMPLEMENTATION_BLOCKER"
+}

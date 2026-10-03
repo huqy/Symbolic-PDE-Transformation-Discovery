@@ -1,0 +1,93 @@
+{
+  "program": "P13-Constructive-Coefficient-Law",
+  "stage": "P13-S0-K2R3",
+  "purpose": "Response-blind continuation after K2R2: separate one-sided FULL capacity-existence evidence from the nonblocking FULL optimum-reference estimate, locally polish the two frozen R2 FULL endpoints with identical bounded derivative-free semantics, continue the exact frozen 128-skeleton fitter qualification, and only after fitter PASS continue the already-approved common burn-in, V2 partial-credit, evaluator-fidelity, lower-order and causal-calibration chain.",
+  "parent_k2r2": {
+    "marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K2R2_RUN.txt",
+    "expected_semantic_output_digest": "165d6e41e6b9b25e09456e0733a410f073cca422ebf2544e5d6980461bf07acc",
+    "expected_overall_status": "FAIL",
+    "expected_next_action": "P13-S0-K2R2_REFERENCE_FITTER_SCIENTIFIC_DECISION_REQUIRED",
+    "required_failure_classifications": ["REFERENCE_OPTIMIZER_NOT_QUALIFIED_CAPACITY"],
+    "required_no_leakage_status": "PASS",
+    "runtime_input_rule": "read the authoritative completed K2R2 run in place through its marker; no K2R2 audit archive is a runtime input"
+  },
+  "capacity_evidence_semantics": {
+    "full_claim": "existence of at least one legal FULL calibration map satisfying the unchanged effect-size gates; no estimate of the global optimum is required for this one-sided claim",
+    "null_claim": "coefficient-blind NULL capacity requires a qualified independent-launch reference because the claim is that NULL cannot obtain comparable improvement under the frozen calibration protocol",
+    "full_identity_improvement_min": 3.0,
+    "null_identity_improvement_max": 2.0,
+    "null_over_full_score_min": 1.67,
+    "full_existence_witness_source": "best F4 FULL record already present in the immutable K2R2 capacity-reference levels; calibration-only and forbidden from search",
+    "null_reference_source": "highest executed K2R2 fidelity level with qualified NULL independent launches",
+    "score_grid": 65,
+    "thresholds_changed": false,
+    "capacity_instrument_role": "CALIBRATION_ONLY"
+  },
+  "full_optimum_polish": {
+    "role": "NONBLOCKING_CALIBRATION_DIAGNOSTIC",
+    "input_endpoints": "the two immutable FULL R2 best F4 theta vectors from K2R2",
+    "algorithm": "scipy.optimize.minimize Powell with box bounds",
+    "parameter_bounds": [-3.0, 3.0],
+    "max_function_evaluations_per_endpoint": 2048,
+    "xtol": 1e-06,
+    "ftol": 1e-08,
+    "infeasible_objective": 1000000.0,
+    "optimization_grid": 33,
+    "adjudication_grid": 65,
+    "relative_agreement_max": 0.02,
+    "same_protocol_for_both_endpoints": true,
+    "candidate_specific_budget": false,
+    "if_agreement_passes": "freeze a stable calibration-only J_capacity reference using the lower of the two G65 polished scores",
+    "if_agreement_fails": "J_capacity and hard-decision R_att remain UNRESOLVED; main K2R3 continuation is not blocked"
+  },
+  "fitter_continuation": {
+    "reuse_exact_k2r2_reference_optimizer_v2": true,
+    "reuse_exact_frozen_k2_128_skeleton_membership": true,
+    "reuse_exact_k2_production_fitter_results": true,
+    "minimum_reference_qualified": 64,
+    "median_R_fit_max": 1.25,
+    "p90_R_fit_max": 3.0,
+    "production_fitter_changed": false,
+    "reference_fidelity_ladder_changed": false,
+    "cohort_wide_escalation": true,
+    "candidate_specific_reference_rescue": false
+  },
+  "continuation_from_k2r2": {
+    "common_burnin_protocol": "byte-semantic reuse of p13_s0_k2r2_protocol.json common_burnin section",
+    "residual_graft_protocol": "byte-semantic reuse of p13_s0_k2r2_protocol.json residual_graft section",
+    "evaluator_fidelity_protocol": "reuse original K2 gate through K2R2 implementation",
+    "lower_order_diagnostics": "diagnostic only",
+    "causal_response_protocol": "reuse original calibration-only causal gate",
+    "formal_S1_search": false,
+    "development_or_sealed_open": false,
+    "opened_transfer_diagnostic_read": false
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "default_workers": 16,
+    "one_BLAS_thread_per_worker": true,
+    "progress_every_seconds": 60,
+    "resume": true,
+    "walltime_design_hours": 20
+  },
+  "scientific_governance": {
+    "objective_changed": false,
+    "grammar_changed": false,
+    "candidate_membership_changed": false,
+    "response_threshold_changed": false,
+    "data_boundary_changed": false,
+    "large_search_budget_changed": false,
+    "capacity_effect_size_thresholds_changed": false,
+    "historical_response_labels_read": false,
+    "opened_transfer_diagnostic_read": false,
+    "development_or_sealed_open": false,
+    "capacity_witness_search_use": false,
+    "characteristic_formula_search_use": false,
+    "top_k_or_percentile_membership": false,
+    "target_survivor_count": false,
+    "candidate_specific_rescue": false,
+    "response_aware_refit": false,
+    "burnin_candidates_eligible_for_S1": false,
+    "formal_S1_search_authorized": false
+  }
+}

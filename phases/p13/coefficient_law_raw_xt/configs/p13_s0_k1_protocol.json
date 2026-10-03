@@ -1,0 +1,120 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S0-K1",
+  "parent": {
+    "stage": "P13-S0-K0",
+    "formal_audit_archive": "P13_S0_K0_AUDIT_20260826T165434Z.tar.xz",
+    "formal_audit_archive_sha256": "ade45cb57d7305837de9ec0b9f5c3c1eab3c7210c1b67b8c669c764f9b4a342d",
+    "semantic_output_digest": "02213877e805410d5da8f9805a634f62919c62f1161908b59a58a8afbc6513d7",
+    "overall_status": "PASS",
+    "next_action": "P13-S0-K1_COEFFICIENT_DATA_COMMITMENTS_OBJECTIVE_RESPONSE_CONTRACT",
+    "numeric_L3_execution_status": "NOT_YET_QUALIFIED",
+    "formal_search_guarded": true
+  },
+  "regime": {
+    "coefficient_parameterization": "a=exp(epsilon*b)",
+    "epsilon_abs": 0.2,
+    "M_max": 1.0,
+    "ell_max": 1.0,
+    "chi_max": 1.0,
+    "q": 1.0,
+    "representation_m_max": 2,
+    "delta_jet_map_bookkeeping": 0.005,
+    "search_facing_coefficient_jet_order": 4,
+    "search_object_grids": [17, 33, 65]
+  },
+  "role_counts": {
+    "CALIBRATION_COEF": 5,
+    "TRAIN_OPERATOR": 6,
+    "OPENED_TRANSFER_DIAGNOSTIC": 2,
+    "DEVELOPMENT_COEF": 4,
+    "SEALED_FINAL_COEF": 4
+  },
+  "generator_families": {
+    "CALIBRATION_COEF": "oblique_plane_wave_3mode",
+    "TRAIN_OPERATOR": "oblique_plane_wave_3mode",
+    "OPENED_TRANSFER_DIAGNOSTIC": "separable_additive_x_t_4mode",
+    "DEVELOPMENT_COEF": "tensor_product_trig_3term",
+    "SEALED_FINAL_COEF": "mixed_plane_tensor_4term"
+  },
+  "open_seed_namespace": "P13-S0-K1-FORMAL-OPEN-COEFFICIENTS-20260826",
+  "spectral_sampling": {
+    "frequency_l1_min": 0.35,
+    "frequency_l1_max": 0.95,
+    "oblique_component_abs_min": 0.08,
+    "amplitude_l1_target": 0.92,
+    "phase_range": [0.0, 6.283185307179586],
+    "no_zero_frequency": true
+  },
+  "identifiability": {
+    "grid": 33,
+    "coordinate_dictionary_total_degree": 3,
+    "channels": ["a_minus_1", "a_x", "a_t", "a_xx", "a_xt", "a_tt"],
+    "svd_relative_tolerance": 1e-8,
+    "sigma_min_over_sigma_max_min": 1e-4,
+    "channel_relative_residual_min": 0.05,
+    "required_rank": 6,
+    "failure_code": "COEFFICIENT_FAMILY_NONIDENTIFYING"
+  },
+  "operator_contract": {
+    "shared_raw_AST_across_fields": true,
+    "shared_theta_across_fields": true,
+    "fitness": "J_family=sqrt(mean_i(J_i^2))",
+    "report_separately": "J_max=max_i(J_i)",
+    "weighted_composite_forbidden": true,
+    "operator_qualified_train": {
+      "F0_F4_valid_on_every_train_field": true,
+      "numerically_resolved_on_every_train_field": true,
+      "J_family_over_identity_max": 0.5,
+      "J_i_over_identity_i_max": 1.0,
+      "defines_complete_scientific_membership": false
+    }
+  },
+  "response_contract": {
+    "q": 1.0,
+    "boundary_condition": "homogeneous_dirichlet",
+    "case_types": [
+      "u0-global", "u0-local", "v0-global", "v0-local",
+      "forcing-global", "forcing-local", "mixed-global", "mixed-local"
+    ],
+    "cases_per_coefficient": 8,
+    "coefficients_per_formal_stage": 4,
+    "pairs_per_formal_stage": 32,
+    "relative_error_threshold": 0.15,
+    "hard_pass": "all required pairs have certified upper bound < 0.15",
+    "hard_fail": "at least one required pair has certified lower bound > 0.15",
+    "unresolved": "no certified failure but at least one required pair overlaps 0.15",
+    "reference_refinement": "candidate-independent",
+    "candidate_fidelity_escalation": "cohort-wide only",
+    "formal_solver": "causal/source-domain",
+    "candidate_specific_rescue": false
+  },
+  "private_payload_policy": {
+    "must_be_outside_project_root": true,
+    "permissions_mode": "0700 root / 0600 files",
+    "development_contents_in_active_tree": false,
+    "sealed_final_contents_in_active_tree": false,
+    "public_commitments_only": true,
+    "private_seed_material_public": false
+  },
+  "response_profile_schema": {
+    "global_spatial": "finite sine series satisfying homogeneous Dirichlet boundaries",
+    "local_spatial": "x*(1-x)*Gaussian packet",
+    "global_forcing": "finite sine-in-x harmonic-in-t series",
+    "local_forcing": "x*(1-x)*Gaussian packet in x and t",
+    "mixed": "nonzero u0, v0 and forcing of the declared global/local family"
+  },
+  "forbidden": [
+    "formal candidate search",
+    "P11/P12 historical response outcomes as design/search information",
+    "Claim-I capacity witness as candidate/search information",
+    "Claim-II characteristic formulas or coordinates as generator/target/seed/fitness/filter",
+    "development or sealed response solve",
+    "private DEVELOPMENT/SEALED contents exported into active tree",
+    "opened transfer diagnostic affecting parents/membership/theta/objective/threshold/budget extension",
+    "response-aware refit",
+    "candidate-specific rescue"
+  ],
+  "next_on_pass": "P13-S0-K2_CONSOLIDATED_QUALIFICATION",
+  "next_on_failure": "STOP_AND_PREREGISTER_P13_S0_K1_REPAIR"
+}

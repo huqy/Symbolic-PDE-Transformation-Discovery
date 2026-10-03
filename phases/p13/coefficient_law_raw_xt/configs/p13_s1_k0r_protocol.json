@@ -1,0 +1,299 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S1-K0R",
+  "authorized_action": "P13-S1-K0R_POST_S0_ADVERSARIAL_REVIEW_PROTOCOL_LOCK",
+  "produces_formal_discovery_evidence": false,
+  "formal_S1_K1_search_authorized_on_entry": false,
+  "formal_S1_K1_search_authorized_only_if_K0R_PASS": true,
+  "active_context": {
+    "path": "phases/p13/coefficient_law_raw_xt/docs/P13_COMPREHENSIVE_CONTEXT_S1_ENTRY_REVIEW_LOCK_20260827.md",
+    "sha256": "3db057955859653c35853b8b2dd2b281e1c4429312ac969e3b9a18b4e1d56db0",
+    "role": "UNIQUE_ACTIVE_S1_PROTOCOL"
+  },
+  "s0_freeze": {
+    "marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K3_RUN.txt",
+    "expected_status": "PASS",
+    "expected_semantic_output_digest": "5f5c72825de4ec0f740471266d72247682669ab92bb2926d95bd8429a5ad4526",
+    "exact_source_config_test_lock": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_exact_source_config_test_lock.json"
+  },
+  "k1_open": {
+    "marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K1_RUN.txt",
+    "expected_status": "PASS",
+    "expected_semantic_output_digest": "3b3e4dbc151d2c4c70241da4450d86cfdc69e573d4df27bee2fa7cc20e021015",
+    "required_train_field_count": 6,
+    "required_opened_transfer_diagnostic_count": 2,
+    "runtime_rule": "read authoritative K1 coefficient arrays in place through marker + open_search_object_manifest; do not copy"
+  },
+  "inherited_p11_sha256": {
+    "phases/p11/raw_xt_td/configs/p11rawxt_s0_k1_raw_ast_grammar.json": "5dd823ea414902f465f19bde202b6ae0ba3f83e5921dbc6ec7b03842c5596e3b",
+    "phases/p11/raw_xt_td/configs/p11rawxt_s0_k2_coordinate_validity.json": "9eae5f4073ae85523e9f60bc17074048966c791bc55fab0cf6a31c1b5f141a58",
+    "phases/p11/raw_xt_td/configs/p11rawxt_s0_k3_operator_objective.json": "0bb8f471059f5003fc78da07fd22e7899299c599366be27293b8c0bdc6c21b88",
+    "phases/p11/raw_xt_td/src/p11rawxt_ast.py": "b458b5b4f2320fc74847161ac6b812c24f1e5d61654cfa75c9bb70dab66c9af1",
+    "phases/p11/raw_xt_td/src/p11rawxt_operator.py": "f366c1c04d151e53a948926ee519cebbc3f1f45c1405e5a7ba7e427d8db12f4f",
+    "phases/p11/raw_xt_td/src/p11rawxt_s1/k1_representation.py": "dd95c547361025b68ada6d011605aca7cbda1da3f5dc117cf14ad6eee1d1a268",
+    "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_ast_runtime.py": "9a7bce451dd1cab9dd9a29a0ad2aaf728859c69c516e2732fd89d785f5268bcf",
+    "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_evaluator.py": "f005861fc2af170577e465fa7078dae08fd2457d46946891dfe4d98b26971d35",
+    "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_fitter.py": "5d3794a145cc000c798059e5a496580514d83c094b578bfa65a16b4b3ce74e32",
+    "phases/p11/raw_xt_td/src/p11rawxt_validity.py": "4ee3a5cf96519e4eecd8a11dd28f0b951f64412772efa85c2d7c2ef1434f12e9"
+  },
+  "caps": {
+    "nodes_X_max": 41,
+    "nodes_T_max": 41,
+    "total_nodes_max": 72,
+    "depth_max": 13,
+    "unique_theta_total_max": 10,
+    "unique_theta_component_max": 6,
+    "theta_occurrences_total_max": 12,
+    "derivative_nesting_max": 2
+  },
+  "arms": {
+    "NULL-V2": {
+      "grammar_prior": "coordinate_only",
+      "kernel": "V2"
+    },
+    "FULL-V1": {
+      "grammar_prior": "full_raw_coefficient",
+      "kernel": "V1"
+    },
+    "FULL-V2": {
+      "grammar_prior": "full_raw_coefficient",
+      "kernel": "V2"
+    }
+  },
+  "initialization": {
+    "FULL_V1_FULL_V2_byte_identical": true,
+    "own_grammar_prior_per_arm": true,
+    "paired_common_rng": true,
+    "coupling": "same deterministic raw-choice uniforms for structure and terminal-choice quantiles; each arm maps terminal quantile into its own uniform terminal alphabet",
+    "regression_population_per_arm": 32,
+    "forbidden_seed_sources": [
+      "S0_burnin_candidates",
+      "S0_operational_fitter_cohort",
+      "S0_capacity_instrument",
+      "S0_V2_calibration_children",
+      "historical_P11_or_P12_outcome_selected_candidates"
+    ]
+  },
+  "grammar_terminals": {
+    "NULL": [
+      "x",
+      "t",
+      "-1",
+      "0",
+      "1",
+      "theta_i"
+    ],
+    "FULL": [
+      "x",
+      "t",
+      "a",
+      "q",
+      "-1",
+      "0",
+      "1",
+      "theta_i"
+    ],
+    "coefficient_dependent_syntax_definition": "canonical AST contains Var(a); q is frozen to 1 in the first branch and does not count as coefficient dependence"
+  },
+  "family_objective": {
+    "train_fields": 6,
+    "shared_theta": true,
+    "per_field_theta_refit": false,
+    "formula": "J_family=sqrt(mean_i(J_i^2))",
+    "report_J_max": true,
+    "report_J_family_rel_descriptive_only": true
+  },
+  "operator_qualification": {
+    "family_ratio_boundary": 0.5,
+    "per_field_ratio_boundary": 1.0,
+    "tau_num": 0.005,
+    "tau_role": "NUMERICAL_AMBIGUITY_ONLY_NOT_THRESHOLD_RELAXATION",
+    "clear_pass_rule": "value < q*(1-tau_num)",
+    "unresolved_rule": "q*(1-tau_num) <= value <= q*(1+tau_num)",
+    "clear_fail_rule": "value > q*(1+tau_num)"
+  },
+  "v2": {
+    "formal_kernel_name": "additive_root_residual_graft",
+    "mutation_slot_graft_probability": 0.5,
+    "subtree_nodes_max": 9,
+    "silent_fallback_to_V1_required": 0,
+    "counters": [
+      "mutation_slots_total",
+      "standard_mutation_selected",
+      "graft_selected",
+      "graft_attempted",
+      "graft_successful_child",
+      "graft_parent_theta_saturated",
+      "graft_no_legal_child",
+      "silent_fallback_to_V1"
+    ],
+    "saturation_behavior": "record outcome; do not compensate with V1 mutation"
+  },
+  "branch_semantics": {
+    "scientific_branch_tuple": [
+      "canonical_skeleton",
+      "theta_hat",
+      "deterministic_gauge",
+      "fit_provenance"
+    ],
+    "same_skeleton_different_theta_are_distinct": true,
+    "top1_theta_branch_deletion_forbidden": true,
+    "exact_equivalence_execution_sharing_allowed": true,
+    "S2_DEV_branch_reselection_forbidden": true
+  },
+  "candidate_governance": {
+    "complete_proposal_branch_F4_equivalence_ledger": true,
+    "top_k_forbidden": true,
+    "percentile_forbidden": true,
+    "pareto_membership_forbidden": true,
+    "target_survivor_count_forbidden": true,
+    "response_aware_membership_forbidden": true
+  },
+  "frontiers": {
+    "checkpoints": [
+      2048,
+      4096,
+      6144,
+      8192
+    ],
+    "FULL_coefficient_dependent_best_J_family": true,
+    "FULL_coefficient_free_best_J_family": true,
+    "descriptive_only": true
+  },
+  "fairness_axes": [
+    "equal_structural_proposals",
+    "equal_evaluator_calls",
+    "equal_accumulated_CPU"
+  ],
+  "fairness_scalar_composite_forbidden": true,
+  "primary_seed_policy": {
+    "paired_seeds": 4,
+    "confirmatory_p_value_claim": false,
+    "future_extra_seeds": "SEPARATE_CONFIRMATORY_BRANCH_NO_RETROACTIVE_RESCUE",
+    "seed1_staged_execution_allowed": true,
+    "seed1_scientific_peeking_may_change_remaining_protocol": false
+  },
+  "formal_first_rung_after_K0R_PASS": {
+    "proposals_per_seed_per_arm": 8192,
+    "arms": [
+      "NULL-V2",
+      "FULL-V1",
+      "FULL-V2"
+    ],
+    "total_structural_proposals": 98304,
+    "formal_search_not_run_by_K0R": true
+  },
+  "continuation": {
+    "eligible_arms": [
+      "NULL-V2",
+      "FULL-V2"
+    ],
+    "FULL_V1_frozen_at": 8192,
+    "extended_total_per_seed_per_arm": 32768,
+    "progress_definition": "r_s=0 if no resolved F4 by 8192; r_s=1 if none by 4096 but exists by 8192; else 1-B_s(8192)/B_s(4096)",
+    "median_progress_min": 0.1,
+    "requires_no_clear_operator_qualified_FULL_at_8192": true,
+    "requires_all_implementation_invariants_PASS": true,
+    "forbidden_inputs": [
+      "J_capacity",
+      "R_att",
+      "F4_or_new_qualified_yield",
+      "diagnostic_fields",
+      "response_outcomes",
+      "target_survivor_count"
+    ]
+  },
+  "within_family_diagnostic_commitment": {
+    "role": "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC",
+    "count": 2,
+    "family": "oblique_plane_wave_3mode",
+    "payload_private_until": "complete response-blind S1 search horizon and continuation decision irreversibly frozen",
+    "active_tree_contains": "commitment hashes only",
+    "may_change_search_or_S2_membership": false
+  },
+  "deferred_diagnostics": {
+    "epsilon_scaling": {
+      "trigger": "after S1 TRAIN membership freeze, before DEVELOPMENT",
+      "allowed": "perturbative order/amplitude-transfer mechanism",
+      "forbidden": "candidate filter, refit, Claim-II coordinate-bound claim without operator Lipschitz derivation"
+    },
+    "functional_alignment": {
+      "trigger": "after S1 membership freeze",
+      "allowed": "descriptive gauge-aware theory alignment",
+      "forbidden": "retroactive fitness/membership; favorable hand-selected decomposition"
+    },
+    "PLCP": {
+      "trigger": "Pattern C or closely related structural-geometry ambiguity",
+      "allowed": "kernel completion-probability diagnostic",
+      "forbidden": "existing-registry rescue or kernel change inside completed S1"
+    },
+    "reverse_fitter_regret": {
+      "trigger": "low structural accessibility or fitter-obstruction evidence",
+      "allowed": "cohort-wide diagnostic rescue-rate estimate",
+      "forbidden": "rescued objects enter completed S1 registry"
+    },
+    "observability": {
+      "trigger": "within/cross-family diagnostic divergence or S2 operator-transfer failure",
+      "allowed": "public-family jet-channel SVD mechanism evidence",
+      "forbidden": "candidate filtering or formal transfer classifier"
+    },
+    "S2_J_vs_response": {
+      "trigger": "S2 complete formal response evaluation",
+      "allowed": "mechanism/certification relationship",
+      "forbidden": "response-aware refit or membership change"
+    }
+  },
+  "response_controls": {
+    "stages": [
+      "S2",
+      "S3"
+    ],
+    "mandatory_controls": [
+      "identity",
+      "frozen_S0_coefficient_blind_NULL_control"
+    ],
+    "absolute_response_threshold": 0.15,
+    "classification_if_identity_passes_complete_bank": "NONDISCRIMINATIVE_ABSOLUTE_GATE",
+    "new_relative_hard_threshold_forbidden": true
+  },
+  "data_boundary": {
+    "allowed_reads": [
+      "TRAIN_OPERATOR K1 search objects",
+      "K1/S0 manifests",
+      "P11 inherited source/config",
+      "ACTIVE S1 lock"
+    ],
+    "forbidden_reads": [
+      "OPENED_TRANSFER_DIAGNOSTIC payload/outcomes",
+      "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC payload",
+      "DEVELOPMENT payload/outcomes",
+      "SEALED payload/outcomes",
+      "historical response outcomes",
+      "S0 capacity/burnin/fitter/V2 candidates as search seeds"
+    ]
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "default_workers": 16,
+    "BLAS_OpenMP_threads": 1,
+    "restart_resume_required": true,
+    "progress_fields": [
+      "processed",
+      "total",
+      "current_stage",
+      "current_candidate_or_case",
+      "elapsed",
+      "rate",
+      "ETA"
+    ]
+  },
+  "next_on_pass": "P13-S1-K1A_SEED1_FORMAL_STAGED_EXECUTION_AUTHORIZED",
+  "next_on_failure": "STOP_AND_REPAIR_P13_S1_K0R_BEFORE_ANY_FORMAL_PROPOSAL",
+  "authoritative_hpc": {
+    "project_root": "/u/scratch/h/huqy/sMoEs_PDE_SR_solver",
+    "K1_run": "/u/scratch/h/huqy/sMoEs_PDE_SR_solver/phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z",
+    "K3_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k3_freeze_20260827T164255Z",
+    "private_payload_commitments_path": "/u/scratch/h/huqy/sMoEs_PDE_SR_solver/phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/private_payload_commitments.json",
+    "private_payload_commitments_sha256": "76cd1449a5a54947c3b619379378e64b8adb9dc95257c65524b649063124aad7"
+  }
+}

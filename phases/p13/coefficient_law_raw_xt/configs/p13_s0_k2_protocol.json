@@ -1,0 +1,154 @@
+{
+  "program": "P13-Constructive-Coefficient-Law",
+  "stage": "P13-S0-K2",
+  "purpose": "Consolidated response-blind/calibration qualification before S0 adjudication; no formal candidate search and no DEV/SEALED opening.",
+  "parent_k1": {
+    "marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K1_RUN.txt",
+    "expected_semantic_output_digest": "3b3e4dbc151d2c4c70241da4450d86cfdc69e573d4df27bee2fa7cc20e021015",
+    "expected_overall_status": "PASS",
+    "expected_next_action": "P13-S0-K2_CONSOLIDATED_QUALIFICATION",
+    "expected_k1_protocol_sha256": "71c9aa38e5c53133a09baff88e9319362cd5a9b7e6fcfe9bb1d641702f39f528",
+    "runtime_input_rule": "read authoritative K1 run in place through marker/manifest; K1 audit archive is not a runtime input"
+  },
+  "caps": {
+    "nodes_X_max": 41,
+    "nodes_T_max": 41,
+    "total_nodes_max": 72,
+    "depth_max": 13,
+    "unique_theta_total_max": 10,
+    "unique_theta_component_max": 6,
+    "theta_occurrences_total_max": 12,
+    "derivative_nesting_max": 2
+  },
+  "representation": {
+    "A": 1,
+    "raw_X_T_primitive_AST_only": true,
+    "representation_m_max": 2,
+    "coefficient_support_jet_order": 4,
+    "characteristic_primitive_or_oracle": false,
+    "capacity_instrument_role": "CALIBRATION_ONLY"
+  },
+  "validity": {
+    "absolute_causal_margin": 1e-10,
+    "absolute_orientation_margin": 1e-10,
+    "barycentric_tolerance": 1e-10,
+    "cell_area_relative_margin": 1e-8,
+    "condition_number_hard_ceiling": 67108864.0,
+    "inverse_probe_grid_per_axis": 7,
+    "inverse_probe_local_coordinates": [0.37, 0.61],
+    "segment_intersection_tolerance": 1e-12,
+    "inverse_roundtrip_tolerance": 0.01
+  },
+  "operator": {
+    "space": {
+      "name": "sine_shifted_legendre_15",
+      "family": "sin(m*pi*X)*sqrt(2*n+1)*P_n(2*T-1)",
+      "m_values": [1,2,3],
+      "n_values": [0,1,2,3,4]
+    },
+    "numerical": {
+      "C_TT_absolute_floor": 1e-12,
+      "mass_matrix_relative_eigen_floor": 1e-12,
+      "grid_relative_tolerance_hard_ceiling": 0.05,
+      "grid_relative_tolerance_source": "inherited P11 direct-operator hard ceiling",
+      "repeatability_absolute_tolerance": 1e-12
+    },
+    "family_fitness": "sqrt(mean_i(J_princ_i^2))",
+    "J_max_report_only": true,
+    "weighted_composite": false
+  },
+  "fitter": {
+    "production": {
+      "parameter_bounds": [-3.0, 3.0],
+      "maximum_calls_by_parameter_count": {
+        "0": 1, "1": 25, "2": 49, "3": 73, "4": 97, "5": 121,
+        "6": 145, "7": 169, "8": 193, "9": 217, "10": 241
+      }
+    },
+    "reference": {
+      "parameter_bounds": [-3.0, 3.0],
+      "independent_launches": 2,
+      "sobol_base": 48,
+      "sobol_per_parameter": 24,
+      "sobol_refresh": 32,
+      "frontier_width": 4,
+      "coordinate_steps": [1.5,0.75,0.375,0.1875,0.09375,0.046875,0.0234375],
+      "launch_relative_agreement_max": 0.02,
+      "calls_by_parameter_count": {
+        "0": 1, "1": 160, "2": 220, "3": 280, "4": 340, "5": 400,
+        "6": 460, "7": 520, "8": 580, "9": 640, "10": 700
+      }
+    },
+    "fresh_prior_skeleton_count": 128,
+    "minimum_reference_qualified": 64,
+    "median_R_fit_max": 1.25,
+    "p90_R_fit_max": 3.0,
+    "seed_namespace": "P13-S0-K2-FITTER-FRESH-PRIOR"
+  },
+  "capacity_null": {
+    "full_identity_improvement_min": 3.0,
+    "null_identity_improvement_max": 2.0,
+    "null_over_full_score_min": 1.67,
+    "calibration_role": "CALIBRATION_COEF"
+  },
+  "proposal_geometry": {
+    "parent_count": 64,
+    "proposal_attempts": 8192,
+    "residual_graft_subtree_nodes_max": 9,
+    "improve_5pct_min_count": 8,
+    "improve_20pct_min_count": 1,
+    "seed_namespace": "P13-S0-K2-V2-PARTIAL-CREDIT",
+    "parent_rule": "first 64 production-F4-valid grammar-prior parents in deterministic proposal order; no objective-quality threshold",
+    "saturated_theta_parent_behavior": "residual-graft proposal is a grammar/cap rejection because frozen V2 requires theta_new"
+  },
+  "evaluator_fidelity": {
+    "grids": [33,65],
+    "fixed_map_set": ["identity", "null_capacity", "full_capacity"],
+    "additional_fresh_F4_map_count": 16,
+    "maximum_relative_J_difference": 0.05,
+    "threshold_source": "inherited P11 operator grid hard ceiling"
+  },
+  "gauge": {
+    "relative_tolerance": 1e-10,
+    "common_positive_scales": [0.37, 2.75],
+    "translations": [[1.25,-0.75],[-2.0,3.5]],
+    "fresh_coefficient_dependent_fixture_count": 3
+  },
+  "m2_semantics": {
+    "relative_tolerance": 1e-11,
+    "fixtures": ["DxDt_a", "DxDx_a", "DtDt_a"]
+  },
+  "causal_response_calibration": {
+    "coefficient_count": 2,
+    "case_count_per_coefficient": 4,
+    "grids": [65,129],
+    "relative_response_threshold": 0.15,
+    "full_capacity_upper_must_be_below_threshold_all_pairs": true,
+    "identity_or_null_lower_must_exceed_threshold_some_pair": true,
+    "source_A_tt_positive_floor": 1e-10,
+    "time_step_linear_residual_relative_tolerance": 1e-9,
+    "generator_provenance_use": "CALIBRATION numerical truth only; forbidden from production evaluator/fitter/proposal kernel"
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "default_workers": 16,
+    "one_BLAS_thread_per_worker": true,
+    "progress_every_seconds": 60,
+    "checkpoint_every_seconds": 900,
+    "resume": true,
+    "walltime_design_hours": 20
+  },
+  "scientific_governance": {
+    "formal_candidate_search": false,
+    "development_or_sealed_open": false,
+    "historical_response_labels_read": false,
+    "opened_transfer_diagnostic_read": false,
+    "capacity_witness_search_use": false,
+    "characteristic_formula_search_use": false,
+    "top_k_or_percentile_membership": false,
+    "target_survivor_count": false,
+    "candidate_specific_rescue": false,
+    "response_aware_refit": false,
+    "large_budget_rescue_on_failure": false
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "PF0_A_frozen_ledger_attainment": {
+    "clear_margin_definition": "min(0.5*(1-tau_num)-family_ratio, min_i((1-tau_num)-field_ratio_i))",
+    "cohort": "complete frozen FULL clear + unresolved membership",
+    "field_ratios": "J_i / J_identity_i",
+    "formal_ratio": "J_family / J_identity_family",
+    "membership_authority": false,
+    "report": [
+      "formal-ratio min/p10/median/p90/max and histogram/ECDF-ready sorted values for clear and unresolved cohorts",
+      "per-seed/per-arm/global best F4 J_family and formal ratio",
+      "best clear J_family and formal ratio",
+      "hard-gate clear-margin distribution",
+      "TRAIN absolute identity J_i and J_family",
+      "within/cross diagnostic absolute identity baselines already frozen by K2B",
+      "within/cross absolute candidate J distributions already frozen by K2B",
+      "V1/V2 structural proposals, F4 scientific-branch throughput, evaluator calls, CPU, and objective frontiers"
+    ],
+    "tau_num": 0.005
+  },
+  "PF0_B_theory_space_geometry": {
+    "cohort": "2307 clear branches only",
+    "decomposition": "r^2=(1-c^2)+(s-c)^2 with s=||u||/||v||, c=cos(u,v), r=||u-v||/||v||, computed branch-by-branch before aggregation",
+    "forbidden_interpretation": [
+      "radial mismatch is not automatically theta-fitter regret",
+      "radial flatness is not automatically global identifiability failure",
+      "no theory metric may modify candidate membership"
+    ],
+    "gram_metric": "G=B_weighted^T B_weighted reconstructed from the frozen Claim-II basis and authoritative TRAIN fields",
+    "report": [
+      "branchwise s,c,r and decomposition",
+      "population radial-fraction distribution",
+      "signed s-c distribution",
+      "six fitted basis-coefficient distributions",
+      "G-metric coefficient norm/cosine/residual to theory",
+      "theory leave-one-channel-out G-metric direction effects"
+    ],
+    "source": "frozen K2C per-branch alignment results; no candidate reevaluation required",
+    "terms": {
+      "angular_squared": "1-c^2",
+      "radial_fraction": "radial_squared/r^2 when r>0",
+      "radial_squared": "(s-c)^2"
+    }
+  },
+  "PF0_C_matched_TRAIN_witness": {
+    "adjudication_grid": 65,
+    "candidate_seed_or_initialization": false,
+    "claim_boundary": "achievable matched-TRAIN theory-informed witness only; not global raw-AST optimum and not formal search regret",
+    "fit_grid": 33,
+    "if_launch_agreement_fails": "WITNESS_UNRESOLVED; no rescue; PF0 may still PASS because this diagnostic has no decision authority",
+    "independent_launches": 2,
+    "membership_authority": false,
+    "name": "POSTFREEZE_MATCHED_TRAIN_CAPACITY_REFERENCE",
+    "optimizer": "exact frozen S0 reference protocol from p13_s0_k2_protocol.json fitter.reference",
+    "response_data": false,
+    "role": "CALIBRATION_ONLY_POSTFREEZE_REFERENCE",
+    "search_or_continuation_authority": false,
+    "seed": 1305102026,
+    "shared_theta": true,
+    "skeleton": "frozen Claim-II-informed full_capacity pair from calibration_instruments.build_full_capacity_pair",
+    "training_fields": "six authoritative TRAIN_OPERATOR fields"
+  },
+  "PF0_D_witness_epsilon_comparator": {
+    "claim_boundary": "descriptive comparator for empirical J_princ scaling only",
+    "coefficient_scaling": "a_eps=a_0.2^(epsilon/0.2) from authoritative TRAIN coefficient jets via local Taylor-jet algebra",
+    "epsilon_values": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "grid": 65,
+    "persistent_scaled_arrays": false,
+    "refit_by_epsilon": false,
+    "same_frozen_witness_theta": true,
+    "source_epsilon": 0.2
+  },
+  "PF0_E_amplitude_sensitivity_probe": {
+    "candidate_refit": false,
+    "candidate_specific_lambda_grid": false,
+    "cohort": "all 2307 clear TRAIN-qualified branches",
+    "construction": "for each TRAIN field i, build raw jets Phi0=Phi_theta[a=1] and Phi1=Phi_theta[a_i]; evaluate G[Phi0 + lambda*(Phi1-Phi0)] on the original a_i field using the same frozen deterministic gauge/validity/operator evaluator",
+    "forbidden_interpretation": [
+      "lambda_star!=1 does not by itself prove theta-fitter regret",
+      "flat J(lambda) does not by itself prove global identifiability failure",
+      "ASP cannot add/remove/rank-delete/rescue candidates"
+    ],
+    "grid": 65,
+    "lambda_1_integrity_check": "ASP J_family(lambda=1) must reproduce frozen K2C epsilon=0.20 G65 J_family within 1e-10 relative tolerance or PF0 fails",
+    "lambda_grid": [
+      0.6,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2,
+      1.4,
+      1.6
+    ],
+    "name": "ASP",
+    "report": [
+      "J_i(lambda) and J_family(lambda)",
+      "lambda_star_on_preregistered_grid",
+      "radial_slack=1-min_lambda J_family(lambda)/J_family(1)",
+      "relative objective span over lambda grid",
+      "whether grid minimum occurs on a boundary"
+    ],
+    "same_AST": true,
+    "same_theta": true
+  },
+  "PF0_F_pre_DEV_predictions": {
+    "freeze_before_DEVELOPMENT": true,
+    "predictions": [
+      "If branchwise PF0-B confirms predominantly radial tangent mismatch, record that as a post-freeze mechanism description without attributing it uniquely to fitter or objective geometry.",
+      "Larger TRAIN radial slack and/or larger |log(lambda_star)| is hypothesized to associate positively with future TRAIN-to-DEV relative degradation rho_transfer; report descriptive association without p-value or membership use.",
+      "Compare candidate epsilon-scaling qualitatively with the zero-refit matched witness epsilon comparator; no slope is a hard gate.",
+      "V2 extra F4 scientific-branch throughput is not predicted to imply superior DEV transfer."
+    ],
+    "predictions_are_descriptive_not_gates": true
+  },
+  "data_boundary": {
+    "allowed": [
+      "frozen S1 proposal/branch/skeleton/membership ledgers",
+      "frozen K2A/K2B/K2C summaries and K2C branch results",
+      "already-open TRAIN_OPERATOR coefficient arrays",
+      "already-frozen K2B diagnostic identity/results for reporting only",
+      "frozen S0 capacity-instrument builder and reference optimizer protocol"
+    ],
+    "forbidden": [
+      "DEVELOPMENT coefficient payload",
+      "DEVELOPMENT response payload",
+      "SEALED_FINAL coefficient payload",
+      "SEALED_FINAL response payload",
+      "historical response outcomes",
+      "new formal search",
+      "32768 continuation",
+      "PLCP",
+      "candidate refit",
+      "membership change",
+      "new hard threshold",
+      "theory/ASP/witness-based candidate selection"
+    ]
+  },
+  "next_on_failure": "REPAIR_P13_S1_PF0_IMPLEMENTATION_OR_PROVENANCE_ONLY",
+  "next_on_pass": "P13-S1-PF1_FINAL_STAGE_FREEZE_AND_S2_HANDOFF",
+  "parent_freeze": {
+    "K3_freeze_remains_immutable": true,
+    "PF0_does_not_replace_K3_semantic_digest": true,
+    "expected_K2B_branch_results_sha256": "ea7727158fc9a8931329d69a3c36f0c004d977b6ca29fa0688b0d581bf8826fb",
+    "expected_K2B_identity_baselines_sha256": "0cd8399161dfc3e68d415de99153448afd6fdfe8da02c914b23910910ae44e38",
+    "expected_K2C_branch_results_sha256": "1c41d59cec620f064a5752281e2d1881bffd5dc19cbcd689d74110363f4eca99",
+    "expected_K2C_protocol_sha256": "abb213c3d11d2b3399642600d788a41cac844de00d3a8a2821f38fcdcd690d52",
+    "expected_K2C_semantic_digest": "910c1337fef9395610f809daff2de3b7f64deca691f0d1a6ca240e3ce3d9597f",
+    "expected_K2C_source_sha256": "69a08294fcf7e4759e3d48b75c36199808375fc51e26b40d31c9b939107efaa3",
+    "expected_K3_semantic_digest": "0862640a856eed7d0321d8fa0597b96005293c9058836d686914b31f52e01997",
+    "expected_S0_K2_protocol_sha256": "d3e405cc72c3259c06b7606be8f0f637b62a057a658847359eaa9edc005a107c",
+    "expected_calibration_instruments_sha256": "d68effff0c6bbafbbbb7a20013fc89e9118f28ee236be3f93efe95337737c6b4",
+    "expected_clear_count": 2307,
+    "expected_clear_membership_sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+    "expected_unresolved_count": 80,
+    "expected_unresolved_membership_sha256": "4177feffe4417e157f17eb90578b1e749ec06fe0db7935a7ade315c33cbc4f67",
+    "k1_open_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K1_RUN.txt",
+    "k3_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_K3_RUN.txt",
+    "operational_next_action_override_authorized_by_user": "insert PF0 before S2; after PF0 audit perform new S0+S1 final stage-freeze/handoff",
+    "s1_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_FORMAL_RUN.txt"
+  },
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "protocol_version": "PF0_V1_POST_K3_USER_CONFIRMED",
+  "role": "REFERENCE_DESCRIPTIVE_POST_MEMBERSHIP",
+  "runtime": {
+    "BLAS_OpenMP_threads": 1,
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "progress": "stage, processed/total, current branch/case, elapsed, rate, ETA",
+    "restart": "PF0_work stores only restart/progress state; final PF0 outputs live in the existing authoritative S1 store under PF0_postfreeze/; work state removed on PASS",
+    "workers": 16
+  },
+  "stage": "P13-S1-PF0_POSTFREEZE_ATTAINMENT_AND_RADIAL_DIAGNOSTICS"
+}

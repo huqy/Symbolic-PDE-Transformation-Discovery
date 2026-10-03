@@ -1,0 +1,77 @@
+{
+  "schema": "P13_S0_K3_SCIENTIFIC_ADJUDICATION_FREEZE_V1",
+  "stage": "P13-S0-K3",
+  "purpose": "Adjudicate and freeze all S0 evidence after formal K2R4 PASS; authorize only S1-K0 implementation regression if every preregistered S0 gate and data-boundary check passes.",
+  "parent_k2r4": {
+    "marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K2R4_RUN.txt",
+    "expected_semantic_output_digest": "033b1a331a57f02e487ea5b41b5e3649360970be432a14d54414e2b7091b2a05",
+    "expected_overall_status": "PASS",
+    "expected_next_action": "P13-S0-K3_SCIENTIFIC_ADJUDICATION_AND_FREEZE"
+  },
+  "required_gate_statuses": {
+    "regime_identifiability": "PASS",
+    "L3_m2_semantics": "PASS",
+    "gauge_equivalence": "PASS",
+    "capacity_null_separation": "PASS",
+    "operational_fitter": "PASS",
+    "proposal_geometry": "PASS",
+    "evaluator_fidelity": "PASS",
+    "causal_response_calibration": "PASS",
+    "no_leakage": "PASS"
+  },
+  "diagnostic_only": [
+    "lower_order_diagnostics"
+  ],
+  "capacity_lock": {
+    "J_capacity_hard_decision_status": "RESOLVED",
+    "R_att_hard_decision_status": "RESOLVED",
+    "capacity_existence_status": "PASS",
+    "full_optimum_reference_status": "RESOLVED"
+  },
+  "data_boundary": {
+    "CALIBRATION_COEF": "OPEN_CALIBRATION_ONLY",
+    "TRAIN_OPERATOR": "OPEN_S1_OPERATOR_ONLY",
+    "OPENED_TRANSFER_DIAGNOSTIC": "OPEN_DIAGNOSTIC_ONLY_NOT_S0_SEARCH_INPUT",
+    "DEVELOPMENT_COEF": "SEALED_UNTIL_S1_FREEZE",
+    "SEALED_FINAL_COEF": "SEALED_UNTIL_S3",
+    "burnin_candidates_eligible_for_S1": false,
+    "capacity_instrument_eligible_for_S1": false
+  },
+  "s1_entry": {
+    "authorize": "S1-K0_FORMAL_SEARCH_IMPLEMENTATION_REGRESSION_ONLY",
+    "formal_search_K1_authorized": false,
+    "arms": ["NULL-V2", "FULL-V1", "FULL-V2"],
+    "paired_seeds": 4,
+    "structural_proposals_per_seed_per_arm_first_rung": 8192,
+    "primary_fairness_axis": "equal_structural_proposals",
+    "secondary_fairness_axis": "exact_accumulated_CPU",
+    "S1_K0_required_regressions": [
+      "exact_NULL_FULL_V1_V2_paired_initialization",
+      "family_objective_shared_theta_regression",
+      "V2_residual_graft_regression",
+      "restart_resume_ledgers_CPU_accounting",
+      "no_response_or_DEVELOPMENT_read"
+    ],
+    "forbidden_seed_sources": [
+      "S0_burnin_candidates",
+      "S0_operational_fitter_cohort",
+      "S0_capacity_instrument",
+      "S0_V2_calibration_children",
+      "historical_P11_or_P12_candidates_selected_by_outcome"
+    ]
+  },
+  "candidate_governance": {
+    "no_top_k_membership": true,
+    "no_percentile_membership": true,
+    "no_target_survivor_count": true,
+    "no_response_aware_membership": true,
+    "no_early_Pareto_pruning": true,
+    "exact_equivalence_quotient_allowed": true,
+    "S1_complete_F4_registry_required_before_freeze": true
+  },
+  "runtime": {
+    "audit_archives_are_runtime_inputs": false,
+    "heavy_computation": false,
+    "workers_required": 1
+  }
+}

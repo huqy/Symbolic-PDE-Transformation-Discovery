@@ -1,0 +1,102 @@
+{
+  "program": "P11-RawXT",
+  "stage": "P11-RawXT-S0-K3",
+  "purpose": "Implement the general A=1 pushforward for arbitrary raw X,T and freeze direct operator-only principal-defect objectives.",
+  "fixed_benchmark": {
+    "domain": {"x": [0.0, 1.0], "t": [0.0, 1.0]},
+    "a": "1+0.5*x*t",
+    "a_x": "0.5*t",
+    "q": "1"
+  },
+  "pushforward": {
+    "C_TT": "T_t^2-a*T_x^2",
+    "C_XT": "2*(X_t*T_t-a*X_x*T_x)",
+    "C_XX": "X_t^2-a*X_x^2",
+    "L_T": "T_tt-a*T_xx-a_x*T_x",
+    "L_X": "X_tt-a*X_xx-a_x*X_x",
+    "m": "C_XT/C_TT",
+    "r": "(C_TT+C_XX)/C_TT",
+    "full_normalized_operator": "w_TT+m*w_XT+(C_XX/C_TT)*w_XX+(L_T/C_TT)*w_T+(L_X/C_TT)*w_X+(q/C_TT)*w",
+    "reduced_operator": "w_TT-w_XX+(L_T/C_TT)*w_T+(L_X/C_TT)*w_X+(q/C_TT)*w",
+    "omitted_principal_defect": "m*w_XT+r*w_XX"
+  },
+  "graph_norm": {
+    "formula": "integral(w^2+w_X^2+w_T^2+w_XT^2+w_XX^2)dX dT",
+    "w_TT_included": false,
+    "reason": "The omitted principal defect contains w_XT and w_XX but no w_TT channel."
+  },
+  "test_spaces": {
+    "search": {
+      "name": "sine_shifted_legendre_15",
+      "family": "sin(m*pi*X)*sqrt(2*n+1)*P_n(2*T-1)",
+      "m_values": [1, 2, 3],
+      "n_values": [0, 1, 2, 3, 4],
+      "dimension": 15
+    },
+    "nested": {
+      "name": "sine_shifted_legendre_35",
+      "family": "sin(m*pi*X)*sqrt(2*n+1)*P_n(2*T-1)",
+      "m_values": [1, 2, 3, 4, 5],
+      "n_values": [0, 1, 2, 3, 4, 5, 6],
+      "dimension": 35,
+      "contains_search_space": true
+    },
+    "independent": {
+      "name": "fixed_gaussian_rbf_25",
+      "family": "exp(-((X-c_X)^2+(T-c_T)^2)/(2*sigma^2))",
+      "centers_X": [0.1, 0.3, 0.5, 0.7, 0.9],
+      "centers_T": [0.1, 0.3, 0.5, 0.7, 0.9],
+      "sigma": 0.22,
+      "dimension": 25,
+      "candidate_dependent_centers": false
+    }
+  },
+  "grid_ladder": {
+    "search": [33, 33],
+    "confirmation": [65, 65],
+    "calibration_holdout": [129, 129]
+  },
+  "numerical_protocol": {
+    "float_dtype": "float64",
+    "C_TT_absolute_floor": 1e-12,
+    "mass_matrix_relative_eigen_floor": 1e-12,
+    "grid_calibration_multiplier": 10.0,
+    "grid_relative_tolerance_floor": 1e-8,
+    "grid_relative_tolerance_hard_ceiling": 0.05,
+    "repeatability_absolute_tolerance": 1e-12,
+    "eigen_residual_relative_tolerance": 1e-9,
+    "quadrature": "tensor trapezoid in source coordinates with positive Jacobian measure dX dT=J_Phi dx dt"
+  },
+  "regression_protocol": {
+    "zero_channel": true,
+    "single_XT_channel": true,
+    "single_XX_channel": true,
+    "mixed_channel": true,
+    "fixed_medium_identity": true,
+    "constant_medium_identity": true,
+    "translated_common_scale_equivalence": true,
+    "curved_initial_map": true,
+    "synthetic_maps_are_fixtures_not_candidates": true
+  },
+  "selection_semantics": {
+    "J_princ_is_direct_generalized_eigenvalue_norm": true,
+    "J_XT_is_direct_generalized_eigenvalue_norm": true,
+    "J_XX_is_direct_generalized_eigenvalue_norm": true,
+    "weighted_composite_score": false,
+    "feature_or_label_reward": false,
+    "top_k": false,
+    "percentile_filter": false,
+    "target_survivor_count": false,
+    "PDE_response_read": false,
+    "candidate_archive_created": false
+  },
+  "execution": {
+    "formal_candidate_generation_run": false,
+    "formal_search_run": false,
+    "parameter_fitting_run": false,
+    "PDE_solve_run": false,
+    "long_running_parallel_work": false,
+    "HPC_workers_required": 1,
+    "progress_printing_required": true
+  }
+}

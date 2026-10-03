@@ -1,0 +1,84 @@
+{
+  "stage": "P13-S3-K5",
+  "purpose": "Post-SEALED diagnostics and representative analysis after the complete K4 decision map is frozen. Every output is descriptive/presentation-only and has zero membership or decision authority.",
+  "k4_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S3_K4_RUN.txt",
+  "expected_k4": {
+    "overall_status": "PASS",
+    "next_action": "P13-S3-K5_POST_RESPONSE_DIAGNOSTICS_REQUIRES_POST_K4_AUDIT",
+    "semantic_output_digest": "000b0797f8755fb840186fb0eadf189b90f79bed8aa5957b33a80ad191052c0e",
+    "complete_response_cohort": 423,
+    "response_pass": 3,
+    "response_unresolved": 0,
+    "response_fail": 420,
+    "final_fidelity_pair": [129, 257],
+    "measurements_sha256": "b76cb199bd37cca6f18ebec83d98c70ba8726892cf6fbd71ad4cc2e31f8b76dc",
+    "decision_map_sha256": "95a5532ed32ff3f62d81415c82d0a6e39202775669a33cffb1b16af57ae83a6a",
+    "pass_membership_sha256": "9c26841500340db305d4ef433884f3afff9e2f7c4cef2e78932085fa00cca2cd"
+  },
+  "parent_evidence": {
+    "k0_derivative_census_rel_to_s3run": "K0_presealed_lock/K0C1_STRUCTURAL_DERIVATIVE_ORDER_CENSUS.jsonl",
+    "k0_derivative_census_sha256": "0466cfdebbfedeb723d66997b46409dce38ed8745422519819fdd67b871f134f",
+    "k1_operator_ledger_rel_to_s3run": "K1_sealed_coefficient_operator_transfer/K1_FORMAL_1955_OPERATOR_LEDGER.jsonl",
+    "k1_operator_ledger_sha256": "cecbd06b6583339029dcb5e958f8ed0366c4cfee81e844ea9d2d1fe65827f2ee",
+    "k2_decision_map_rel_to_s3run": "K2_sealed_operator_adjudication_response_entry_lock/K2_FORMAL_1955_SEALED_OPERATOR_DECISION_MAP.jsonl",
+    "k2_decision_map_sha256": "f2fbb5dd38cb192d5c3f538fcec1517b2e58d4a640f6126b47777b12568dc096",
+    "k3_reference_certification_rel_to_s3run": "K3_sealed_response_reference_control_first/K3_REFERENCE_CERTIFICATION.json",
+    "k3_reference_certification_sha256": "75d89aae0c0712c332cdb7d782a40950c466ca37d9e4c3a7322c8aa130afe83f",
+    "s2_k6_branch_diagnostics": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K6_post_response_diagnostics/K6_BRANCH_DIAGNOSTICS.jsonl",
+    "s2_k6_branch_diagnostics_sha256": "118363d4356d4de22cf9f069f4135e82da0710d039b302e88321b68a60d524f0",
+    "s1_clear_membership": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+    "s1_clear_membership_sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84"
+  },
+  "diagnostic_contract": {
+    "response_threshold_for_margin_only": 0.15,
+    "development_to_sealed_associations": true,
+    "failure_witness_analysis": true,
+    "structural_hash_classes": true,
+    "exact_equivalence_classes": true,
+    "failure_signature_classes": "exact set of cases whose uncertainty-adjusted lower bound is above 0.15",
+    "failure_signature_medoid": "minimum total L1 distance in the complete 32-case SEALED nominal response vector; scientific_branch_id tie-break",
+    "seed_reliability_scope": "conditional on the 423 K2 SEALED-operator clear-PASS branches; not a full search-population estimate",
+    "coefficient_ablation": "continuous descriptive association only; no post-response bins or gate",
+    "descriptive_pareto_axes": [
+      "SEALED_operator_family_ratio_G65",
+      "SEALED_response_worst_upper",
+      "DEVELOPMENT_response_worst_upper"
+    ],
+    "paper_exemplars": "all 3 K4 RESPONSE_PASS identities plus deterministic boundary/modal failure anchors; presentation only"
+  },
+  "governance": {
+    "k4_decision_map_immutable": true,
+    "k4_pass_membership_immutable": true,
+    "diagnostics_may_modify_membership": false,
+    "diagnostics_may_modify_response_decision": false,
+    "top_k_or_pareto_formal_selection": false,
+    "presentation_set_has_membership_authority": false,
+    "weighted_composite_score": false,
+    "proxy_filter": false,
+    "candidate_refit": false,
+    "branch_reselection": false,
+    "amplitude_compensation": false,
+    "new_response_threshold": false,
+    "new_fidelity_escalation": false,
+    "p_values_reported": false
+  },
+  "outputs": {
+    "branch_diagnostics": "K5_COMPLETE_423_BRANCH_DIAGNOSTICS.jsonl",
+    "development_sealed_transitions": "K5_DEVELOPMENT_TO_SEALED_TRANSITIONS.json",
+    "failure_witness_census": "K5_FAILURE_WITNESS_CENSUS.json",
+    "structure_equivalence": "K5_STRUCTURE_AND_EQUIVALENCE_CLASSES.json",
+    "failure_signature_classes": "K5_FAILURE_SIGNATURE_CLASSES.json",
+    "seed_reliability": "K5_SEED_RELIABILITY_DESCRIPTIVE.json",
+    "coefficient_ablation": "K5_COEFFICIENT_ABLATION_DESCRIPTIVE.json",
+    "operator_response_associations": "K5_OPERATOR_RESPONSE_ASSOCIATIONS.json",
+    "case_control_effects": "K5_CASE_CONTROL_EFFECTS.json",
+    "descriptive_pareto": "K5_DESCRIPTIVE_PARETO_VIEW.json",
+    "paper_exemplars": "K5_PAPER_FACING_EXEMPLARS.json"
+  },
+  "runtime": {
+    "mode": "single_coordinator_read_only_postprocessing",
+    "blas_openmp_threads": 1,
+    "progress_every_rows": 50
+  },
+  "next_action_on_pass": "P13-S3-K6_FINAL_CLAIM_III_P13_FIRST_BRANCH_FREEZE_REQUIRES_POST_K5_AUDIT"
+}

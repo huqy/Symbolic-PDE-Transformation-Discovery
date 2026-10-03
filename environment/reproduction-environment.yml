@@ -1,0 +1,18 @@
+# Candidate Linux x86_64 subset from the 2026-09-29 capture. Not an exact historical environment.
+name: p13-reproduction-candidate
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.10.19=h3c07f61_2_cpython
+  - numpy=2.2.6=py310hefbff90_0
+  - scipy=1.15.2=py310h1d65ade_0
+  - libblas=3.11.0=5_h4a7cf45_openblas
+  - libcblas=3.11.0=5_h0358290_openblas
+  - liblapack=3.11.0=5_h47877c9_openblas
+  - libopenblas=0.3.30=pthreads_h94d23a6_4
+  - libgcc=15.2.0=he0feb66_16
+  - libgfortran=15.2.0=h69a702a_16
+  - libgfortran5=15.2.0=h68bc16d_16
+  - libstdcxx=15.2.0=h934c35e_16
+  - threadpoolctl=3.6.0=pyhecae5ae_0

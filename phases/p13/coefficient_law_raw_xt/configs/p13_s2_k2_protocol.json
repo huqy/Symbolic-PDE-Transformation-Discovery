@@ -1,0 +1,99 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S2-K2",
+  "protocol_version": "III_B_ADJUDICATION_AND_RESPONSE_ENTRY_LOCK_V1",
+  "active_context": "P13_COMPREHENSIVE_CONTEXT_S2_ENTRY_PF0_LOCK_20260831.md",
+  "active_context_sha256": "6d6b5b0a8923e89df505a4d0c6744a76c395797664763d1177edfb245bb1a9ba",
+  "k1_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_K1_RUN.txt",
+  "expected_k1": {
+    "overall_status": "PASS",
+    "next_action": "P13-S2-K2_III_B_ADJUDICATION_AND_RESPONSE_ENTRY_LOCK",
+    "measurement_count": 2307,
+    "measurements_sha256": "c360a49dec0e11e69064562e5d2e578e5a06344bf07d161ee7a152945c3f45b9",
+    "semantic_output_digest": "b056861dcff3ef2d660ca0d4e2e7bc7a73c7bc837b754e995fbe9020d7319ca1",
+    "k0_semantic_output_digest": "1f54d51e22df9aedb76cf83878416ef7004e749bb65fb86993a8833c8812d8ab",
+    "family_discrepancy_gt_tau_num_count": 0,
+    "max_per_field_discrepancy_gt_tau_num_count": 13,
+    "numerical_or_operator_unresolved": 0,
+    "all_DEV_fields_F4_G33_count": 2307,
+    "all_DEV_fields_F4_G65_count": 2307
+  },
+  "clear_membership": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+    "sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+    "count": 2307
+  },
+  "unresolved_reference": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_UNRESOLVED_MEMBERSHIP.jsonl",
+    "sha256": "4177feffe4417e157f17eb90578b1e749ec06fe0db7935a7ade315c33cbc4f67",
+    "count": 80,
+    "s2_eligible": false
+  },
+  "frozen_hard_gate": {
+    "family_ratio_boundary": 0.5,
+    "per_field_ratio_boundary": 1.0,
+    "tau_num": 0.005,
+    "tau_num_role": "NUMERICAL_AMBIGUITY_ONLY_NOT_THRESHOLD_RELAXATION",
+    "component_order": ["family", "field_1", "field_2", "field_3", "field_4"]
+  },
+  "k1_fidelity_review_lock": {
+    "conclusion": "NO_MATERIAL_COHORT_WIDE_G33_G65_INCONSISTENCY_REQUIRING_REPAIR_BEFORE_K2",
+    "basis": "2307/2307 family discrepancies below inherited tau_num; 13/2307 max-per-field discrepancies marginally above tau_num; no K1 numerical/operator unresolved; no new fraction trigger introduced",
+    "new_discrepancy_threshold": null,
+    "candidate_specific_rescue": false,
+    "cohort_wide_escalation_added": false,
+    "tau_num_changed": false
+  },
+  "adjudication": {
+    "uses_only_frozen_G33_G65_boundary_statuses": true,
+    "new_numeric_thresholds": [],
+    "component_consensus": {
+      "CLEAR_PASS": "G33=CLEAR_PASS and G65=CLEAR_PASS",
+      "CLEAR_FAIL": "G33=CLEAR_FAIL and G65=CLEAR_FAIL",
+      "UNRESOLVED_NUMERICAL_BOUNDARY_OR_GRID_DISAGREEMENT": "all other G33/G65 status pairs"
+    },
+    "final_decision": {
+      "OPERATOR_TRANSFER_FAIL": "any component consensus is CLEAR_FAIL, or any DEV F0-F4 validity gate fails",
+      "OPERATOR_TRANSFER_UNRESOLVED": "no CLEAR_FAIL and at least one component consensus is unresolved, or required operator quantity is unresolved",
+      "OPERATOR_TRANSFER_PASS": "all five component consensuses are CLEAR_PASS"
+    },
+    "clear_PASS_entire_cohort_enters_response_eligibility": true,
+    "top_k_after_PASS_forbidden": true,
+    "pareto_after_PASS_forbidden": true,
+    "target_survivor_count_forbidden": true
+  },
+  "data_boundary": {
+    "DEVELOPMENT_COEF": "OPENED_K0_READ_IN_PLACE",
+    "DEVELOPMENT_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "SEALED_FINAL_COEF": "SEALED_COMMITTED_UNOPENED",
+    "SEALED_FINAL_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "K2_response_archive_access": "NONE",
+    "K2_sealed_archive_access": "NONE",
+    "response_stage_blocked_after_K2": true
+  },
+  "forbidden": [
+    "proxy labels",
+    "historical response information",
+    "PF0/K2B/K2C filtering",
+    "top-k",
+    "Pareto narrowing",
+    "percentile narrowing",
+    "target survivor count",
+    "candidate-specific rescue",
+    "AST/theta refit",
+    "response-aware refit",
+    "tau_num widening"
+  ],
+  "outputs": {
+    "complete_decision_map": "K2_III_B_DECISION_MAP.jsonl",
+    "response_eligible_membership": "K2_RESPONSE_ELIGIBLE_PASS_MEMBERSHIP.jsonl",
+    "response_eligible_manifest": "K2_RESPONSE_ELIGIBLE_INPUT_MANIFEST.json"
+  },
+  "next_if_nonempty_PASS": "P13-S2-K3_RESPONSE_PROTOCOL_FIDELITY_AND_CONTROL_LOCK_REQUIRES_EXPLICIT_USER_CONFIRMATION",
+  "next_if_zero_PASS": "P13-S2-K7_FORMAL_S2_FREEZE_WITHOUT_RESPONSE_AFTER_III_B_NEGATIVE_OR_UNRESOLVED",
+  "runtime": {
+    "parallelism": "single coordinator; K2 is deterministic postprocessing of frozen K1 evidence",
+    "blas_threads": 1,
+    "restart_resume": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "stage": "P13-S2-K6",
+  "purpose": "Post-response mechanism diagnostics after the complete K5 DEVELOPMENT response decision map is frozen. Diagnostics have zero membership/decision authority.",
+  "k5_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_K5_RUN.txt",
+  "expected_k5": {
+    "overall_status": "PASS",
+    "next_action": "P13-S2-K6_POST_RESPONSE_DIAGNOSTICS",
+    "semantic_output_digest": "3ee981fbc3991fec03a17108127091e9755bb7ea2d598aa7a0a3e0a231634010",
+    "complete_response_cohort": 1955,
+    "response_pass": 1955,
+    "response_unresolved": 0,
+    "response_fail": 0,
+    "final_fidelity_pair": [129, 257],
+    "measurements_sha256": "f5d6bd2cd8776f39b5536aab949ff9e81158d2b32752c380aaf94ea578c3f24c",
+    "decision_map_sha256": "d1694210645b5e9942963349f1e0933584e4fec5be47c8388d126590ce8a455a",
+    "pass_membership_sha256": "2eea886fb4f63bbdec65f2c97377da64788c0820c09d6f5930715f4609286985"
+  },
+  "parent_evidence": {
+    "s1_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z",
+    "k1_measurements_rel_to_s2run": "K1_zero_shot_operator_transfer/K1_OPERATOR_TRANSFER_MEASUREMENTS.jsonl",
+    "k1_measurements_sha256": "c360a49dec0e11e69064562e5d2e578e5a06344bf07d161ee7a152945c3f45b9",
+    "k2b_semantic_output_digest": "1dfbfbb520dd4ef943c7e7306583eef63fba9c605bfe332b312de07a96e7af8f",
+    "k2c_semantic_output_digest": "910c1337fef9395610f809daff2de3b7f64deca691f0d1a6ca240e3ce3d9597f",
+    "pf0_semantic_output_digest": "a6850d1d96aef495b631d065da5028e936de8f8939a2854d731b5b5eb3bfe431",
+    "k2b_branch_results": "K2B_diagnostics/K2B_diagnostic_branch_results.jsonl",
+    "k2c_branch_results": "K2C_theory_bridge/K2C_branch_results.jsonl",
+    "pf0_geometry_rows": "PF0_postfreeze/PF0_theory_geometry_rows.jsonl",
+    "pf0_asp_rows": "PF0_postfreeze/PF0_ASP_branch_results.jsonl"
+  },
+  "governance": {
+    "k5_decision_map_immutable": true,
+    "k5_pass_membership_immutable": true,
+    "diagnostics_may_modify_membership": false,
+    "diagnostics_may_modify_response_decision": false,
+    "top_k_or_pareto_formal_selection": false,
+    "weighted_composite_score": false,
+    "proxy_filter": false,
+    "candidate_refit": false,
+    "branch_reselection": false,
+    "amplitude_compensation": false,
+    "new_response_threshold": false,
+    "p_values_reported": false,
+    "sealed_must_remain_unopened": true
+  },
+  "response_threshold_for_margin_only": 0.15,
+  "outputs": {
+    "branch_diagnostics": "K6_BRANCH_DIAGNOSTICS.jsonl",
+    "response_distributions": "K6_RESPONSE_DISTRIBUTIONS.json",
+    "case_census": "K6_CASE_DIFFICULTY_CENSUS.json",
+    "operator_response_associations": "K6_OPERATOR_RESPONSE_ASSOCIATIONS.json",
+    "pf0_response_associations": "K6_PF0_RESPONSE_ASSOCIATIONS_EXPLORATORY.json",
+    "arm_seed_descriptive": "K6_ARM_SEED_DESCRIPTIVE.json",
+    "control_comparisons": "K6_CONTROL_COMPARISONS.json"
+  },
+  "runtime": {
+    "mode": "single_coordinator_postprocessing",
+    "blas_openmp_threads": 1,
+    "progress_every_rows": 250
+  },
+  "next_action_on_pass": "P13-S2-K7_FORMAL_S2_FREEZE_AND_S3_DECISION_REQUIRES_POST_K6_REVIEW"
+}

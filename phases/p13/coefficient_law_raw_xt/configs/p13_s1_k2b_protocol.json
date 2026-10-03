@@ -1,0 +1,86 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S1-K2B",
+  "protocol_version": "POST_SEARCH_DIAGNOSTICS_V1",
+  "active_context": "phases/p13/coefficient_law_raw_xt/docs/P13_COMPREHENSIVE_CONTEXT_S1_ENTRY_REVIEW_LOCK_20260827.md",
+  "s1_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_FORMAL_RUN.txt",
+  "k2a_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_K2A_RUN.txt",
+  "k0r_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_K0R_RUN.txt",
+  "k1_open_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K1_RUN.txt",
+  "entry_requires": {
+    "K2A_status": "PASS",
+    "K2A_continuation_status": "NOT_AUTHORIZED_BY_PREREGISTERED_TRAIN_ONLY_RULE",
+    "K2A_next_action": "P13-S1-K2B_POST_SEARCH_DIAGNOSTICS",
+    "TRAIN_membership_frozen": true
+  },
+  "diagnostic_candidate_cohort": {
+    "include": ["K2A_FROZEN_FULL_CLEAR_MEMBERSHIP", "K2A_FROZEN_FULL_UNRESOLVED_MEMBERSHIP"],
+    "reason": "complete frozen FULL cohort at and adjacent to the preregistered numerical qualification boundary; clear and unresolved remain separately labeled",
+    "S2_eligibility_source": "clear TRAIN membership only; K2B may not add/remove candidates"
+  },
+  "transfer_diagnostics": {
+    "within_family_count": 2,
+    "cross_family_count": 2,
+    "grids": [33, 65],
+    "primary_descriptive_grid": 65,
+    "same_AST": true,
+    "same_theta": true,
+    "same_deterministic_gauge": true,
+    "refit": false,
+    "hard_transfer_PASS_FAIL": false,
+    "G33_G65_discrepancy_role": "descriptive numerical sensitivity only; no membership effect"
+  },
+  "coefficient_ablation": {
+    "name": "family_mean_coefficient_jet_substitution",
+    "grid": 33,
+    "probe_grid": 65,
+    "definition": "replace every AST-visible coefficient jet channel a_d{i}_{j} by the pointwise arithmetic mean of that channel across the six TRAIN_OPERATOR fields; keep the actual field coefficient in F0-F4 causal validity and pushforward/operator evaluation",
+    "theta_refit": false,
+    "metrics": ["J_family_ablated", "Delta_coef_abs=J_family_ablated-J_family_original", "Delta_coef_rel=J_family_ablated/J_family_original-1", "ablation_valid_all_fields"],
+    "role": "mechanism diagnostic only"
+  },
+  "lower_order_diagnostics": {
+    "grid": 65,
+    "TRAIN": true,
+    "diagnostic_fields": true,
+    "metrics": ["max_abs_L_T_over_C_TT", "max_abs_L_X_over_C_TT", "min_C_TT", "max_abs_q_over_C_TT", "max_abs_inv_C_TT"],
+    "role": "descriptive only; no candidate filter"
+  },
+  "hit_rate_vs_parent_J": {
+    "arms": ["FULL-V1", "FULL-V2"],
+    "parent_reference": "best (lowest-J_family) resolved breeding parent among the recorded parent_branch_hashes",
+    "clear_hit": "resolved child best-J_family < parent_J_family*(1-tau_num)",
+    "tau_num": 0.005,
+    "normalized_parent_J_bins": [0.0, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, "inf"],
+    "role": "search-mechanism diagnostic; bins fixed in this implementation before diagnostic evaluation and never affect membership"
+  },
+  "fairness": {
+    "source": "immutable K2A paired-arm evidence",
+    "axes": ["equal_structural_proposals", "equal_evaluator_calls", "equal_accumulated_CPU"],
+    "scalar_composite_forbidden": true
+  },
+  "data_boundary": {
+    "now_allowed": ["TRAIN_OPERATOR", "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC", "OPENED_TRANSFER_DIAGNOSTIC", "frozen S1/K2A ledgers and membership locators"],
+    "still_forbidden": ["DEVELOPMENT", "SEALED_FINAL", "historical response outcomes", "response data", "candidate refit", "diagnostic-based candidate selection"]
+  },
+  "membership_governance": {
+    "K2A_clear_membership_immutable": true,
+    "K2A_unresolved_membership_immutable": true,
+    "top_k_forbidden": true,
+    "percentile_forbidden": true,
+    "pareto_membership_forbidden": true,
+    "weighted_score_forbidden": true,
+    "target_survivor_count_forbidden": true,
+    "diagnostic_transfer_filter_forbidden": true,
+    "S2_branch_reselection_forbidden": true
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "workers": 16,
+    "BLAS_OpenMP_threads": 1,
+    "progress": "processed/total,current branch,elapsed,rate,ETA",
+    "restart": "K2B_work/partial_results.jsonl in the authoritative S1 store; final results are deterministically reordered and K2B_work is removed on PASS"
+  },
+  "next_on_pass": "P13-S1-K2C_POST_MEMBERSHIP_THEORY_BRIDGE",
+  "next_on_failure": "REPAIR_P13_S1_K2B_IMPLEMENTATION_OR_PROVENANCE_ONLY"
+}

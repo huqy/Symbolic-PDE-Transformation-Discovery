@@ -1,0 +1,21 @@
+{
+  "stage": "P13-S2-K7",
+  "k6_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_K6_RUN.txt",
+  "expected_k6_next_action": "P13-S2-K7_FORMAL_S2_FREEZE_AND_S3_DECISION_REQUIRES_POST_K6_REVIEW",
+  "expected_s1_clear": 2307,
+  "expected_s1_unresolved": 80,
+  "expected_k2_counts": {"OPERATOR_TRANSFER_PASS":1955,"OPERATOR_TRANSFER_UNRESOLVED":4,"OPERATOR_TRANSFER_FAIL":348},
+  "expected_k5_counts": {"RESPONSE_PASS":1955,"RESPONSE_UNRESOLVED":0,"RESPONSE_FAIL":0},
+  "expected_k5_final_pair": [129,257],
+  "expected_k5_pass_membership_sha256": "2eea886fb4f63bbdec65f2c97377da64788c0820c09d6f5930715f4609286985",
+  "governance": {
+    "k6_diagnostics_membership_authority": false,
+    "top_k_or_pareto_formal_selection": false,
+    "new_threshold": false,
+    "response_aware_refit": false,
+    "s3_opening_in_k7": false,
+    "sealed_must_remain_unopened": true
+  },
+  "s3_decision_on_clean_s2": "RECOMMENDED_PENDING_EXPLICIT_USER_AUTHORIZATION",
+  "next_action_on_pass": "P13-S3_PROTOCOL_AND_SEALED_OPENING_BLOCKED_PENDING_EXPLICIT_USER_AUTHORIZATION"
+}

@@ -1,0 +1,80 @@
+{
+  "execution": {
+    "HPC_workers_required": 1,
+    "PDE_solve_run": false,
+    "formal_candidate_generation_run": false,
+    "formal_search_run": false,
+    "parameter_fitting_run": false,
+    "synthetic_maps_are_test_fixtures_not_candidates": true
+  },
+  "feasibility_ladder": {
+    "F0": "finite map values, first derivatives and declared shapes",
+    "F1": "positive Jacobian margin and future orientation T_t>0",
+    "F2": "C_TT>0, source initial line maps to a spacelike curve, side boundaries map to timelike curves",
+    "F3": "simple positively oriented mapped boundary and positive mapped-cell orientation",
+    "F4": "degree-one evidence, unique numerical inverse probes, round-trip tolerance and bounded derivative conditioning"
+  },
+  "fixed_benchmark": {
+    "a": "1+0.5*x*t",
+    "domain": {
+      "t": [
+        0.0,
+        1.0
+      ],
+      "x": [
+        0.0,
+        1.0
+      ]
+    },
+    "grid_points_t": 65,
+    "grid_points_x": 65,
+    "q": "1"
+  },
+  "minimal_gauge": {
+    "common_positive_scale": "divide both coordinates and all first derivatives by sqrt(J_raw(z_ref))",
+    "forbidden_as_gauge": [
+      "anisotropic_X_T_scaling",
+      "constant_shear",
+      "arbitrary_2x2_linear_mixing",
+      "Lorentz_like_post_layer",
+      "candidate_specific_initial_curve_straightening"
+    ],
+    "orientation_is_a_gate_not_an_automatic_flip": true,
+    "raw_AST_raw_parameters_raw_hash_retained": true,
+    "reference_point": [
+      0.0,
+      0.0
+    ],
+    "translation": "subtract X(z_ref) and T(z_ref)"
+  },
+  "numerical_protocol": {
+    "absolute_causal_margin": 1e-10,
+    "absolute_orientation_margin": 1e-10,
+    "barycentric_tolerance": 1e-10,
+    "cell_area_relative_margin": 1e-08,
+    "condition_number_hard_ceiling": 67108864.0,
+    "condition_number_hard_ceiling_rule": "1/sqrt(float64_machine_epsilon)",
+    "float_dtype": "float64",
+    "inverse_probe_grid_per_axis": 7,
+    "inverse_probe_local_coordinates": [
+      0.37,
+      0.61
+    ],
+    "inverse_roundtrip_calibration_multiplier": 10.0,
+    "inverse_roundtrip_floor": 1e-08,
+    "inverse_roundtrip_hard_ceiling": 0.01,
+    "segment_intersection_tolerance": 1e-12
+  },
+  "program": "P11-RawXT",
+  "purpose": "Remove only translation/common-positive-scale bookkeeping redundancy and certify mathematical admissibility of raw spacetime maps.",
+  "selection_semantics": {
+    "conditioning_is_recorded_directly": true,
+    "percentile_filter": false,
+    "proxy_or_feature_reward": false,
+    "target_survivor_count": false,
+    "top_k": false,
+    "validity_is_hard_boolean_ladder": true,
+    "weighted_validity_score": false
+  },
+  "stage": "P11-RawXT-S0-K2"
+}

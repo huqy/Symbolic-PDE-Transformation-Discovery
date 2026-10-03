@@ -1,0 +1,11 @@
+{
+  "heavy_science_rerun": false,
+  "integrity_adaptation": "LOCAL_SHA_AUTHENTICATION_ONLY; UNMODIFIED_STAGE_LAUNCHERS",
+  "internal_source_commit": "b6f832c66260d19744ff562a4cf1f42871cc9bb9",
+  "protected_scientific_digest": "e8730a1eeb77dc3a2dd2438962bb84863d59b8189e032fa73185486bd2f20b23",
+  "protected_scientific_files": 195,
+  "public_history": "NEW_ROOT_NO_INTERNAL_ANCESTRY",
+  "reference_results_runtime_authority": false,
+  "schema": "PUBLIC_RELEASE_PROVENANCE_V1",
+  "scientific_files_changed": 0
+}

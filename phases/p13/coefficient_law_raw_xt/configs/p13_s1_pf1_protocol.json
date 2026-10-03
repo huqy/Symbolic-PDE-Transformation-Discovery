@@ -1,0 +1,39 @@
+{
+  "stage": "P13-S1-PF1_FINAL_STAGE_FREEZE_AND_S2_HANDOFF",
+  "role": "FINAL_S0_S1_STAGE_FREEZE_HANDOFF",
+  "parent_K3_semantic_digest": "0862640a856eed7d0321d8fa0597b96005293c9058836d686914b31f52e01997",
+  "clear_membership_sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+  "unresolved_membership_sha256": "4177feffe4417e157f17eb90578b1e749ec06fe0db7935a7ade315c33cbc4f67",
+  "clear_count": 2307,
+  "unresolved_count": 80,
+  "required_PF0_next_action": "P13-S1-PF1_FINAL_STAGE_FREEZE_AND_S2_HANDOFF",
+  "next_on_pass": "P13-S2-K0_DEVELOPMENT_COEFFICIENT_OPENING_AND_PROTOCOL_LOCK",
+  "contexts": {
+    "S1_final": "P13_COMPREHENSIVE_CONTEXT_S1_FINAL_FREEZE_20260831.md",
+    "S2_entry": "P13_COMPREHENSIVE_CONTEXT_S2_ENTRY_PF0_LOCK_20260831.md",
+    "rolling": "P13_S1_ROLLING_CONTEXT.md"
+  },
+  "S2_top_level_roadmap": [
+    "S2-K0_DEVELOPMENT_COEFFICIENT_OPENING_AND_PROTOCOL_LOCK",
+    "S2-K1_COMPLETE_ZERO_SHOT_OPERATOR_TRANSFER",
+    "S2-K2_CLAIM_III_B_ADJUDICATION_AND_RESPONSE_ENTRY_LOCK",
+    "S2-K3_RESPONSE_PROTOCOL_FIDELITY_AND_CONTROL_LOCK",
+    "S2-K4_RESPONSE_REFERENCE_BANK_AND_CONTROL_FIRST_PRECHECK",
+    "S2-K5_COMPLETE_CANDIDATE_RESPONSE_CERTIFICATION",
+    "S2-K6_POST_RESPONSE_MECHANISM_DIAGNOSTICS",
+    "S2-K7_FORMAL_S2_FREEZE_AND_S3_DECISION"
+  ],
+  "response_stage_blocked_at_S2_entry": true,
+  "response_blockers_to_freeze_before_candidate_response": [
+    "exact causal/source-domain fidelity ladder and uncertainty semantics",
+    "control-first identity/NULL stopping/compute-governance semantics",
+    "NONDISCRIMINATIVE_ABSOLUTE_GATE consequence",
+    "policy that nondiscriminative DEV keeps current SEALED unopened for a strong transformation-improvement claim"
+  ],
+  "data_boundary": {
+    "DEVELOPMENT_COEF": "SEALED_COMMITTED_UNOPENED_UNTIL_S2_K0",
+    "DEVELOPMENT_RESPONSE": "SEALED_COMMITTED_UNOPENED_UNTIL_RESPONSE_PROTOCOL_LOCK",
+    "SEALED_FINAL_COEF": "SEALED_COMMITTED_UNOPENED",
+    "SEALED_FINAL_RESPONSE": "SEALED_COMMITTED_UNOPENED"
+  }
+}

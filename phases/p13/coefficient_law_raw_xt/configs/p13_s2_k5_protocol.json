@@ -1,0 +1,93 @@
+{
+  "escalation": {
+    "beyond_G1025": false,
+    "scope": "all 1955 candidates + identity + frozen NULL together",
+    "trigger": "at least one of the complete 1955 candidates is RESPONSE_UNRESOLVED at the current uniform pair"
+  },
+  "expected_k4": {
+    "candidate_responses_executed": false,
+    "development_response_opened": true,
+    "frozen_null_decision": "RESPONSE_FAIL",
+    "identity_decision": "RESPONSE_FAIL",
+    "k4r_semantic_output_digest": "b252b59f44b1665322ad46852457648c2ca3f52150371f3eb3b2eb1517868695",
+    "next_action": "P13-S2-K5_COMPLETE_CANDIDATE_RESPONSE_CERTIFICATION_REQUIRES_POST_K4_USER_REVIEW",
+    "overall_status": "PASS",
+    "reference_certified_count": 32,
+    "reference_unresolved_count": 0,
+    "scientific_outcome": "DISCRIMINATIVE_ABSOLUTE_GATE",
+    "sealed_opened": false,
+    "semantic_output_digest": "899ced09d91a4483e00293c67a828b96d1b926d28951e6b58dfef7883cf18441"
+  },
+  "frozen_causal_core": {
+    "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/causal_calibration.py",
+    "sha256": "cd2481d984342f32352014f64c3ed64b1c640a6b01e08b7fe874dbae91e69c0f"
+  },
+  "governance": {
+    "PF0_filter": false,
+    "SEALED_must_remain_unopened": true,
+    "complete_1955_required": true,
+    "cross_candidate_execution_equivalence_not_assumed": true,
+    "cross_candidate_proxy_filter": false,
+    "exact_operator_reuse_within_same_candidate_field_across_8_response_cases": true,
+    "operator_score_shortlist": false,
+    "rho_transfer_filter": false,
+    "scientific_branch_identity_preserved": true
+  },
+  "k4_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_K4_RUN.txt",
+  "next_action_on_pass": "P13-S2-K6_POST_RESPONSE_DIAGNOSTICS",
+  "outputs": {
+    "decision_map": "K5_RESPONSE_DECISION_MAP.jsonl",
+    "decision_summary": "K5_RESPONSE_DECISION_SUMMARY.json",
+    "escalation_summary": "K5_FIDELITY_ESCALATION_SUMMARY.json",
+    "measurements": "K5_CANDIDATE_RESPONSE_MEASUREMENTS.jsonl",
+    "pass_membership": "K5_RESPONSE_PASS_MEMBERSHIP.jsonl"
+  },
+  "pf1_active_input_manifest": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/PF1_final_freeze/PF1_S2_ACTIVE_INPUT_MANIFEST.json",
+    "sha256": "35d81936750448e8047b4a8b8f474379ec7dad3c9b662553073c842df8a3d87a"
+  },
+  "purpose": "Complete response certification of the entire 1955-member K2 clear operator-transfer cohort under the K3-frozen causal fidelity protocol.",
+  "response_contract": {
+    "candidate_refit": false,
+    "candidate_specific_rescue": false,
+    "fail": "at least one lower bound strictly above 0.15",
+    "initial_pair": [
+      129,
+      257
+    ],
+    "pairs": 32,
+    "pass": "all 32 upper bounds strictly below 0.15",
+    "radius": "abs(E_fine-E_coarse)+reference_uncertainty",
+    "threshold": 0.15,
+    "top_k_or_pareto": false,
+    "uniform_escalation_grids": [
+      513,
+      1025
+    ],
+    "unresolved": "otherwise, including numerical unresolved"
+  },
+  "response_eligible_membership": {
+    "count": 1955,
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K2_III_B_adjudication_response_entry_lock/K2_RESPONSE_ELIGIBLE_PASS_MEMBERSHIP.jsonl",
+    "sha256": "af97feead15e6868da5f9f19c7732dfdb9cf8383ffcdaf43694b9cbbe81601aa"
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "blas_openmp_threads_per_worker": 1,
+    "checkpoint_every_completed_field_tasks": 25,
+    "progress_every_seconds": 30.0,
+    "restart_resume": true,
+    "workers": {
+      "1025": 8,
+      "129": 16,
+      "257": 16,
+      "513": 8
+    }
+  },
+  "s1_clear_membership": {
+    "count": 2307,
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+    "sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84"
+  },
+  "stage": "P13-S2-K5"
+}

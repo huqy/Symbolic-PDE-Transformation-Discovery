@@ -1,0 +1,160 @@
+{
+  "active_design": {
+    "artifact": "P13_COMPREHENSIVE_CONTEXT_S0_ENTRY_20260826.md",
+    "supersedes": "P13_BOOTSTRAP_FROM_CLAIM_I_II_20260825.md",
+    "uploaded_reference_sha256": "fc73715a7b5886c37ff4a33247390c0d782596305a8b06eea9ff5fc4d3543def"
+  },
+  "arm_design": {
+    "FULL-V1": "full primitive coefficient grammar with inherited free-form GP geometry",
+    "FULL-V2": "same full grammar/caps with generic residual-graft proposal geometry",
+    "K0_only_design_lock": true,
+    "NULL-V2": "coordinate-only null grammar with V2 proposal geometry"
+  },
+  "claim_hierarchy": [
+    "III-A_OPERATOR_DISCOVERY",
+    "III-B_ZERO_SHOT_OPERATOR_TRANSFER",
+    "III-C_DEVELOPMENT_PHYSICAL_RESPONSE",
+    "III-D_SEALED_JOINT_GENERALIZATION"
+  ],
+  "data_roles": {
+    "CALIBRATION_COEF": "5 fresh objects to be generated in K1; open calibration only",
+    "DEVELOPMENT_COEF": "4 private fresh objects to be generated and sealed in K1",
+    "DEVELOPMENT_RESPONSE": "private committed K1 payload; sealed until S2",
+    "OPENED_CALIBRATION_DIAGNOSTIC": "historical collaborator previews only; never formal evidence",
+    "OPENED_TRANSFER_DIAGNOSTIC": "2 fresh objects to be generated in K1; diagnostic only after frozen rung",
+    "SEALED_FINAL_COEF": "4 private fresh objects to be generated and sealed in K1",
+    "SEALED_FINAL_RESPONSE": "private committed K1 payload; sealed until S3",
+    "TRAIN_OPERATOR": "6 fresh objects to be generated/committed in K1; operator-only discovery"
+  },
+  "forbidden_in_K0": {
+    "PDE_response_solve": true,
+    "formal_candidate_search": true,
+    "generate_formal_coefficient_payloads": true,
+    "generate_or_open_development_response": true,
+    "generate_or_open_sealed_response": true,
+    "large_search_code": true,
+    "parameter_fitting": true,
+    "read_historical_response_outcomes_as_search_information": true,
+    "use_claim_II_characteristic_formula_as_search_seed_or_fitness": true,
+    "use_claim_I_capacity_witness_as_search_information": true
+  },
+  "gauge_equivalence": {
+    "canonicalization": "subtract raw X,T at reference point; divide coordinates and all map derivatives by sqrt(raw Jacobian at reference point)",
+    "forbidden": [
+      "anisotropic_X_T_scaling",
+      "constant_shear",
+      "arbitrary_2x2_linear_mixing",
+      "Lorentz_like_post_layer",
+      "candidate_specific_initial_curve_straightening"
+    ],
+    "group": "common translations in X,T and one common positive scale",
+    "orientation": "positive raw reference Jacobian required; no automatic flip",
+    "per_field_optimized_gauge": false,
+    "raw_and_canonical_records_required": true,
+    "reference_index": [
+      0,
+      0
+    ],
+    "zero_shot_semantics": "same raw AST + same theta + same predeclared canonicalization rule on every field"
+  },
+  "inherited_file_sha256": {
+    "phases/p11/raw_xt_td/configs/p11rawxt_s0_k1_raw_ast_grammar.json": "5dd823ea414902f465f19bde202b6ae0ba3f83e5921dbc6ec7b03842c5596e3b",
+    "phases/p11/raw_xt_td/configs/p11rawxt_s0_k2_coordinate_validity.json": "9eae5f4073ae85523e9f60bc17074048966c791bc55fab0cf6a31c1b5f141a58",
+    "phases/p11/raw_xt_td/configs/p11rawxt_s0_k3_operator_objective.json": "0bb8f471059f5003fc78da07fd22e7899299c599366be27293b8c0bdc6c21b88",
+    "phases/p11/raw_xt_td/src/p11rawxt_ast.py": "b458b5b4f2320fc74847161ac6b812c24f1e5d61654cfa75c9bb70dab66c9af1",
+    "phases/p11/raw_xt_td/src/p11rawxt_operator.py": "f366c1c04d151e53a948926ee519cebbc3f1f45c1405e5a7ba7e427d8db12f4f",
+    "phases/p11/raw_xt_td/src/p11rawxt_s1/k1_representation.py": "dd95c547361025b68ada6d011605aca7cbda1da3f5dc117cf14ad6eee1d1a268",
+    "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_ast_runtime.py": "9a7bce451dd1cab9dd9a29a0ad2aaf728859c69c516e2732fd89d785f5268bcf",
+    "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_evaluator.py": "f005861fc2af170577e465fa7078dae08fd2457d46946891dfe4d98b26971d35",
+    "phases/p11/raw_xt_td/src/p11rawxt_validity.py": "4ee3a5cf96519e4eecd8a11dd28f0b951f64412772efa85c2d7c2ef1434f12e9"
+  },
+  "l3_activation": {
+    "caps": {
+      "depth_max": 13,
+      "derivative_nesting_max": 2,
+      "nodes_T_max": 41,
+      "nodes_X_max": 41,
+      "theta_occurrences_total_max": 12,
+      "total_nodes_max": 72,
+      "unique_theta_component_max": 6,
+      "unique_theta_total_max": 10
+    },
+    "formal_search_authorized": false,
+    "merge_rule": "start from frozen P11 active_caps and overwrite only keys explicitly present in the L3 cap-ladder row",
+    "numeric_execution_of_derivative_nesting_2": "MUST_BE_QUALIFIED_BEFORE_SEARCH_IN_S0_K2",
+    "source_level": "L3_requires_new_protocol_confirmation",
+    "theta_occurrences_note": "L3 row omits this key; P11 executable cap transition semantics preserve the base active cap value 12 rather than inventing a new cap."
+  },
+  "next_on_pass": "P13-S0-K1_COEFFICIENT_DATA_COMMITMENTS_OBJECTIVE_RESPONSE_CONTRACT",
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "representation": {
+    "amplitude": 1,
+    "atomic_coefficient_derivative_terminals_added": false,
+    "characteristic_or_directional_primitives_added": false,
+    "forced_coefficient_use": false,
+    "forced_root_wrapper": false,
+    "ontology": "u=w(X,T), A=1; X,T independent complete raw primitive AST roots",
+    "operators": [
+      "Add",
+      "Sub",
+      "Mul",
+      "Div",
+      "Inv",
+      "Sqrt",
+      "Log",
+      "PowInt",
+      "PowParam",
+      "Dx",
+      "Dt"
+    ],
+    "terminals": [
+      "x",
+      "t",
+      "a",
+      "q",
+      "-1",
+      "0",
+      "1",
+      "theta_i"
+    ]
+  },
+  "stage": "P13-S0-K0",
+  "status": "BRANCH_INHERITANCE_GAUGE_LOCK_NO_DATA_GENERATION_NO_SEARCH",
+  "upstream_context_file_sha256": {
+    "active_p13_s0_entry": {
+      "artifact": "P13_COMPREHENSIVE_CONTEXT_S0_ENTRY_20260826.md",
+      "role": "ACTIVE",
+      "sha256": "fc73715a7b5886c37ff4a33247390c0d782596305a8b06eea9ff5fc4d3543def"
+    },
+    "claim_II_freeze": {
+      "artifact": "P12_CLAIM_II_REPRESENTATION_THEORY_FREEZE_20260825.md",
+      "role": "ACTIVE_UPSTREAM_IMMUTABLE",
+      "sha256": "b6cd999f72ddd3b4a2a50c9a3c579feaf2ac99759546b9d591cb84874d530abf"
+    },
+    "claim_I_freeze": {
+      "artifact": "P12_CLAIM_I_ATTAINMENT_CERTIFIED_DISCOVERY_FREEZE_20260825.md",
+      "role": "ACTIVE_UPSTREAM_IMMUTABLE",
+      "sha256": "3973800451b9f51db15985cd2a5755ff83856c4353bed1c72bec92e18231e0cf"
+    },
+    "p13_bootstrap_superseded": {
+      "artifact": "P13_BOOTSTRAP_FROM_CLAIM_I_II_20260825.md",
+      "role": "REFERENCE_SUPERSEDED",
+      "sha256": "f27977a763abd5280c9f6b6cc16c8d4828fde297641870a9d18126b231aabb43"
+    }
+  },
+  "upstream_scientific_anchors": {
+    "claim_I": {
+      "archive": "P12_S0A_K4_P12_FREEZE_AUDIT_20260825T051241Z.tar.xz",
+      "archive_sha256": "b6a152a1045934eb1098de672e21cf13b335c609a60b9578c99cc10b2461d684",
+      "semantic_output_digest": "100af1cce3eb336eb6eefdd3377cecadc1ed9b6cdc82085bd30ad9af866e6dda",
+      "status": "S0A_K4_P12_FREEZE_COMPLETE"
+    },
+    "claim_II": {
+      "archive": "P12_CLAIM_II_T5R_B3_AUDIT_20260825T222046Z.tar.xz",
+      "archive_sha256": "0268dfca87a59954009a28b1ad6f7d065f6a2d88745cd47b383937bce455deb5",
+      "characteristic_reference_role": "THEORY_REFERENCE_ONLY_NOT_SEARCH_INFORMATION",
+      "semantic_output_digest": "e4c9f3f2a1f17e33c0099bb661ee42051cba702891578a2164f25481e356858e",
+      "status": "FORMAL_T5R_COMPLETE"
+    }
+  }
+}

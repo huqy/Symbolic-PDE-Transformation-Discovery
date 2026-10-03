@@ -1,0 +1,216 @@
+{
+  "program": "P13-Constructive-Coefficient-Law",
+  "stage": "P13-S3-K2",
+  "protocol_version": "SEALED_OPERATOR_ADJUDICATION_AND_RESPONSE_ENTRY_LOCK_V1",
+  "purpose": "Deterministically adjudicate the complete frozen S3-K1 SEALED operator evidence without reading coefficient objects or response data, and freeze the full clear-PASS response-eligible cohort without ranking or narrowing.",
+  "authorization": "EXPLICIT_USER_AUTHORIZATION_AFTER_K1_AUDIT_20260901",
+  "parent": {
+    "k1_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S3_K1_RUN.txt",
+    "expected_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock",
+    "k1_output_subdir": "K1_sealed_coefficient_operator_transfer",
+    "expected_overall_status": "PASS",
+    "expected_next_action": "STOP_AFTER_K1_AWAIT_AUDIT_AND_EXPLICIT_AUTHORIZATION_FOR_S3_K2_OPERATOR_ADJUDICATION",
+    "k0_semantic_output_digest": "5b4c58b85f007663c10fcc965a4b259f9f89b3d2f2508c1554ed516ec0dc9221",
+    "k1_semantic_output_digest": "76df2f5216cfc411112ccb6072f63b61090ff9876a6cb3270812af6fb03c2bf0",
+    "formal_s2_membership_sha256": "2eea886fb4f63bbdec65f2c97377da64788c0820c09d6f5930715f4609286985",
+    "files": [
+      {
+        "name": "entry_audit",
+        "path": "K1_ENTRY_AND_AUTHORIZATION_AUDIT.json",
+        "sha256": "d89a7f9a3ee5761e1ccf11819b6c5369bc8803f9f2b222ba1f0bae3cf710f91e"
+      },
+      {
+        "name": "opening_event",
+        "path": "K1_COEFFICIENT_OPENING_EVENT.json",
+        "sha256": "f1cef978a97fb4023887531c4d541f0a5358c98a447cb7627a491c57087af11a"
+      },
+      {
+        "name": "opened_input_manifest",
+        "path": "K1_SEALED_FINAL_COEF_INPUT_MANIFEST.json",
+        "sha256": "27275abaf0869f2902ed0f86371ff062e3400e0e3992c3eaed5bd7e5579c6856"
+      },
+      {
+        "name": "opened_reproducibility_audit",
+        "path": "K1_OPENED_COEFFICIENT_REPRODUCIBILITY_AUDIT.json",
+        "sha256": "664418d7f775b2e50ff727a8b88c803c63f7d65bfde0c9d1a96e62af1992f846"
+      },
+      {
+        "name": "identity_baselines",
+        "path": "K1_SEALED_IDENTITY_BASELINES.json",
+        "sha256": "e547dca8c768b05da1a10e7409d9f22c019f4faf25369866ed1ba24cd84d7ff3"
+      },
+      {
+        "name": "formal_ledger",
+        "path": "K1_FORMAL_1955_OPERATOR_LEDGER.jsonl",
+        "sha256": "cecbd06b6583339029dcb5e958f8ed0366c4cfee81e844ea9d2d1fe65827f2ee",
+        "count": 1955,
+        "stratum": "FORMAL_1955",
+        "membership_authority": true
+      },
+      {
+        "name": "diagnostic_dev_fail_ledger",
+        "path": "K1_DIAGNOSTIC_DEV_FAIL_348_OPERATOR_LEDGER.jsonl",
+        "sha256": "7d0ccac74e72851cba66298c893f1e560fb9fbb7d12466cf3589bafbcdfd55fb",
+        "count": 348,
+        "stratum": "DIAGNOSTIC_DEV_FAIL_348",
+        "membership_authority": false
+      },
+      {
+        "name": "diagnostic_dev_unresolved_ledger",
+        "path": "K1_DIAGNOSTIC_DEV_UNRESOLVED_4_OPERATOR_LEDGER.jsonl",
+        "sha256": "a6c9e01a0e74fa41e810d966cbe6732a3515bbcb1a5178bbc37ed47f0bee5d58",
+        "count": 4,
+        "stratum": "DIAGNOSTIC_DEV_UNRESOLVED_4",
+        "membership_authority": false
+      },
+      {
+        "name": "measurement_aggregate",
+        "path": "K1_OPERATOR_MEASUREMENT_AGGREGATE.json",
+        "sha256": "66682090ba2170ed61066eae9a5659d0806ce042185acb71ccd4eca2621920a2"
+      },
+      {
+        "name": "numerical_fidelity_census",
+        "path": "K1_NUMERICAL_FIDELITY_CENSUS.json",
+        "sha256": "ef54536adad6b3552c5bfc4164992534da65450bd211fbfbda0ed8ae4abfe58e"
+      },
+      {
+        "name": "data_boundary_guard",
+        "path": "K1_DATA_BOUNDARY_GUARD.json",
+        "sha256": "2781f003dff168361c6b989c7522e9491acfa480be8914b03adb726f87a48f23"
+      },
+      {
+        "name": "adjudication_handoff",
+        "path": "K1_ADJUDICATION_HANDOFF_LOCK.json",
+        "sha256": "2ff7de2680d497079b73394c1ac47359b276f43cbf364be1882fbadf6ba85e9a"
+      },
+      {
+        "name": "source_and_parent_manifest",
+        "path": "K1_SOURCE_AND_PARENT_MANIFEST.json",
+        "sha256": "15b85e04d04b41acf4c31c455eae79bf3d456152026063fe9e2ae43c90510ae6"
+      },
+      {
+        "name": "semantic_digest",
+        "path": "K1_SEMANTIC_OUTPUT_DIGEST.json",
+        "sha256": "3b4cb6ba8bad01965d5b61ceabf25b39702f278abd7acab811853fd3efee7c0a"
+      },
+      {
+        "name": "scientific_summary",
+        "path": "K1_SCIENTIFIC_SUMMARY.json",
+        "sha256": "c5d49847e50431e8bd4a9a42d6760769a10df4403e293158351de2fb08167f86"
+      }
+    ]
+  },
+  "cohort_contract": {
+    "formal": {
+      "stratum": "FORMAL_1955",
+      "count": 1955,
+      "development_status": "CLEAR_PASS",
+      "membership_authority": true
+    },
+    "diagnostic_dev_fail": {
+      "stratum": "DIAGNOSTIC_DEV_FAIL_348",
+      "count": 348,
+      "development_status": "CLEAR_FAIL",
+      "membership_authority": false,
+      "promotion_or_rescue_authority": false
+    },
+    "diagnostic_dev_unresolved": {
+      "stratum": "DIAGNOSTIC_DEV_UNRESOLVED_4",
+      "count": 4,
+      "development_status": "UNRESOLVED",
+      "membership_authority": false,
+      "promotion_or_rescue_authority": false
+    },
+    "complete_partition_count": 2307
+  },
+  "frozen_hard_gate": {
+    "family_ratio_boundary": 0.5,
+    "per_field_ratio_boundary": 1.0,
+    "tau_num": 0.005,
+    "tau_num_role": "NUMERICAL_AMBIGUITY_ONLY_NOT_THRESHOLD_RELAXATION",
+    "component_order": [
+      "family",
+      "field_1",
+      "field_2",
+      "field_3",
+      "field_4"
+    ],
+    "clear_pass_rule": "value < q*(1-tau_num)",
+    "unresolved_rule": "q*(1-tau_num) <= value <= q*(1+tau_num)",
+    "clear_fail_rule": "value > q*(1+tau_num)"
+  },
+  "fidelity_review": {
+    "uses_only_K1_preregistered_G33_G65_evidence": true,
+    "observed_formal_family_discrepancy_gt_tau_num": 0,
+    "observed_formal_max_per_field_discrepancy_gt_tau_num": 0,
+    "observed_formal_operator_or_numerical_unresolved": 0,
+    "conclusion": "NO_COHORT_WIDE_NUMERICAL_REPAIR_REQUIRED_BEFORE_K2_ADJUDICATION",
+    "new_discrepancy_threshold": null,
+    "posthoc_fraction_trigger": false,
+    "candidate_specific_rescue": false,
+    "cohort_wide_escalation_added": false,
+    "tau_num_changed": false
+  },
+  "adjudication": {
+    "uses_only_verified_frozen_G33_G65_boundary_statuses": true,
+    "recomputes_stored_boundary_statuses_for_integrity_only": true,
+    "new_numeric_thresholds": [],
+    "component_consensus": {
+      "CLEAR_PASS": "G33=CLEAR_PASS and G65=CLEAR_PASS",
+      "CLEAR_FAIL": "G33=CLEAR_FAIL and G65=CLEAR_FAIL",
+      "UNRESOLVED_NUMERICAL_BOUNDARY_OR_GRID_DISAGREEMENT": "all other G33/G65 status pairs"
+    },
+    "final_decision": {
+      "SEALED_OPERATOR_FAIL": "any component consensus is CLEAR_FAIL, or any required F0-F4 validity gate fails",
+      "SEALED_OPERATOR_UNRESOLVED": "no CLEAR_FAIL and at least one component consensus is unresolved, or a required operator quantity is unresolved",
+      "SEALED_OPERATOR_PASS": "all five component consensuses are CLEAR_PASS"
+    },
+    "every_clear_formal_PASS_enters_response_eligibility": true,
+    "top_k_after_PASS_forbidden": true,
+    "pareto_after_PASS_forbidden": true,
+    "representative_narrowing_after_PASS_forbidden": true,
+    "target_survivor_count_forbidden": true,
+    "diagnostic_promotion_or_rescue_forbidden": true
+  },
+  "data_boundary": {
+    "TRAIN_OPERATOR": "NOT_READ_BY_K2",
+    "DEVELOPMENT_COEF": "PRELOCKED_STRATUM_LABELS_ONLY",
+    "DEVELOPMENT_RESPONSE": "NOT_READ_BY_K2",
+    "SEALED_FINAL_COEF": "OPENED_IN_K1_OBJECTS_NOT_READ_BY_K2",
+    "SEALED_FINAL_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "K2_coefficient_object_access": "NONE",
+    "K2_response_archive_access": "NONE",
+    "K3_blocked_until_K2_audit_and_explicit_user_authorization": true
+  },
+  "forbidden": [
+    "proxy labels or proxy rules",
+    "historical or SEALED response information",
+    "DEVELOPMENT response filtering",
+    "top-k, Pareto, percentile, weighted-score, or representative narrowing",
+    "target survivor count",
+    "diagnostic-stratum promotion or rescue",
+    "candidate-specific rescue",
+    "AST, theta, gauge, or amplitude modification",
+    "response-aware refit",
+    "new operator threshold",
+    "tau_num widening",
+    "SEALED_FINAL coefficient-object read/stat/hash",
+    "SEALED_FINAL_RESPONSE read/open/extract/stat/hash"
+  ],
+  "outputs": {
+    "run_subdir": "K2_sealed_operator_adjudication_response_entry_lock",
+    "formal_decision_map": "K2_FORMAL_1955_SEALED_OPERATOR_DECISION_MAP.jsonl",
+    "response_eligible_membership": "K2_RESPONSE_ELIGIBLE_CLEAR_PASS_MEMBERSHIP.jsonl",
+    "response_eligible_manifest": "K2_RESPONSE_ELIGIBLE_INPUT_MANIFEST.json",
+    "diagnostic_dev_fail_map": "K2_DIAGNOSTIC_DEV_FAIL_348_OUTCOME_MAP.jsonl",
+    "diagnostic_dev_unresolved_map": "K2_DIAGNOSTIC_DEV_UNRESOLVED_4_OUTCOME_MAP.jsonl"
+  },
+  "next_if_nonempty_PASS": "STOP_AFTER_K2_AWAIT_AUDIT_AND_EXPLICIT_AUTHORIZATION_FOR_S3_K3_SEALED_FINAL_RESPONSE_OPENING",
+  "next_if_zero_PASS": "STOP_FORMAL_RESPONSE_PATH_FREEZE_III_D_OP_NEGATIVE_OR_UNRESOLVED",
+  "next_on_failure": "STOP_AND_AUDIT_S3_K2_PROVENANCE_FIDELITY_OR_ADJUDICATION_BLOCKER",
+  "runtime": {
+    "parallelism": "single coordinator; deterministic postprocessing of frozen K1 ledgers",
+    "blas_threads": 1,
+    "restart_resume": false
+  }
+}

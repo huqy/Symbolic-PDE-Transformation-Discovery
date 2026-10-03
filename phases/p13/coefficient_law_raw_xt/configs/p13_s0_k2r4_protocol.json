@@ -1,0 +1,95 @@
+{
+  "program": "P13-Constructive-Coefficient-Law",
+  "stage": "P13-S0-K2R4",
+  "purpose": "Operational fitter qualification after the K2R3 post-freeze mechanism diagnostic established that the frozen naked raw-prior fitter cohort contained zero F4-attainable objects under both production and R0/R1/R2 reference fitting. Reuse the resolved K2R3 capacity evidence, run the already-approved response-blind production-matched common burn-in first, define the fitter cohort only by the preregistered F4 mathematical hard gate plus chronology, adjudicate continuous-fit regret on that operational F4 cohort, and only after those gates pass continue the frozen V2, evaluator-fidelity, lower-order and calibration-only causal chain.",
+  "parent_k2r3": {
+    "marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K2R3_RUN.txt",
+    "expected_semantic_output_digest": "1bb3ae221034b2f5da1e1e76889a57df1ea945a784d82ed71f7828133788d6d4",
+    "expected_overall_status": "FAIL",
+    "expected_next_action": "P13-S0-K2R3_REFERENCE_FITTER_SCIENTIFIC_DECISION_REQUIRED",
+    "required_failure_classifications": ["REFERENCE_OPTIMIZER_NOT_QUALIFIED_FITTER_COHORT"],
+    "required_capacity_existence_status": "PASS",
+    "required_full_optimum_reference_status": "RESOLVED",
+    "required_no_leakage_status": "PASS",
+    "runtime_input_rule": "read the authoritative completed K2R3 run in place through its marker; no K2R3 audit archive or post-freeze diagnostic JSON is a runtime input"
+  },
+  "mechanism_lock": {
+    "role": "POST_FREEZE_DIAGNOSTIC_MOTIVATION_REPRODUCED_FROM_AUTHORITATIVE_LEDGERS",
+    "expected_naked_fitter_object_count": 128,
+    "expected_production_F4_count": 0,
+    "expected_reference_levels": ["R0", "R1", "R2"],
+    "expected_both_reference_launches_no_F4_per_level": 128,
+    "formal_K2R3_status_unchanged": true
+  },
+  "capacity_reuse": {
+    "rerun_capacity": false,
+    "require_K2R3_capacity_existence_PASS": true,
+    "require_K2R3_full_optimum_RESOLVED": true,
+    "reuse_stable_full_capacity_reference": true,
+    "capacity_artifacts_remain_CALIBRATION_ONLY": true,
+    "capacity_witness_forbidden_from_search": true
+  },
+  "operational_burnin": {
+    "scientific_semantics": "byte-semantic reuse of the P13-S0-K2R2 common_burnin protocol for the 8192-proposal production-matched generic GP calibration run",
+    "structural_proposal_budget": 8192,
+    "parent_count": 64,
+    "operational_fitter_cohort_max": 128,
+    "operational_fitter_membership_rule": "chronologically first up to 128 unique structural skeletons whose unchanged production fit emits at least one F4 branch; membership uses only the preregistered F4 mathematical hard gate plus chronology; no J threshold, score rank, top-k, response, characteristic, capacity resemblance, or historical outcome",
+    "V2_parent_membership_rule": "chronologically first 64 members of the same operational F4 stream",
+    "formal_S1_seed_export": false,
+    "burnin_candidates_eligible_for_S1": false,
+    "failure_if_fewer_than_64_unique_F4": "OPERATIONAL_COMMON_BURNIN_F4_ATTAINMENT_FAIL"
+  },
+  "operational_fitter": {
+    "reference_optimizer": "exact byte-semantic reuse of P13-S0-K2R2 reference_optimizer_v2 and R0/R1/R2 cohort-wide ladder",
+    "minimum_R_fit_resolved": 64,
+    "median_R_fit_max": 1.25,
+    "p90_R_fit_max": 3.0,
+    "membership_conditioning": "F4 mathematical hard gate only",
+    "claim_boundary": "continuous-fit quality conditional on operational F4 attainment; the separate burn-in gate adjudicates whether the current search+production-fitter system forms enough F4 state within 8192 proposals",
+    "candidate_specific_reference_rescue": false,
+    "production_fitter_changed": false,
+    "reference_fidelity_ladder_changed": false
+  },
+  "continuation": {
+    "residual_graft_protocol": "byte-semantic reuse of p13_s0_k2r2_protocol.json residual_graft section",
+    "evaluator_fidelity_protocol": "reuse original K2 gate through K2R2 implementation",
+    "lower_order_diagnostics": "diagnostic only",
+    "causal_response_protocol": "reuse original calibration-only causal gate",
+    "formal_S1_search": false,
+    "development_or_sealed_open": false,
+    "opened_transfer_diagnostic_read": false
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "default_workers": 16,
+    "one_BLAS_thread_per_worker": true,
+    "progress_every_seconds": 60,
+    "checkpoint_every_batches": 10,
+    "resume": true,
+    "walltime_design_hours": 20
+  },
+  "scientific_governance": {
+    "objective_changed": false,
+    "grammar_changed": false,
+    "F4_hard_gate_changed": false,
+    "response_threshold_changed": false,
+    "data_boundary_changed": false,
+    "formal_S1_budget_changed": false,
+    "K2R2_common_burnin_budget_changed": false,
+    "K2R2_V2_budget_or_gate_changed": false,
+    "fitter_calibration_cohort_semantics_changed": true,
+    "change_is_explicit_new_preregistered_branch": true,
+    "historical_response_labels_read": false,
+    "opened_transfer_diagnostic_read": false,
+    "development_or_sealed_open": false,
+    "capacity_witness_search_use": false,
+    "characteristic_formula_search_use": false,
+    "objective_top_k_or_percentile_membership": false,
+    "target_survivor_count": false,
+    "candidate_specific_rescue": false,
+    "response_aware_refit": false,
+    "burnin_candidates_eligible_for_S1": false,
+    "formal_S1_search_authorized": false
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "count_targets": false,
+  "count_tolerances": false,
+  "fresh": {
+    "S1": {
+      "FULL_clear": 2444,
+      "FULL_unresolved": 89,
+      "NULL_clear": 0,
+      "NULL_unresolved": 0,
+      "continuation_32768": false
+    },
+    "S2": {
+      "operator": [
+        2038,
+        6,
+        400
+      ],
+      "references": [
+        32,
+        32
+      ],
+      "response": [
+        2038,
+        0,
+        0
+      ]
+    },
+    "S3": {
+      "diagnostic_DEV_FAIL": [
+        8,
+        0,
+        392
+      ],
+      "diagnostic_DEV_UNRESOLVED": [
+        2,
+        0,
+        4
+      ],
+      "formal_input": 2038,
+      "operator": [
+        451,
+        26,
+        1561
+      ],
+      "references": [
+        32,
+        32
+      ],
+      "response": [
+        4,
+        0,
+        447
+      ]
+    }
+  },
+  "historical": {
+    "S1_FULL_clear_unresolved": [
+      2307,
+      80
+    ],
+    "S2_operator": [
+      1955,
+      4,
+      348
+    ],
+    "S2_response": [
+      1955,
+      0,
+      0
+    ],
+    "S3_formal_input": 1955,
+    "S3_operator_PASS": 423,
+    "S3_operator_UNRESOLVED": 27,
+    "S3_response_PASS": 3
+  },
+  "order": "PASS_UNRESOLVED_FAIL",
+  "role": "DESCRIPTIVE_NON_RUNTIME_REFERENCE"
+}

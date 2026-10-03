@@ -1,0 +1,121 @@
+{
+  "program": "P13-Constructive-Coefficient-Law",
+  "stage": "P13-S0-K2R2",
+  "purpose": "Response-blind pre-search attainment repair: qualify a reproducible calibration reference optimizer, re-adjudicate the frozen 128-skeleton production fitter cohort, qualify production-matched common F4 burn-in, then adjudicate the frozen V2 residual-graft partial-credit experiment before continuing K2 numerical/causal calibration.",
+  "parent_k2": {
+    "marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K2_RUN.txt",
+    "expected_semantic_output_digest": "ab229cfe44bb7d8cc58cdc4b804a2ef9ab9dcf897888dbbc99bf1b6ffe398d53",
+    "expected_overall_status": "FAIL",
+    "expected_next_action": "P13-S0-K2R_PARENT_SOURCE_SCIENTIFIC_DECISION_REQUIRED",
+    "required_failure_classifications": [
+      "REGIME_OR_CAPACITY_NOT_CLEAN",
+      "FITTER_NOT_QUALIFIED",
+      "RAW_PRIOR_F4_PARENT_ATTAINMENT_FAIL"
+    ],
+    "runtime_input_rule": "read the authoritative completed K2 run in place through its marker; no K2 audit archive is a runtime input"
+  },
+  "reference_optimizer_v2": {
+    "role": "CALIBRATION_ONLY",
+    "parameter_bounds": [-3.0, 3.0],
+    "independent_launches": 2,
+    "common_incumbents": ["zero_theta", "production_best_F4_theta_if_available"],
+    "independent_global_design": "scrambled Sobol",
+    "global_fraction": 0.45,
+    "frontier_width": 8,
+    "local_sobol_per_frontier": 16,
+    "coordinate_steps": [1.5, 0.75, 0.375, 0.1875, 0.09375, 0.046875, 0.0234375, 0.01171875, 0.005859375],
+    "launch_relative_agreement_max": 0.02,
+    "fidelity_ladder": [
+      {
+        "level": "R0",
+        "calls_by_parameter_count": {"0":1,"1":512,"2":512,"3":640,"4":768,"5":896,"6":1024,"7":1152,"8":1280,"9":1408,"10":1536}
+      },
+      {
+        "level": "R1",
+        "calls_by_parameter_count": {"0":1,"1":1024,"2":1024,"3":1280,"4":1536,"5":1792,"6":2048,"7":2304,"8":2560,"9":2816,"10":3072}
+      },
+      {
+        "level": "R2",
+        "calls_by_parameter_count": {"0":1,"1":2048,"2":2048,"3":2560,"4":3072,"5":3584,"6":4096,"7":4608,"8":5120,"9":5632,"10":6144}
+      }
+    ],
+    "capacity_cohort_rule": "at each level run both NULL and FULL instruments under identical level semantics; stop only when both are reference-qualified, otherwise escalate both together",
+    "fitter_cohort_rule": "reuse the exact frozen K2 128-skeleton membership and production results; at each level run all 128 skeletons, stop only when at least 64 are reference-qualified, otherwise escalate the entire cohort together",
+    "candidate_specific_reference_rescue": false,
+    "response_information": false
+  },
+  "capacity_null": {
+    "full_identity_improvement_min": 3.0,
+    "null_identity_improvement_max": 2.0,
+    "null_over_full_score_min": 1.67,
+    "calibration_role": "CALIBRATION_COEF",
+    "unchanged_from_k2": true
+  },
+  "fitter": {
+    "frozen_membership_count": 128,
+    "minimum_reference_qualified": 64,
+    "median_R_fit_max": 1.25,
+    "p90_R_fit_max": 3.0,
+    "production_fitter_changed": false,
+    "membership_rule_changed": false
+  },
+  "common_burnin": {
+    "role": "CALIBRATION_ONLY",
+    "structural_proposal_budget": 8192,
+    "seed_namespace": "P13-S0-K2R2-COMMON-F4-BURNIN",
+    "parent_count": 64,
+    "parent_membership_rule": "chronologically first 64 unique structural skeletons whose unchanged production fit emits at least one F4 branch; one production-best F4 branch per skeleton; no objective threshold or top-k",
+    "formal_S1_seed_export": false,
+    "gp": {
+      "name": "P11-style feasibility-first multi-island generic GP burn-in",
+      "island_count": 8,
+      "initial_complete_skeleton_target_per_island": 128,
+      "offspring_mix": {"de_novo":0.2,"subtree_mutation":0.4,"subtree_crossover":0.4},
+      "migration": {"interval_completed_batches":20,"records_per_island":2,"selection":"uniform hash-spaced representatives from current breeding view","migration_changes_export_membership":false},
+      "parent_selection": "inherited P11 direct feasibility/nondominance semantics",
+      "residual_graft_used": false,
+      "characteristic_or_witness_seed": false
+    },
+    "batch_size": 32,
+    "failure_if_fewer_than_64": "COMMON_BURNIN_F4_ATTAINMENT_FAIL"
+  },
+  "residual_graft": {
+    "proposal_attempts": 8192,
+    "residual_graft_subtree_nodes_max": 9,
+    "improve_5pct_min_count": 8,
+    "improve_20pct_min_count": 1,
+    "seed_namespace": "P13-S0-K2-V2-PARTIAL-CREDIT",
+    "parent_cycle": "deterministic modulo over frozen chronological 64-parent cohort",
+    "unchanged_scientific_gate_from_k2": true
+  },
+  "continuation": {
+    "run_original_k2_evaluator_fidelity_after_R2C_pass": true,
+    "run_original_k2_lower_order_diagnostics_after_R2C_pass": true,
+    "run_original_k2_causal_response_after_R2C_pass": true,
+    "development_or_sealed_open": false,
+    "opened_transfer_diagnostic_read": false
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "default_workers": 16,
+    "one_BLAS_thread_per_worker": true,
+    "progress_every_seconds": 60,
+    "checkpoint_every_batches": 10,
+    "resume": true,
+    "walltime_design_hours": 20
+  },
+  "scientific_governance": {
+    "formal_candidate_search": false,
+    "development_or_sealed_open": false,
+    "historical_response_labels_read": false,
+    "opened_transfer_diagnostic_read": false,
+    "capacity_witness_search_use": false,
+    "characteristic_formula_search_use": false,
+    "top_k_or_percentile_membership": false,
+    "target_survivor_count": false,
+    "candidate_specific_rescue": false,
+    "response_aware_refit": false,
+    "large_budget_rescue_on_failure": false,
+    "burnin_candidates_eligible_for_S1": false
+  }
+}

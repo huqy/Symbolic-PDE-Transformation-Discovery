@@ -1,0 +1,446 @@
+{
+  "authored_control_inputs": [
+    {
+      "bytes": 6322,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_exact_source_config_test_lock.json",
+      "sha256": "679ff628ba9fc0b27d8be2ae77fe8bd430401b3320408980de530fe293ed3b8c",
+      "stage_first_consumed": "S1-K0R"
+    },
+    {
+      "bytes": 7376,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k0_protocol.json",
+      "sha256": "309def6302722762ddb12fe8f6c93565b8a563cf75d49bc0c661952a13295efb",
+      "stage_first_consumed": "S0-K0"
+    },
+    {
+      "bytes": 4793,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k1_protocol.json",
+      "sha256": "71c9aa38e5c53133a09baff88e9319362cd5a9b7e6fcfe9bb1d641702f39f528",
+      "stage_first_consumed": "S0-K1"
+    },
+    {
+      "bytes": 5795,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2_protocol.json",
+      "sha256": "d3e405cc72c3259c06b7606be8f0f637b62a057a658847359eaa9edc005a107c",
+      "stage_first_consumed": "S0-K2"
+    },
+    {
+      "bytes": 5701,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r2_protocol.json",
+      "sha256": "79b5e16f971222bc75cd1199593aa048311894f783dcce5850a58f838f0c6fae",
+      "stage_first_consumed": "S0-K2R2"
+    },
+    {
+      "bytes": 4995,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r3_protocol.json",
+      "sha256": "3ecd8c920161416a42fddb8c1d66b4448527030e7c54cf222ea4827dd3f9c430",
+      "stage_first_consumed": "S0-K2R3"
+    },
+    {
+      "bytes": 5416,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r4_protocol.json",
+      "sha256": "1fbe8da343ab56906231ecc13d7f4503f1ac944b9e7250eadbd0bd48833604d3",
+      "stage_first_consumed": "S0-K2R4"
+    },
+    {
+      "bytes": 2950,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k3_protocol.json",
+      "sha256": "47c45bcdbaa4e000c99728f1d570a57462a11084576197f9b7d186667148c5f7",
+      "stage_first_consumed": "S0-K3"
+    },
+    {
+      "bytes": 11466,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k0r_protocol.json",
+      "sha256": "d26954856897419b2e92d172f9cde8decfbb1ad1c0f98315b2f774971d104279",
+      "stage_first_consumed": "S1-K0R"
+    },
+    {
+      "bytes": 2612,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k1_protocol.json",
+      "sha256": "9f71f3fccba5ea3beeb244ac64708c24a5bc298e2299331a122e0dba2c510ace",
+      "stage_first_consumed": "S1-K1"
+    },
+    {
+      "bytes": 2959,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k2a_protocol.json",
+      "sha256": "c22178d8dba3fd1f08b9df6b012cfe50e2ba204f8771e7b41086d852fc0f3ec6",
+      "stage_first_consumed": "S1-K2A"
+    },
+    {
+      "bytes": 4466,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k2b_protocol.json",
+      "sha256": "c8785b70ef80c37b809be8b9ea7deb19f497222008109b8d2fb99570e9ff8046",
+      "stage_first_consumed": "S1-K2B"
+    },
+    {
+      "bytes": 6248,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k2c_protocol.json",
+      "sha256": "abb213c3d11d2b3399642600d788a41cac844de00d3a8a2821f38fcdcd690d52",
+      "stage_first_consumed": "S1-K2C"
+    },
+    {
+      "bytes": 1893,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k3_protocol.json",
+      "sha256": "93a6bedf8dec6eeb002be79c391bb04e2a3b1e63433a05fa766b9de4523e292c",
+      "stage_first_consumed": "S1-K3"
+    },
+    {
+      "bytes": 9072,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_pf0_protocol.json",
+      "sha256": "0eee75063e12b893ef0b5f4f4598b69497da71b6e9f01ea575b1ce5a6cedf0c2",
+      "stage_first_consumed": "S1-PF0"
+    },
+    {
+      "bytes": 2020,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_pf1_protocol.json",
+      "sha256": "717b703578f7b380649301a41cfe7417d3b456967ef9e3a692d9e5ebe0c6e613",
+      "stage_first_consumed": "S1-PF1"
+    },
+    {
+      "bytes": 5650,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k0_protocol.json",
+      "sha256": "40458de227bcf503cde911463ab511e9d7c9a502d4094b400713b95d1d543c17",
+      "stage_first_consumed": "S2-K0"
+    },
+    {
+      "bytes": 4323,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k1_protocol.json",
+      "sha256": "5332b2fc84751c99bacabf7681c400b8af68daca9b0aa16308c37c9064ebea14",
+      "stage_first_consumed": "S2-K1"
+    },
+    {
+      "bytes": 4647,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k2_protocol.json",
+      "sha256": "840d32b98f316d2b0bd1453de9154d326f10cc63541f45eb6f28c1e88d51bae5",
+      "stage_first_consumed": "S2-K2"
+    },
+    {
+      "bytes": 7956,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k3_protocol.json",
+      "sha256": "141ea0972a4f4827dc08211dfcff078b8742472681f04cf9d73bd25c8c162126",
+      "stage_first_consumed": "S2-K3"
+    },
+    {
+      "bytes": 3512,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k4_protocol.json",
+      "sha256": "13c2d35b56b8dc00ca3bd336c9edd64d09ed32811cd0207b134e067767daace2",
+      "stage_first_consumed": "S2-K4"
+    },
+    {
+      "bytes": 3900,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k5_protocol.json",
+      "sha256": "0c8deb9b40c28dafe1e0ae9e1d5c39012b154342b8f02557d0ffbe0987ea352b",
+      "stage_first_consumed": "S2-K5"
+    },
+    {
+      "bytes": 3142,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k6_protocol.json",
+      "sha256": "ac0aa97d8790198c76fe9992ffa91c651eaeb940a67c5c925a934c2d538e3309",
+      "stage_first_consumed": "S2-K6"
+    },
+    {
+      "bytes": 1070,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k7_protocol.json",
+      "sha256": "6808202d4c00f20b98be7e57a6a792c044d93e201d46d1481121af57f7da903f",
+      "stage_first_consumed": "S2-K7"
+    },
+    {
+      "bytes": 4923,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k0_protocol.json",
+      "sha256": "6c43f4cfd1b48b77900226556c8539e2c0d0ecae2473365b2809299284cfb7cf",
+      "stage_first_consumed": "S3-K0"
+    },
+    {
+      "bytes": 10530,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k1_protocol.json",
+      "sha256": "ef6ebf5fd4e343251fba8731c2957d0b226845bb89327e06cf8f82a36110b6d2",
+      "stage_first_consumed": "S3-K1"
+    },
+    {
+      "bytes": 9291,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k2_protocol.json",
+      "sha256": "1f012211bd9c3fcc0edb57faf3a1d4f812fcf6ca7ab247eebf02a56e8afd3712",
+      "stage_first_consumed": "S3-K2"
+    },
+    {
+      "bytes": 3530,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k3_protocol.json",
+      "sha256": "bffead37da7061257ad4305439fe271c775247efc06cb9e03efa7bbbd16c7375",
+      "stage_first_consumed": "S3-K3"
+    },
+    {
+      "bytes": 3925,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k4_protocol.json",
+      "sha256": "c88804e34281c43e020f3913e0ab7344c1d25249a9a3162244a9ad2c5698a988",
+      "stage_first_consumed": "S3-K4"
+    },
+    {
+      "bytes": 5075,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k5_protocol.json",
+      "sha256": "f4554148b5f03506e193c80778fd1790f81a543dd28b35ca1cbb9e5d52203b35",
+      "stage_first_consumed": "S3-K5"
+    },
+    {
+      "bytes": 7521,
+      "kind": "FROZEN_PROTOCOL_OR_SOURCE_LOCK",
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k6_protocol.json",
+      "sha256": "de4cf0188b15c375d7af86d68b190d4dd4373eaa9b5a56af731cd89cd2d4dc8a",
+      "stage_first_consumed": "S3-K6"
+    },
+    {
+      "bytes": 4683,
+      "kind": "INHERITED_P11_CONFIG",
+      "path": "phases/p11/raw_xt_td/configs/p11rawxt_s0_k1_raw_ast_grammar.json",
+      "sha256": "5dd823ea414902f465f19bde202b6ae0ba3f83e5921dbc6ec7b03842c5596e3b",
+      "stage_first_consumed": "S0-K0"
+    },
+    {
+      "bytes": 2662,
+      "kind": "INHERITED_P11_CONFIG",
+      "path": "phases/p11/raw_xt_td/configs/p11rawxt_s0_k2_coordinate_validity.json",
+      "sha256": "9eae5f4073ae85523e9f60bc17074048966c791bc55fab0cf6a31c1b5f141a58",
+      "stage_first_consumed": "S0-K0"
+    },
+    {
+      "bytes": 3452,
+      "kind": "INHERITED_P11_CONFIG",
+      "path": "phases/p11/raw_xt_td/configs/p11rawxt_s0_k3_operator_objective.json",
+      "sha256": "0bb8f471059f5003fc78da07fd22e7899299c599366be27293b8c0bdc6c21b88",
+      "stage_first_consumed": "S0-K0"
+    },
+    {
+      "bytes": 30960,
+      "kind": "FROZEN_ACTIVE_PROTOCOL_DOCUMENT",
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_COMPREHENSIVE_CONTEXT_S1_ENTRY_REVIEW_LOCK_20260827.md",
+      "sha256": "3db057955859653c35853b8b2dd2b281e1c4429312ac969e3b9a18b4e1d56db0",
+      "stage_first_consumed": "S1-K0R"
+    }
+  ],
+  "historical_evidence_notice": "Already opened/frozen historical evidence; not new sealed-holdout validation.",
+  "historical_random_realizations": [
+    {
+      "allowed_consumers": [
+        "S2-K0",
+        "S2-K4R",
+        "S2-K5"
+      ],
+      "bytes": 2517880,
+      "class": "HISTORICAL_RANDOM_REALIZATION",
+      "commitment_kind": "coefficient",
+      "commitment_role": "DEVELOPMENT_COEF",
+      "committed_field_ids": [
+        "P13_DEVELOPMENT_COEF_01",
+        "P13_DEVELOPMENT_COEF_02",
+        "P13_DEVELOPMENT_COEF_03",
+        "P13_DEVELOPMENT_COEF_04"
+      ],
+      "evidence": [
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k0_dev_open_protocol_lock.py:224",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k0_dev_open_protocol_lock.py:333"
+      ],
+      "first_stage_allowed": "S2-K0",
+      "historical_commitment_stage": "S0-K1",
+      "historical_locator": "public_assets/P13_S0_K1_PRIVATE_COEFFICIENT_DEVELOPMENT_COEF.tar.xz",
+      "id": "development_coefficient",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "payload_semantic_digest": "df87ec1cae920de0b2091c6bb472929cc3d1e1fa0e2809e9f608fdef6a262d42",
+      "public_header_provenance": {
+        "capsule_member": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/private_payload_commitments.json",
+        "fields_copied": [
+          "kind",
+          "role",
+          "row_count",
+          "field_id only from public_row_commitments"
+        ],
+        "member_sha256": "76cd1449a5a54947c3b619379378e64b8adb9dc95257c65524b649063124aad7",
+        "private_payload_read": false
+      },
+      "row_count": 4,
+      "scientific_role": "DEVELOPMENT_COEF",
+      "sha256": "bbecbc2d04e595e052fbd65964bded58efb08b1bf18bcb7111a3524a55f506e0",
+      "staged_basename": "P13_S0_K1_PRIVATE_COEFFICIENT_DEVELOPMENT_COEF.tar.xz"
+    },
+    {
+      "allowed_consumers": [
+        "S3-K1",
+        "S3-K3",
+        "S3-K4"
+      ],
+      "bytes": 2503628,
+      "class": "HISTORICAL_RANDOM_REALIZATION",
+      "commitment_kind": "coefficient",
+      "commitment_role": "SEALED_FINAL_COEF",
+      "committed_field_ids": [
+        "P13_SEALED_FINAL_COEF_01",
+        "P13_SEALED_FINAL_COEF_02",
+        "P13_SEALED_FINAL_COEF_03",
+        "P13_SEALED_FINAL_COEF_04"
+      ],
+      "evidence": [
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k1_sealed_operator_transfer.py:167",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k1_sealed_operator_transfer.py:224",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k1_sealed_operator_transfer.py:315",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k1_sealed_operator_transfer.py:459"
+      ],
+      "first_stage_allowed": "S3-K1",
+      "historical_commitment_stage": "S0-K1",
+      "historical_locator": "public_assets/P13_S0_K1_PRIVATE_COEFFICIENT_SEALED_FINAL_COEF.tar.xz",
+      "id": "sealed_coefficient",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "payload_semantic_digest": "242bc12de28667443833696b7ebdb361c48d3b186b4161d899e5961a5bee269b",
+      "public_header_provenance": {
+        "capsule_member": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/private_payload_commitments.json",
+        "fields_copied": [
+          "kind",
+          "role",
+          "row_count",
+          "field_id only from public_row_commitments"
+        ],
+        "member_sha256": "76cd1449a5a54947c3b619379378e64b8adb9dc95257c65524b649063124aad7",
+        "private_payload_read": false
+      },
+      "row_count": 4,
+      "scientific_role": "SEALED_FINAL_COEF",
+      "sha256": "a17650bf096a00d5523d82fc71163382c944deed5fd9c6675c839fe919ad16af",
+      "staged_basename": "P13_S0_K1_PRIVATE_COEFFICIENT_SEALED_FINAL_COEF.tar.xz"
+    },
+    {
+      "allowed_consumers": [
+        "S2-K4R"
+      ],
+      "bytes": 2724,
+      "class": "HISTORICAL_RANDOM_REALIZATION",
+      "commitment_kind": "response",
+      "commitment_role": "DEVELOPMENT_COEF",
+      "committed_field_ids": [
+        "P13_DEVELOPMENT_COEF_01",
+        "P13_DEVELOPMENT_COEF_02",
+        "P13_DEVELOPMENT_COEF_03",
+        "P13_DEVELOPMENT_COEF_04"
+      ],
+      "evidence": [
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k4_response_reference_controls.py:465",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k4_response_reference_controls.py:469"
+      ],
+      "first_stage_allowed": "S2-K4R",
+      "historical_commitment_stage": "S0-K1",
+      "historical_locator": "public_assets/P13_S0_K1_PRIVATE_RESPONSE_DEVELOPMENT_COEF.tar.xz",
+      "id": "development_response",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "payload_semantic_digest": "2230db4f1b15071c49fc4be77696dff5b61bd4530950c2582101adaa5b3bf27d",
+      "public_header_provenance": {
+        "capsule_member": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/private_payload_commitments.json",
+        "fields_copied": [
+          "kind",
+          "role",
+          "row_count",
+          "field_id only from public_row_commitments"
+        ],
+        "member_sha256": "76cd1449a5a54947c3b619379378e64b8adb9dc95257c65524b649063124aad7",
+        "private_payload_read": false
+      },
+      "row_count": 32,
+      "scientific_role": "DEVELOPMENT_COEF",
+      "sha256": "6ad783f8cd392e3bb389cf2499fb17991dc9ae6122706e4e6b23a61c23ebaf89",
+      "staged_basename": "P13_S0_K1_PRIVATE_RESPONSE_DEVELOPMENT_COEF.tar.xz"
+    },
+    {
+      "allowed_consumers": [
+        "S3-K3"
+      ],
+      "bytes": 2772,
+      "class": "HISTORICAL_RANDOM_REALIZATION",
+      "commitment_kind": "response",
+      "commitment_role": "SEALED_FINAL_COEF",
+      "committed_field_ids": [
+        "P13_SEALED_FINAL_COEF_01",
+        "P13_SEALED_FINAL_COEF_02",
+        "P13_SEALED_FINAL_COEF_03",
+        "P13_SEALED_FINAL_COEF_04"
+      ],
+      "evidence": [
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k3_sealed_response_reference_controls.py:495",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k3_sealed_response_reference_controls.py:499"
+      ],
+      "first_stage_allowed": "S3-K3",
+      "historical_commitment_stage": "S0-K1",
+      "historical_locator": "public_assets/P13_S0_K1_PRIVATE_RESPONSE_SEALED_FINAL_COEF.tar.xz",
+      "id": "sealed_response",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "payload_semantic_digest": "feaad2e77ee683683787b3230d81b11008b0d41c2995c404741d49c31a2ca946",
+      "public_header_provenance": {
+        "capsule_member": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/private_payload_commitments.json",
+        "fields_copied": [
+          "kind",
+          "role",
+          "row_count",
+          "field_id only from public_row_commitments"
+        ],
+        "member_sha256": "76cd1449a5a54947c3b619379378e64b8adb9dc95257c65524b649063124aad7",
+        "private_payload_read": false
+      },
+      "row_count": 32,
+      "scientific_role": "SEALED_FINAL_COEF",
+      "sha256": "0b3df73bda831a3217a3f4228d3761b449188cebecf00ac23afc40b225006a37",
+      "staged_basename": "P13_S0_K1_PRIVATE_RESPONSE_SEALED_FINAL_COEF.tar.xz"
+    },
+    {
+      "allowed_consumers": [
+        "S1-K2B"
+      ],
+      "bytes": 1254608,
+      "class": "HISTORICAL_RANDOM_REALIZATION",
+      "evidence": [
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2b_post_search_diagnostics.py:455",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2b_post_search_diagnostics.py:461",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2b_post_search_diagnostics.py:523",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2b_post_search_diagnostics.py:541",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2b_post_search_diagnostics.py:564",
+        "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k3_formal_freeze.py:161"
+      ],
+      "first_stage_allowed": "S1-K2B",
+      "historical_commitment_stage": "S1-K0R",
+      "historical_locator": "public_assets/P13_S1_K0R_PRIVATE_WITHIN_FAMILY_TRANSFER_DIAGNOSTIC.tar.xz",
+      "id": "within_family_diagnostic",
+      "membership_authority": "NONE",
+      "payload_semantic_digest": "97d52780d96b198e753c702d3ee749dc6cd3903d42acc093d17a63eca4e4a871",
+      "scientific_role": "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC",
+      "sha256": "d7fec79f4b9e59c395d4800d20519d4700f839436785068be86f1ae6a4908dd4",
+      "staged_basename": "P13_S1_K0R_PRIVATE_WITHIN_FAMILY_TRANSFER_DIAGNOSTIC.tar.xz"
+    }
+  ],
+  "integrity_audit_policy": "Administrative SHA-only scan of compressed bytes; no tar listing/decompression/semantic parsing and no paths returned to scientific stages.",
+  "schema": "P13_REPRO_INPUT_MANIFEST_V1",
+  "staging_root_policy": "Explicit caller-supplied path; original historical locators are never dereferenced.",
+  "visibility_policy": "Exact consumer capabilities, not a broad stage-number >= rule. S1 search/membership stages receive no private archive paths."
+}

@@ -1,0 +1,109 @@
+{
+  "asset_count": 5,
+  "assets": [
+    {
+      "allowed_consumers": [
+        "S2-K0",
+        "S2-K4R",
+        "S2-K5"
+      ],
+      "bytes": 2517880,
+      "filename": "P13_S0_K1_PRIVATE_COEFFICIENT_DEVELOPMENT_COEF.tar.xz",
+      "first_stage_allowed": "S2-K0",
+      "id": "development_coefficient",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "provenance": {
+        "commitment_stage": "S0-K1",
+        "manifest": "inputs/P13_REPRO_INPUT_MANIFEST.json",
+        "payload_semantic_digest": "df87ec1cae920de0b2091c6bb472929cc3d1e1fa0e2809e9f608fdef6a262d42"
+      },
+      "publication_status": "INCLUDED_IN_TAGGED_PUBLIC_RELEASE",
+      "release_url": "https://raw.githubusercontent.com/huqy/Symbolic-PDE-Transformation-Discovery/v1.0.0-paper-submission/public_assets/P13_S0_K1_PRIVATE_COEFFICIENT_DEVELOPMENT_COEF.tar.xz",
+      "role": "DEVELOPMENT_COEF",
+      "sha256": "bbecbc2d04e595e052fbd65964bded58efb08b1bf18bcb7111a3524a55f506e0"
+    },
+    {
+      "allowed_consumers": [
+        "S3-K1",
+        "S3-K3",
+        "S3-K4"
+      ],
+      "bytes": 2503628,
+      "filename": "P13_S0_K1_PRIVATE_COEFFICIENT_SEALED_FINAL_COEF.tar.xz",
+      "first_stage_allowed": "S3-K1",
+      "id": "sealed_coefficient",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "provenance": {
+        "commitment_stage": "S0-K1",
+        "manifest": "inputs/P13_REPRO_INPUT_MANIFEST.json",
+        "payload_semantic_digest": "242bc12de28667443833696b7ebdb361c48d3b186b4161d899e5961a5bee269b"
+      },
+      "publication_status": "INCLUDED_IN_TAGGED_PUBLIC_RELEASE",
+      "release_url": "https://raw.githubusercontent.com/huqy/Symbolic-PDE-Transformation-Discovery/v1.0.0-paper-submission/public_assets/P13_S0_K1_PRIVATE_COEFFICIENT_SEALED_FINAL_COEF.tar.xz",
+      "role": "SEALED_FINAL_COEF",
+      "sha256": "a17650bf096a00d5523d82fc71163382c944deed5fd9c6675c839fe919ad16af"
+    },
+    {
+      "allowed_consumers": [
+        "S2-K4R"
+      ],
+      "bytes": 2724,
+      "filename": "P13_S0_K1_PRIVATE_RESPONSE_DEVELOPMENT_COEF.tar.xz",
+      "first_stage_allowed": "S2-K4R",
+      "id": "development_response",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "provenance": {
+        "commitment_stage": "S0-K1",
+        "manifest": "inputs/P13_REPRO_INPUT_MANIFEST.json",
+        "payload_semantic_digest": "2230db4f1b15071c49fc4be77696dff5b61bd4530950c2582101adaa5b3bf27d"
+      },
+      "publication_status": "INCLUDED_IN_TAGGED_PUBLIC_RELEASE",
+      "release_url": "https://raw.githubusercontent.com/huqy/Symbolic-PDE-Transformation-Discovery/v1.0.0-paper-submission/public_assets/P13_S0_K1_PRIVATE_RESPONSE_DEVELOPMENT_COEF.tar.xz",
+      "role": "DEVELOPMENT_COEF",
+      "sha256": "6ad783f8cd392e3bb389cf2499fb17991dc9ae6122706e4e6b23a61c23ebaf89"
+    },
+    {
+      "allowed_consumers": [
+        "S3-K3"
+      ],
+      "bytes": 2772,
+      "filename": "P13_S0_K1_PRIVATE_RESPONSE_SEALED_FINAL_COEF.tar.xz",
+      "first_stage_allowed": "S3-K3",
+      "id": "sealed_response",
+      "membership_authority": "FROZEN_INPUT_ONLY_NOT_SELECTION_LABEL",
+      "provenance": {
+        "commitment_stage": "S0-K1",
+        "manifest": "inputs/P13_REPRO_INPUT_MANIFEST.json",
+        "payload_semantic_digest": "feaad2e77ee683683787b3230d81b11008b0d41c2995c404741d49c31a2ca946"
+      },
+      "publication_status": "INCLUDED_IN_TAGGED_PUBLIC_RELEASE",
+      "release_url": "https://raw.githubusercontent.com/huqy/Symbolic-PDE-Transformation-Discovery/v1.0.0-paper-submission/public_assets/P13_S0_K1_PRIVATE_RESPONSE_SEALED_FINAL_COEF.tar.xz",
+      "role": "SEALED_FINAL_COEF",
+      "sha256": "0b3df73bda831a3217a3f4228d3761b449188cebecf00ac23afc40b225006a37"
+    },
+    {
+      "allowed_consumers": [
+        "S1-K2B"
+      ],
+      "bytes": 1254608,
+      "filename": "P13_S1_K0R_PRIVATE_WITHIN_FAMILY_TRANSFER_DIAGNOSTIC.tar.xz",
+      "first_stage_allowed": "S1-K2B",
+      "id": "within_family_diagnostic",
+      "membership_authority": "NONE",
+      "provenance": {
+        "commitment_stage": "S1-K0R",
+        "manifest": "inputs/P13_REPRO_INPUT_MANIFEST.json",
+        "payload_semantic_digest": "97d52780d96b198e753c702d3ee749dc6cd3903d42acc093d17a63eca4e4a871"
+      },
+      "publication_status": "INCLUDED_IN_TAGGED_PUBLIC_RELEASE",
+      "release_url": "https://raw.githubusercontent.com/huqy/Symbolic-PDE-Transformation-Discovery/v1.0.0-paper-submission/public_assets/P13_S1_K0R_PRIVATE_WITHIN_FAMILY_TRANSFER_DIAGNOSTIC.tar.xz",
+      "role": "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC",
+      "sha256": "d7fec79f4b9e59c395d4800d20519d4700f839436785068be86f1ae6a4908dd4"
+    }
+  ],
+  "data_license": "CC-BY-4.0",
+  "license_choice_requires_user": false,
+  "public_input_closure": "EXACT_ASSETS_INCLUDED_REMOTE_VERIFICATION_REQUIRED",
+  "schema": "P13_PUBLIC_RELEASE_ASSETS_V1",
+  "software_license": "BSD-3-Clause"
+}

@@ -1,0 +1,158 @@
+{
+  "active_context": "P13_COMPREHENSIVE_CONTEXT_S2_ENTRY_PF0_LOCK_20260831.md",
+  "active_context_sha256": "6d6b5b0a8923e89df505a4d0c6744a76c395797664763d1177edfb245bb1a9ba",
+  "candidate_control_fidelity_protocol": {
+    "automatic_escalation_beyond_G1025": false,
+    "candidate_escalation_scope": "all 1955 scientific branches + identity + frozen NULL together",
+    "candidate_escalation_trigger": "at least one member of the complete 1955 response-eligible cohort remains threshold-unresolved",
+    "candidate_specific_rescue": false,
+    "first_uniform_escalation_grid": 513,
+    "initial_nested_pair": [
+      129,
+      257
+    ],
+    "interval_lower": "max(0,E_fine-radius)",
+    "interval_radius": "abs(E_fine-E_coarse)+reference_uncertainty",
+    "interval_upper": "E_fine+radius",
+    "post_G1025_threshold_ambiguity": "UNRESOLVED",
+    "second_uniform_escalation_grid": 1025
+  },
+  "causal_solver_core": {
+    "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/causal_calibration.py",
+    "role": "FROZEN_CAUSAL_SOURCE_DOMAIN_NUMERICAL_CORE",
+    "sha256": "cd2481d984342f32352014f64c3ed64b1c640a6b01e08b7fe874dbae91e69c0f"
+  },
+  "control_first_protocol": {
+    "change_absolute_threshold": false,
+    "control_role": "response control only; no candidate membership authority",
+    "controls": [
+      "identity",
+      "S0_FROZEN_COEFFICIENT_BLIND_NULL_CALIBRATION"
+    ],
+    "if_identity_clear_fail": "DISCRIMINATIVE_ABSOLUTE_GATE; K4 may recommend K5 after cost/equivalence preflight",
+    "if_identity_clear_pass": "NONDISCRIMINATIVE_ABSOLUTE_GATE; stop before candidate response campaign",
+    "if_identity_unresolved": "escalate identity and NULL together to G513, then G1025 if still unresolved",
+    "if_identity_unresolved_after_G1025": "CONTROL_GATE_UNRESOLVED; stop before candidate response campaign",
+    "initial_pair": [
+      129,
+      257
+    ],
+    "new_relative_hard_threshold": false,
+    "null_control_decision_role": "descriptive/control evidence only; never a new relative hard gate or filter"
+  },
+  "data_boundary": {
+    "K3_opens_development_response": false,
+    "K3_opens_sealed": false,
+    "K3_stats_hashes_or_extracts_private_development_response_archive": false,
+    "K4_response_open_requires_post_K3_user_review": true
+  },
+  "exact_execution_sharing": {
+    "allowed": true,
+    "cost_preflight_allowed_after_controls": true,
+    "criterion": "byte/exact equality of complete discrete numerical execution objects at the relevant grid; no tolerance/rounding/learned similarity",
+    "membership_authority": false,
+    "scientific_branch_identity_preserved": true
+  },
+  "expected_k2": {
+    "complete_census": 2307,
+    "decision_map_sha256": "9da95b8e189bdb9665c9a28cfd09188816168bcc012ab73ea6276fcc2fc687da",
+    "fail_count": 348,
+    "next_action": "P13-S2-K3_RESPONSE_PROTOCOL_FIDELITY_AND_CONTROL_LOCK_REQUIRES_EXPLICIT_USER_CONFIRMATION",
+    "overall_status": "PASS",
+    "pass_count": 1955,
+    "response_eligible_membership_sha256": "af97feead15e6868da5f9f19c7732dfdb9cf8383ffcdaf43694b9cbbe81601aa",
+    "semantic_output_digest": "a36eb314ed7e6d97ca2a87dd7b7377025a608623cc16ccd9421e158f23b7fb25",
+    "unresolved_count": 4
+  },
+  "expected_public_commitments": {
+    "development_response": {
+      "archive_bytes": 2724,
+      "archive_sha256": "6ad783f8cd392e3bb389cf2499fb17991dc9ae6122706e4e6b23a61c23ebaf89",
+      "payload_semantic_digest": "2230db4f1b15071c49fc4be77696dff5b61bd4530950c2582101adaa5b3bf27d",
+      "row_count": 32
+    },
+    "sealed_response": {
+      "archive_sha256": "0b3df73bda831a3217a3f4228d3761b449188cebecf00ac23afc40b225006a37",
+      "payload_semantic_digest": "feaad2e77ee683683787b3230d81b11008b0d41c2995c404741d49c31a2ca946",
+      "row_count": 32
+    }
+  },
+  "k2_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_K2_RUN.txt",
+  "next_action_on_pass": "P13-S2-K4_DEVELOPMENT_RESPONSE_OPEN_REFERENCE_BANK_CONTROL_FIRST_REQUIRES_POST_K3_USER_REVIEW",
+  "nondiscrimination_and_sealed_policy": {
+    "candidate_accuracy_claim_if_not_run": "UNTESTED_RESPONSE_BECAUSE_CONTROL_STOP",
+    "classification": "NONDISCRIMINATIVE_ABSOLUTE_GATE",
+    "current_sealed_coefficient_response": "REMAIN_UNOPENED",
+    "redesign_policy": "any stronger-regime or accuracy-only continuation that changes the claim is a new explicitly authorized preregistered branch; current DEVELOPMENT/SEALED data cannot be relabeled as new sealed evidence",
+    "strong_transformation_improvement_route": "STOP",
+    "trigger": "identity clear PASS on all 32 DEVELOPMENT response pairs under certified interval semantics"
+  },
+  "null_control_builder": {
+    "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/calibration_instruments.py",
+    "sha256": "d68effff0c6bbafbbbb7a20013fc89e9118f28ee236be3f93efe95337737c6b4"
+  },
+  "null_control_instrument_lock": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k2r3_capacity_continuation_20260827T004343Z/calibration_only/capacity_instrument_lock_k2r3.json",
+    "sha256": "f51281cba32a33ecd26b28614a552c353faf6e83586cf4dd255912395bf42d0d"
+  },
+  "pf1_active_input_manifest": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/PF1_final_freeze/PF1_S2_ACTIVE_INPUT_MANIFEST.json",
+    "sha256": "35d81936750448e8047b4a8b8f474379ec7dad3c9b662553073c842df8a3d87a"
+  },
+  "purpose": "Freeze response protocol/fidelity/control semantics before opening DEVELOPMENT response data.",
+  "reference_protocol": {
+    "candidate_grid_reference_transfer": "exact nested restriction only; no interpolation",
+    "candidate_information_may_trigger": false,
+    "development_coefficient_high_grid_rule": {
+      "evaluate_generator_analytically_at_required_reference_grids": true,
+      "interpolate_from_G65_forbidden": true,
+      "precheck": "reconstructed G17/G33/G65 coefficient objects must reproduce K0 committed semantic/SHA-compatible values before any G513+ reference solve",
+      "private_master_seed_or_generator_json_persisted_into_active_tree": false,
+      "reopen_coefficient_archive_allowed": true,
+      "response_archive_access": false,
+      "source": "already-opened K0 DEVELOPMENT coefficient private commitment/archive only"
+    },
+    "initial_nested_pair": [
+      513,
+      1025
+    ],
+    "reference_uncertainty_ceiling_relative_energy": 0.02,
+    "reference_uncertainty_definition": "relative physical spacetime wave-energy difference between nested coarse and fine original-PDE reference solutions after exact nested restriction",
+    "refinement_pairs_if_needed": [
+      [
+        1025,
+        2049
+      ],
+      [
+        2049,
+        4097
+      ]
+    ],
+    "terminal_unresolved": "REFERENCE_UNRESOLVED_AFTER_G2049_G4097",
+    "trigger": "reference own self-convergence only"
+  },
+  "response_contract_lock": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/objective_response_contract_lock.json",
+    "sha256": "fc4c8307a46428ba849a105e25be62135c5113d4abd4a67793f005431472a84c"
+  },
+  "runtime_policy": {
+    "K3_parallelism": "single_coordinator",
+    "blas_openmp_threads_per_worker": 1,
+    "heavy_default": "17 CPUs = 16 workers + 1 coordinator",
+    "memory_aware_worker_cap_at_high_grid": "engineering-only, based on answer-neutral preflight; cannot change cohort or fidelity ladder",
+    "restart_resume_required_for_K4_K5": true
+  },
+  "scientific_response_contract": {
+    "candidate_response_refit": false,
+    "candidate_specific_rescue": false,
+    "formal_solver": "causal/source-domain",
+    "hard_fail": "at least one certified lower bound is strictly above 0.15",
+    "hard_pass": "all 32 certified upper bounds are strictly below 0.15",
+    "pairs": 32,
+    "relative_error_threshold": 0.15,
+    "top_k_or_pareto": false,
+    "unresolved": "no certified fail but at least one interval overlaps/touches 0.15",
+    "weighted_or_relative_proxy_gate": false
+  },
+  "stage": "P13-S2-K3"
+}

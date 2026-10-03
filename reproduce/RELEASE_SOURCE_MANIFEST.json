@@ -1,0 +1,1848 @@
+{
+  "files": [
+    {
+      "bytes": 48,
+      "mode": 420,
+      "path": ".gitignore",
+      "role": "publication_administration",
+      "sha256": "780f56bf2163ddfddb74a518f90677b6177943d6fb772cf5f93b055aad293e41"
+    },
+    {
+      "bytes": 525,
+      "mode": 420,
+      "path": "CITATION.md",
+      "role": "publication_administration",
+      "sha256": "feecbfdbd9b643dbc0270a664ce16e942be26a995447c7a0e03d29460fea132d"
+    },
+    {
+      "bytes": 1533,
+      "mode": 420,
+      "path": "LICENSE",
+      "role": "publication_administration",
+      "sha256": "6a59670da746f768387a03fc44fc3f7ec91473d86cd1b579a00f5cf998cd95aa"
+    },
+    {
+      "bytes": 5820,
+      "mode": 420,
+      "path": "PUBLIC_REPRODUCTION_CONTRACT.md",
+      "role": "scientific_frozen",
+      "sha256": "3e7e97eacea5099adfa89059357cff1633a70bb8d376831bf007d6a81f113171"
+    },
+    {
+      "bytes": 5891,
+      "mode": 420,
+      "path": "README.md",
+      "role": "publication_administration",
+      "sha256": "c827d939422106adf1fa956608428a802e48cfea9974d16a08d734eedd9bb822"
+    },
+    {
+      "bytes": 550,
+      "mode": 420,
+      "path": "docs/ARCHIVAL_RELEASE.md",
+      "role": "publication_administration",
+      "sha256": "d80aa92261ae8aaa4bdf25901d93acefb46554b23dcded0bf93e420c59238c60"
+    },
+    {
+      "bytes": 1596,
+      "mode": 420,
+      "path": "docs/reproducibility/ENGINEERING_LINEAGE.md",
+      "role": "publication_administration",
+      "sha256": "3670643d1130f1f213f0292b69e597b28878fcc6f2a56600d196c92085726395"
+    },
+    {
+      "bytes": 2231,
+      "mode": 420,
+      "path": "docs/reproducibility/RELEASE_PROVENANCE.md",
+      "role": "publication_administration",
+      "sha256": "95127e7fb30143221ade487602a3c9f8570f8511af1aff67b8706cb2d5ab821a"
+    },
+    {
+      "bytes": 1568,
+      "mode": 420,
+      "path": "docs/reproducibility/SCIENTIFIC_SCOPE.md",
+      "role": "publication_administration",
+      "sha256": "6ae695455c2056d78ccb58fa1e724e8d0a9458f5e9d46a343a8a7c5858cebb52"
+    },
+    {
+      "bytes": 880,
+      "mode": 420,
+      "path": "environment/PUBLIC_RELEASE_SETUP.md",
+      "role": "publication_administration",
+      "sha256": "e871fa92176a641f5ce1e805c208003d7fea38a9869b249e37cbc1d57d19ab60"
+    },
+    {
+      "bytes": 880,
+      "mode": 420,
+      "path": "environment/README.md",
+      "role": "publication_administration",
+      "sha256": "e871fa92176a641f5ce1e805c208003d7fea38a9869b249e37cbc1d57d19ab60"
+    },
+    {
+      "bytes": 4314,
+      "mode": 420,
+      "path": "environment/public-release-explicit.txt",
+      "role": "publication_administration",
+      "sha256": "ea1cf6865443fcfd960411d9272d5e1233e9fd970833696122c0be96c152ebdd"
+    },
+    {
+      "bytes": 16279,
+      "mode": 420,
+      "path": "environment/public-release-lock.json",
+      "role": "publication_administration",
+      "sha256": "19041cfc3c861d2bc61aeb1f4b3cb6e240bab15a92482d82266f3b23ab8fc8ee"
+    },
+    {
+      "bytes": 623,
+      "mode": 420,
+      "path": "environment/reproduction-environment.yml",
+      "role": "publication_administration",
+      "sha256": "580e9e76e4592fa58ddf9e0e3c32836745e8f46381b52f58bf2e9fdfeede2065"
+    },
+    {
+      "bytes": 19212,
+      "mode": 420,
+      "path": "inputs/P13_REPRO_INPUT_MANIFEST.json",
+      "role": "publication_administration",
+      "sha256": "6707203dbbc2cae3ea330700e04f41681df4373473b08b5f6c212963a60ced71"
+    },
+    {
+      "bytes": 4683,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/configs/p11rawxt_s0_k1_raw_ast_grammar.json",
+      "role": "scientific_frozen",
+      "sha256": "5dd823ea414902f465f19bde202b6ae0ba3f83e5921dbc6ec7b03842c5596e3b"
+    },
+    {
+      "bytes": 2662,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/configs/p11rawxt_s0_k2_coordinate_validity.json",
+      "role": "scientific_frozen",
+      "sha256": "9eae5f4073ae85523e9f60bc17074048966c791bc55fab0cf6a31c1b5f141a58"
+    },
+    {
+      "bytes": 3452,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/configs/p11rawxt_s0_k3_operator_objective.json",
+      "role": "scientific_frozen",
+      "sha256": "0bb8f471059f5003fc78da07fd22e7899299c599366be27293b8c0bdc6c21b88"
+    },
+    {
+      "bytes": 11081,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_ast.py",
+      "role": "scientific_frozen",
+      "sha256": "b458b5b4f2320fc74847161ac6b812c24f1e5d61654cfa75c9bb70dab66c9af1"
+    },
+    {
+      "bytes": 10428,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_common.py",
+      "role": "scientific_frozen",
+      "sha256": "1d7593e9e8260329a1ede6061ee537eedc1bace4d12494aa88722c676fcb8da1"
+    },
+    {
+      "bytes": 12874,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_operator.py",
+      "role": "scientific_frozen",
+      "sha256": "f366c1c04d151e53a948926ee519cebbc3f1f45c1405e5a7ba7e427d8db12f4f"
+    },
+    {
+      "bytes": 68,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_s1/__init__.py",
+      "role": "scientific_frozen",
+      "sha256": "86e7eb66edb5dbfc0dc7c4a8a289deac117cffcd690309d49d1170d64a705980"
+    },
+    {
+      "bytes": 20890,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_s1/k1_representation.py",
+      "role": "scientific_frozen",
+      "sha256": "dd95c547361025b68ada6d011605aca7cbda1da3f5dc117cf14ad6eee1d1a268"
+    },
+    {
+      "bytes": 20259,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_ast_runtime.py",
+      "role": "scientific_frozen",
+      "sha256": "9a7bce451dd1cab9dd9a29a0ad2aaf728859c69c516e2732fd89d785f5268bcf"
+    },
+    {
+      "bytes": 13830,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_evaluator.py",
+      "role": "scientific_frozen",
+      "sha256": "f005861fc2af170577e465fa7078dae08fd2457d46946891dfe4d98b26971d35"
+    },
+    {
+      "bytes": 7441,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_fitter.py",
+      "role": "scientific_frozen",
+      "sha256": "5d3794a145cc000c798059e5a496580514d83c094b578bfa65a16b4b3ce74e32"
+    },
+    {
+      "bytes": 24920,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_s1/k2_search.py",
+      "role": "scientific_frozen",
+      "sha256": "f93cd34c6d133f09ec0f820d70f0b37dd9e2612d90c2d156db531922588240ba"
+    },
+    {
+      "bytes": 22968,
+      "mode": 420,
+      "path": "phases/p11/raw_xt_td/src/p11rawxt_validity.py",
+      "role": "scientific_frozen",
+      "sha256": "4ee3a5cf96519e4eecd8a11dd28f0b951f64412772efa85c2d7c2ef1434f12e9"
+    },
+    {
+      "bytes": 6322,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_exact_source_config_test_lock.json",
+      "role": "scientific_frozen",
+      "sha256": "679ff628ba9fc0b27d8be2ae77fe8bd430401b3320408980de530fe293ed3b8c"
+    },
+    {
+      "bytes": 7376,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k0_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "309def6302722762ddb12fe8f6c93565b8a563cf75d49bc0c661952a13295efb"
+    },
+    {
+      "bytes": 4793,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k1_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "71c9aa38e5c53133a09baff88e9319362cd5a9b7e6fcfe9bb1d641702f39f528"
+    },
+    {
+      "bytes": 5795,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "d3e405cc72c3259c06b7606be8f0f637b62a057a658847359eaa9edc005a107c"
+    },
+    {
+      "bytes": 5701,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r2_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "79b5e16f971222bc75cd1199593aa048311894f783dcce5850a58f838f0c6fae"
+    },
+    {
+      "bytes": 4995,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r3_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "3ecd8c920161416a42fddb8c1d66b4448527030e7c54cf222ea4827dd3f9c430"
+    },
+    {
+      "bytes": 5416,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2r4_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "1fbe8da343ab56906231ecc13d7f4503f1ac944b9e7250eadbd0bd48833604d3"
+    },
+    {
+      "bytes": 2950,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k3_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "47c45bcdbaa4e000c99728f1d570a57462a11084576197f9b7d186667148c5f7"
+    },
+    {
+      "bytes": 11466,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k0r_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "d26954856897419b2e92d172f9cde8decfbb1ad1c0f98315b2f774971d104279"
+    },
+    {
+      "bytes": 2612,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k1_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "9f71f3fccba5ea3beeb244ac64708c24a5bc298e2299331a122e0dba2c510ace"
+    },
+    {
+      "bytes": 2959,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k2a_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "c22178d8dba3fd1f08b9df6b012cfe50e2ba204f8771e7b41086d852fc0f3ec6"
+    },
+    {
+      "bytes": 4466,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k2b_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "c8785b70ef80c37b809be8b9ea7deb19f497222008109b8d2fb99570e9ff8046"
+    },
+    {
+      "bytes": 6248,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k2c_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "abb213c3d11d2b3399642600d788a41cac844de00d3a8a2821f38fcdcd690d52"
+    },
+    {
+      "bytes": 1893,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_k3_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "93a6bedf8dec6eeb002be79c391bb04e2a3b1e63433a05fa766b9de4523e292c"
+    },
+    {
+      "bytes": 9072,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_pf0_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "0eee75063e12b893ef0b5f4f4598b69497da71b6e9f01ea575b1ce5a6cedf0c2"
+    },
+    {
+      "bytes": 2020,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s1_pf1_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "717b703578f7b380649301a41cfe7417d3b456967ef9e3a692d9e5ebe0c6e613"
+    },
+    {
+      "bytes": 5650,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k0_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "40458de227bcf503cde911463ab511e9d7c9a502d4094b400713b95d1d543c17"
+    },
+    {
+      "bytes": 4323,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k1_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "5332b2fc84751c99bacabf7681c400b8af68daca9b0aa16308c37c9064ebea14"
+    },
+    {
+      "bytes": 4647,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k2_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "840d32b98f316d2b0bd1453de9154d326f10cc63541f45eb6f28c1e88d51bae5"
+    },
+    {
+      "bytes": 7956,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k3_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "141ea0972a4f4827dc08211dfcff078b8742472681f04cf9d73bd25c8c162126"
+    },
+    {
+      "bytes": 3512,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k4_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "13c2d35b56b8dc00ca3bd336c9edd64d09ed32811cd0207b134e067767daace2"
+    },
+    {
+      "bytes": 3900,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k5_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "0c8deb9b40c28dafe1e0ae9e1d5c39012b154342b8f02557d0ffbe0987ea352b"
+    },
+    {
+      "bytes": 3142,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k6_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "ac0aa97d8790198c76fe9992ffa91c651eaeb940a67c5c925a934c2d538e3309"
+    },
+    {
+      "bytes": 1070,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s2_k7_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "6808202d4c00f20b98be7e57a6a792c044d93e201d46d1481121af57f7da903f"
+    },
+    {
+      "bytes": 4923,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k0_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "6c43f4cfd1b48b77900226556c8539e2c0d0ecae2473365b2809299284cfb7cf"
+    },
+    {
+      "bytes": 10530,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k1_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "ef6ebf5fd4e343251fba8731c2957d0b226845bb89327e06cf8f82a36110b6d2"
+    },
+    {
+      "bytes": 9291,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k2_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "1f012211bd9c3fcc0edb57faf3a1d4f812fcf6ca7ab247eebf02a56e8afd3712"
+    },
+    {
+      "bytes": 3530,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k3_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "bffead37da7061257ad4305439fe271c775247efc06cb9e03efa7bbbd16c7375"
+    },
+    {
+      "bytes": 3925,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k4_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "c88804e34281c43e020f3913e0ab7344c1d25249a9a3162244a9ad2c5698a988"
+    },
+    {
+      "bytes": 5075,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k5_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "f4554148b5f03506e193c80778fd1790f81a543dd28b35ca1cbb9e5d52203b35"
+    },
+    {
+      "bytes": 7521,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/configs/p13_s3_k6_protocol.json",
+      "role": "scientific_frozen",
+      "sha256": "de4cf0188b15c375d7af86d68b190d4dd4373eaa9b5a56af731cd89cd2d4dc8a"
+    },
+    {
+      "bytes": 30960,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_COMPREHENSIVE_CONTEXT_S1_ENTRY_REVIEW_LOCK_20260827.md",
+      "role": "scientific_frozen",
+      "sha256": "3db057955859653c35853b8b2dd2b281e1c4429312ac969e3b9a18b4e1d56db0"
+    },
+    {
+      "bytes": 1114,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S0_K0_BRANCH_INHERITANCE_GAUGE_LOCK.md",
+      "role": "scientific_frozen",
+      "sha256": "87836fa746f2489f73c4d08a2044ac005449ac127acda1c2e842ee8ded0f02e4"
+    },
+    {
+      "bytes": 1520,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S0_K1_COEFFICIENT_DATA_COMMITMENTS.md",
+      "role": "scientific_frozen",
+      "sha256": "87b6bff98a9d3e413e23b472f85e305090f85c820f6f5c10ee45f6b9cf03f841"
+    },
+    {
+      "bytes": 2098,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S0_K3_SCIENTIFIC_ADJUDICATION_AND_FREEZE_20260827.md",
+      "role": "scientific_frozen",
+      "sha256": "8aeed0d84d0d35b21915cd2379ffc30c30f3f1b11ffb74b30a48ae53134afceb"
+    },
+    {
+      "bytes": 2737,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_K0R_PROTOCOL_LOCK.md",
+      "role": "scientific_frozen",
+      "sha256": "c0527e2bc81a85c94d772458081f3b161d9f949d25a11fe2656cd45a06e829aa"
+    },
+    {
+      "bytes": 1911,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_K2B_POST_SEARCH_DIAGNOSTICS.md",
+      "role": "scientific_frozen",
+      "sha256": "7ae85a0967f4280b5cfdc1d8ea88e16a77369d645660f63cbe2b438c2cb20219"
+    },
+    {
+      "bytes": 3243,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_K2C_POST_MEMBERSHIP_THEORY_BRIDGE.md",
+      "role": "scientific_frozen",
+      "sha256": "773e9340041c72beabd7655787155002dd7372718e2da676010fe3e2e260c250"
+    },
+    {
+      "bytes": 1138,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_K3R_NULL_CONTROL_PROVENANCE_REPAIR.md",
+      "role": "scientific_frozen",
+      "sha256": "014b3a5570a58bf308ce62b7f339dd2e9f39ddf47815ff9148244cda81956543"
+    },
+    {
+      "bytes": 1164,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_K3_FORMAL_S1_FREEZE.md",
+      "role": "scientific_frozen",
+      "sha256": "e3a3fe2fa6f6c22f6f5e9a4e975caddfefea2279eab88f30d348159085542658"
+    },
+    {
+      "bytes": 2360,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_PF0R1_ASP_NEUTRAL_DOMAIN_REPAIR.md",
+      "role": "scientific_frozen",
+      "sha256": "ab06431ac9123fd2611b1e22068286088967f3917cd2e6dabf001afe01a7bd5d"
+    },
+    {
+      "bytes": 7651,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_PF0_POSTFREEZE_ATTAINMENT_AND_RADIAL_DIAGNOSTICS.md",
+      "role": "scientific_frozen",
+      "sha256": "3d29658b9e373839fc3edfb9ef00a7efbf274aea4a7ed18c8dc9a415f50749ce"
+    },
+    {
+      "bytes": 1885,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S1_PF1_FINAL_STAGE_FREEZE_AND_S2_HANDOFF.md",
+      "role": "scientific_frozen",
+      "sha256": "b57f5bcfb0d2258fafdddffd57e998f4cacd0f047f3439d442b2d217ab8552da"
+    },
+    {
+      "bytes": 3270,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S2_K0_DEVELOPMENT_COEFFICIENT_OPENING_AND_PROTOCOL_LOCK.md",
+      "role": "scientific_frozen",
+      "sha256": "ae61963943984912c25e255b42b21bde3685d069be5f33b75a63d9c5a27f30a6"
+    },
+    {
+      "bytes": 1120,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S2_K1_COMPLETE_ZERO_SHOT_OPERATOR_TRANSFER.md",
+      "role": "scientific_frozen",
+      "sha256": "4cc56caaf720a22e10d4609ba89aaae8d239bc867a79828f7c2f6570d08a72fa"
+    },
+    {
+      "bytes": 1173,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S2_K2_III_B_ADJUDICATION_AND_RESPONSE_ENTRY_LOCK.md",
+      "role": "scientific_frozen",
+      "sha256": "f00ec521a1a9bd5a7ef9d318cb01645a886031969a98044abf6e6f048ebef727"
+    },
+    {
+      "bytes": 3343,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S2_K3_RESPONSE_PROTOCOL_FIDELITY_AND_CONTROL_LOCK.md",
+      "role": "scientific_frozen",
+      "sha256": "02d43760959b522e18c9f8c2ad15cdc27545d7e70917cc39c0d1571fe142eb12"
+    },
+    {
+      "bytes": 1236,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S2_K6_POST_RESPONSE_DIAGNOSTICS.md",
+      "role": "scientific_frozen",
+      "sha256": "472876efb4295a49128ef74a946827fc4d52c633ff9387806221d8dd9d60a236"
+    },
+    {
+      "bytes": 1854,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S3_K1_SEALED_COEFFICIENT_OPERATOR_TRANSFER.md",
+      "role": "scientific_frozen",
+      "sha256": "3b6f703ec5804a0e6e6f3741ac28e9d3d923400bc6dd8351d2f04f7d32ec2649"
+    },
+    {
+      "bytes": 2317,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S3_K2_SEALED_OPERATOR_ADJUDICATION_AND_RESPONSE_ENTRY_LOCK.md",
+      "role": "scientific_frozen",
+      "sha256": "8b15ef8814eb6d4953bcd4c6e090bb8c457cf6152289b22365d46f9fb0bda5c8"
+    },
+    {
+      "bytes": 1905,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S3_K5_POST_SEALED_DIAGNOSTICS_AND_REPRESENTATIVE_ANALYSIS.md",
+      "role": "scientific_frozen",
+      "sha256": "6a04ee37afcf6ab7abf724ff5918bd1d7e64ad0cb46566da8e8a7471a93b7263"
+    },
+    {
+      "bytes": 1110,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/docs/P13_S3_K6_FINAL_CLAIM_III_P13_FIRST_BRANCH_FREEZE.md",
+      "role": "scientific_frozen",
+      "sha256": "e9f7890535bb88833fe75338428393357c6e7c5022a9ca099cd201e5ea402e74"
+    },
+    {
+      "bytes": 1693,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s0_k0_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "a4e42b85a892a6af7faafa6ef812a55ec5efec8039c0946e45787c1bc899f874"
+    },
+    {
+      "bytes": 1981,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s0_k1_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "14cdf14d663f525cd9a998533969e33e68ae2a6f7690ed48b5814ec821531b4c"
+    },
+    {
+      "bytes": 2117,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s0_k2_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "a57c21e6fcba954dc525f2c18bbf3ea997e5581ac5201c075e6480281969f84c"
+    },
+    {
+      "bytes": 1867,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s0_k3_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "134887c05bf62be85c99216668282d51b4c55cf27b163a88dad3eb9825a1ca47"
+    },
+    {
+      "bytes": 256,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s0_s1_pf1_final_freeze.sh",
+      "role": "scientific_frozen",
+      "sha256": "c1e94c782af5fd23acbbc5666e58646a0e486b9482558b2dfac145fc4315672c"
+    },
+    {
+      "bytes": 2868,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s1_k0r_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "ca5f81d7a04a45a1f9971b531dd5f1126cdf1ab0a46aeb8911233fe3854e59a6"
+    },
+    {
+      "bytes": 2511,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s1_k2b_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "a672aea78aaca013e44f6799a787cf0cafd22829847e34563c55135e28296393"
+    },
+    {
+      "bytes": 2455,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s1_k2c_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "dd0f0bb3f36d59f9b5a31c1afb8571f0e70482f092dc7ba62d950caaf76b3637"
+    },
+    {
+      "bytes": 2562,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s1_k3_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "980dc40184a6754dde5b1239f4c418cdf78509676b16a8c65a4fe4846df7cbc7"
+    },
+    {
+      "bytes": 2610,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s1_pf0_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "5784e34bf08910b74bf108a71da9604f38af66cb5261a3f0b104f1e68d993b50"
+    },
+    {
+      "bytes": 2464,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s1_pf1_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "7b7e402fad57964632070001d68c4b65a06e317cc775525525c7c01e8f69a0d5"
+    },
+    {
+      "bytes": 3265,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s2_k0_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "83cd3c719e5c964c5ce6223390ecd57b09a95b28a53cd75223cbf97abe31b76c"
+    },
+    {
+      "bytes": 2051,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s2_k1_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "b8a53850bb372224ed9cc200a3ac16d86a49c95305b050b800098dcd2383d7d7"
+    },
+    {
+      "bytes": 2286,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s2_k2_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "6764221f46e0b2fab792cc0091c5a7f67e63bdf1b85fca1696363f848f69f34f"
+    },
+    {
+      "bytes": 2503,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s2_k3_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "c9dca9ed38f80433ebc668182c1c4483accad1f76f3181230f3ddeba066c01c3"
+    },
+    {
+      "bytes": 2086,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s2_k6_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "b2f91068e80d2b62740f4f8fd6341dd5222ac116a5ffb085c7bf0bf8e4a2aae3"
+    },
+    {
+      "bytes": 5443,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s3_k1_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "92a099fa3ab2408e97b6501bb4f812d8c2d32f37e6ddade7d440eeed71ff6a65"
+    },
+    {
+      "bytes": 7373,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s3_k2_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "1807fc77fa7f69042082d63e7bf571c91cd1ef3720ae73066980e8047e5c51ac"
+    },
+    {
+      "bytes": 2875,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s3_k5_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "e6677ce92d51ce84fad5e2a66990ca04bd95685ae2136bffe0ad7b862388f18b"
+    },
+    {
+      "bytes": 3193,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/package_p13_s3_k6_audit.sh",
+      "role": "scientific_frozen",
+      "sha256": "d74a31ced9ad5d9ede2fd2d99cad76702a9a851fa119f75d25e389e810724170"
+    },
+    {
+      "bytes": 693,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s0_k0.sh",
+      "role": "scientific_frozen",
+      "sha256": "0312b29aaaa6aba2fc0307b8bc7ea7ef319eba4a50b3a206a742c1af5b6c87f1"
+    },
+    {
+      "bytes": 543,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s0_k1.sh",
+      "role": "scientific_frozen",
+      "sha256": "e6978f233eb0b9ed236ff396b2c048eaae706536c85eb4d6001fd3b6f7fd793e"
+    },
+    {
+      "bytes": 1168,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s0_k2.sh",
+      "role": "scientific_frozen",
+      "sha256": "90127b00f3ce91d6b3efa3bd582ee2a9d0806cce2aa948022c8d71d9b13266d1"
+    },
+    {
+      "bytes": 837,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s0_k2r2.sh",
+      "role": "scientific_frozen",
+      "sha256": "d127190a40122725b836dbe8601de400c79507247b25c8d27a52974b5bc1fe67"
+    },
+    {
+      "bytes": 867,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s0_k2r3.sh",
+      "role": "scientific_frozen",
+      "sha256": "fcf35f14e5d11017e7e594a2638ddd6579885c6a2fda7b4a244be9bc0d23b2b5"
+    },
+    {
+      "bytes": 888,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s0_k2r4.sh",
+      "role": "scientific_frozen",
+      "sha256": "a7866d8f4f956956db14dce43be862af2110c6d5abbc1f18197f559a0d58ccbd"
+    },
+    {
+      "bytes": 596,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s0_k3.sh",
+      "role": "scientific_frozen",
+      "sha256": "b056b264c292319cfed0720ba52b9001cb36220e42987b162eb7a74189c155d4"
+    },
+    {
+      "bytes": 1314,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_k0r.sh",
+      "role": "scientific_frozen",
+      "sha256": "9eccb48b199ee5f095a0d3dcfbd21bb9041ea79bac876055247446815cd02309"
+    },
+    {
+      "bytes": 398,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_k1a.sh",
+      "role": "scientific_frozen",
+      "sha256": "3a66808f0cab7a298f4107753f30e35f4e341aa16537b8733d77fdb644e450da"
+    },
+    {
+      "bytes": 392,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_k1b.sh",
+      "role": "scientific_frozen",
+      "sha256": "097d3effcb54cde423b8a519c544d8de93b83e4f0ba4dbc196a3a3bc3a2c2367"
+    },
+    {
+      "bytes": 395,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_k2a.sh",
+      "role": "scientific_frozen",
+      "sha256": "6574dac5d8a6e18acee4f98f6a1d3177db169502ef117c57870a5d7d5e3fe7ca"
+    },
+    {
+      "bytes": 400,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_k2b.sh",
+      "role": "scientific_frozen",
+      "sha256": "5a33c0606ce95ec18d335ce3702254a7ef61210ad4d8fe373b6a57f198c66a42"
+    },
+    {
+      "bytes": 409,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_k2c.sh",
+      "role": "scientific_frozen",
+      "sha256": "610a2d61f42b17357077b5d9aa9e5945a706eeda51ac74606de8c8ed7df93b5b"
+    },
+    {
+      "bytes": 360,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_k3.sh",
+      "role": "scientific_frozen",
+      "sha256": "aa7c6d445892874274e039916cc431d1dc578e0adbf14253ebfba5c7a56382a9"
+    },
+    {
+      "bytes": 418,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_pf0.sh",
+      "role": "scientific_frozen",
+      "sha256": "da8d5e1b54f92fb1d8f8858d22f5d34f69f5d8042f0e8e9400e2ead5e15c86f8"
+    },
+    {
+      "bytes": 339,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s1_pf1.sh",
+      "role": "scientific_frozen",
+      "sha256": "f49771262411acb5e1825884d40e78620abed05ce0953a30e56f4bb3144166ef"
+    },
+    {
+      "bytes": 369,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k0.sh",
+      "role": "scientific_frozen",
+      "sha256": "6f14cb62251bcc250975f2840e15c4bfb1c10cd5132795e9f8cb00f3e19bcda4"
+    },
+    {
+      "bytes": 429,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k1.sh",
+      "role": "scientific_frozen",
+      "sha256": "079e22153ca2bddf180412f55131f203c1f273bc70cef3992913acafe60752b9"
+    },
+    {
+      "bytes": 359,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k2.sh",
+      "role": "scientific_frozen",
+      "sha256": "692d3bd3b473ef86458e8a671e58d798bc1164069d998d7cda9d6d0f862c8f92"
+    },
+    {
+      "bytes": 369,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k3.sh",
+      "role": "scientific_frozen",
+      "sha256": "147c644f8c9b31b4c82f063a27306ebd7ca5de1de9306380b5caa6bb0ac38560"
+    },
+    {
+      "bytes": 374,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k4.sh",
+      "role": "scientific_frozen",
+      "sha256": "af85fbcf3710f8c95f02c43c890f50195c0764ac72dbc62ff8596ae2257cb99f"
+    },
+    {
+      "bytes": 379,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k4r.sh",
+      "role": "scientific_frozen",
+      "sha256": "cd95bc7060942c4d263e5850eee7142a45112e5af5f60ff9759b06daaed1fe02"
+    },
+    {
+      "bytes": 356,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k5.sh",
+      "role": "scientific_frozen",
+      "sha256": "1fc0e194c01ef03d3ed7e3f66b80460dc2370a7447356c02193f0550adb04061"
+    },
+    {
+      "bytes": 351,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k6.sh",
+      "role": "scientific_frozen",
+      "sha256": "6369e172f8356dedb5f45964d8cd138da11ce42b745b26a42099f03aff3f540d"
+    },
+    {
+      "bytes": 342,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s2_k7.sh",
+      "role": "scientific_frozen",
+      "sha256": "134b65fff25096a3ed2610029ddc4490b2392cfccbf73117f4b3335ed5c6da0f"
+    },
+    {
+      "bytes": 334,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s3_k0.sh",
+      "role": "scientific_frozen",
+      "sha256": "a74c8e22301aebbe8e3cb52d9f1e110438033fe7283ab9f8dae3935d260dc9f5"
+    },
+    {
+      "bytes": 444,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s3_k1.sh",
+      "role": "scientific_frozen",
+      "sha256": "75421686283d558492f26b916fa78402463e6cefec03f082637e26790fd12712"
+    },
+    {
+      "bytes": 400,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s3_k2.sh",
+      "role": "scientific_frozen",
+      "sha256": "0ab52c1e30661adb28250a754a9acfa28545dea7cb536dc396077e9e48018802"
+    },
+    {
+      "bytes": 361,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s3_k3.sh",
+      "role": "scientific_frozen",
+      "sha256": "865e7e1997672ccd64012f89ccb598ea58eea9051f878943251bd760374cabdd"
+    },
+    {
+      "bytes": 359,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s3_k4.sh",
+      "role": "scientific_frozen",
+      "sha256": "bd61c8ebfd01fca26d38e9a4d396653bce06a0f9c0154fe25dc4986a3f58973f"
+    },
+    {
+      "bytes": 350,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s3_k5.sh",
+      "role": "scientific_frozen",
+      "sha256": "ff41a860516282d88c722d5c02e722c68b9f66670e88f398fc7852e8a1d9aaad"
+    },
+    {
+      "bytes": 470,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/run_p13_s3_k6.sh",
+      "role": "scientific_frozen",
+      "sha256": "6793aefec1137314395009561c242a68a615526498290bcd970ccf6926aaf83d"
+    },
+    {
+      "bytes": 993,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/verify_p13_s0_k1_private_commitments.sh",
+      "role": "scientific_frozen",
+      "sha256": "bcbaac719b3a92057130ba63e034d9c1cbadf853a098970974d4cdb488a1f131"
+    },
+    {
+      "bytes": 385,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/verify_p13_s3_k1.sh",
+      "role": "scientific_frozen",
+      "sha256": "f0026f9935d7e8d5bd39bf4892a5b42a7b42d2abec0a9f37307bc42d0c546518"
+    },
+    {
+      "bytes": 414,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/verify_p13_s3_k2.sh",
+      "role": "scientific_frozen",
+      "sha256": "750a2b2fc3e67847b2ab20f27972c79608af66bd42e3dc927376d07b74708b93"
+    },
+    {
+      "bytes": 3014,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/verify_p13_s3_k5.sh",
+      "role": "scientific_frozen",
+      "sha256": "94500053c86cae538fc3ba3832b55d5ef6589202b4e9a64f7916c143a422b87b"
+    },
+    {
+      "bytes": 278,
+      "mode": 493,
+      "path": "phases/p13/coefficient_law_raw_xt/scripts/verify_p13_s3_k6.sh",
+      "role": "scientific_frozen",
+      "sha256": "f6988d3314638d83272ac5dc3c1d03fe83f384626b27e58f9cb230f4cf4b6c88"
+    },
+    {
+      "bytes": 78,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/__init__.py",
+      "role": "scientific_frozen",
+      "sha256": "cf0ba0e8280625681b1b9962d37c401109890b9f670251d524acadd8421268ef"
+    },
+    {
+      "bytes": 11261,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/ast_runtime.py",
+      "role": "scientific_frozen",
+      "sha256": "792734959b23383db69038ec2e8034f6628e01ee9eb9b44ac56e83b066175620"
+    },
+    {
+      "bytes": 8154,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/calibration_instruments.py",
+      "role": "scientific_frozen",
+      "sha256": "d68effff0c6bbafbbbb7a20013fc89e9118f28ee236be3f93efe95337737c6b4"
+    },
+    {
+      "bytes": 9625,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/causal_calibration.py",
+      "role": "scientific_frozen",
+      "sha256": "cd2481d984342f32352014f64c3ed64b1c640a6b01e08b7fe874dbae91e69c0f"
+    },
+    {
+      "bytes": 12649,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/coefficients.py",
+      "role": "scientific_frozen",
+      "sha256": "78f4b703d6ebe6ec6a153c4793169588cba94ce1068a6fc772461ecbb0b9a8cf"
+    },
+    {
+      "bytes": 16211,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/family_evaluator.py",
+      "role": "scientific_frozen",
+      "sha256": "08db7ab9dc066d9995e2abc6ea1a36a19906440384589e38078aa1eb8ab66fa8"
+    },
+    {
+      "bytes": 2224,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/gauge.py",
+      "role": "scientific_frozen",
+      "sha256": "33d410f107837f935de5c7eb20f636bb4982c87360df8a7be49714bebbc2a514"
+    },
+    {
+      "bytes": 15029,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k0_lock.py",
+      "role": "scientific_frozen",
+      "sha256": "fa9f7261a406b1a6183460bc0e3ba5a93325d5b97b74074f986c1e32df262950"
+    },
+    {
+      "bytes": 26224,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k1_commit.py",
+      "role": "scientific_frozen",
+      "sha256": "f2603104e377e1b98c48d4b66d30a1d3c5ffafc0dd7e693a3097dafeba10bff2"
+    },
+    {
+      "bytes": 55439,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2_qualification.py",
+      "role": "scientific_frozen",
+      "sha256": "7fef44550d9af2af055d8c52042138dce0901ad887058336e8b64798531693f4"
+    },
+    {
+      "bytes": 37045,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2r2_attainment_repair.py",
+      "role": "scientific_frozen",
+      "sha256": "6cbc727cdd53051ff385e5733c684c00c99f9843542d58da534223cdce6cd01e"
+    },
+    {
+      "bytes": 30206,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2r3_capacity_continuation.py",
+      "role": "scientific_frozen",
+      "sha256": "915e3bf1bf38f11f28a27a515f32e1b023ccd0b1fed15794696bf274d6c845d1"
+    },
+    {
+      "bytes": 41766,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k2r4_operational_fitter.py",
+      "role": "scientific_frozen",
+      "sha256": "4ddbebd9a2e2a9e77755ba201088b6bc100633ba55789b6a28dd9f85503528b6"
+    },
+    {
+      "bytes": 23662,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/k3_s0_freeze.py",
+      "role": "scientific_frozen",
+      "sha256": "19bacd83ca6ccd4725e5b605c80416934752805c3edf7ec49572efd72ca52eee"
+    },
+    {
+      "bytes": 2291,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/proposal_geometry.py",
+      "role": "scientific_frozen",
+      "sha256": "6d7357a72f0f64b6fedcacdea4c79fc2b5ba7940873a55615f1d4073c95cc6e3"
+    },
+    {
+      "bytes": 7118,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/reference_optimizer_v2.py",
+      "role": "scientific_frozen",
+      "sha256": "7831214ea63192ae5837bda4e14ba529c693f6a29fbfe2a38516feab2aad6d0c"
+    },
+    {
+      "bytes": 26703,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k0r_protocol_lock.py",
+      "role": "scientific_frozen",
+      "sha256": "1fa4208b128985249b83067551252a35d0f10b8caae6ca087663e786f86b445c"
+    },
+    {
+      "bytes": 35118,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k1_formal_search.py",
+      "role": "scientific_frozen",
+      "sha256": "bad3ccf5de568272a248283cad3e22c48bf373bb8c91c1c32829ce4ac2d44296"
+    },
+    {
+      "bytes": 11156,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k1b_remaining_seeds.py",
+      "role": "scientific_frozen",
+      "sha256": "12a82acd1bd811868f9862c65b54cc3593c0704f830fb5a3e2e33bb8c2eec130"
+    },
+    {
+      "bytes": 34640,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2a_train_adjudication.py",
+      "role": "scientific_frozen",
+      "sha256": "5dc0c44cffa663971b70333018b8db42b4e61836a8b2bcca87c11da626f5e96a"
+    },
+    {
+      "bytes": 37234,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2b_post_search_diagnostics.py",
+      "role": "scientific_frozen",
+      "sha256": "59c354de892237b54a177ebf9ce4eb17b52f4feb31b6f76412bc1c9e4416189e"
+    },
+    {
+      "bytes": 36937,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k2c_theory_bridge.py",
+      "role": "scientific_frozen",
+      "sha256": "69a08294fcf7e4759e3d48b75c36199808375fc51e26b40d31c9b939107efaa3"
+    },
+    {
+      "bytes": 25346,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_k3_formal_freeze.py",
+      "role": "scientific_frozen",
+      "sha256": "299faa4e662ee4f7e23b805173823b6b4b8fd41be5443e8d89701b7c79d8b3b0"
+    },
+    {
+      "bytes": 54759,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_pf0_postfreeze_diagnostics.py",
+      "role": "scientific_frozen",
+      "sha256": "10d877702f9f7198ac555e03b5e0995ff8df6237427f75b2e6041fa9d658deb8"
+    },
+    {
+      "bytes": 26341,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_pf1_final_freeze.py",
+      "role": "scientific_frozen",
+      "sha256": "e9d141078fdd7a547481bf645f84f7da48775e6fec778b66e2a31bed05b61e6d"
+    },
+    {
+      "bytes": 19739,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s1_search_primitives.py",
+      "role": "scientific_frozen",
+      "sha256": "c3faa7e2f64bbfc6ef7fee997231d569d617b52a862ff465b9ecc055af594cd2"
+    },
+    {
+      "bytes": 21732,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k0_dev_open_protocol_lock.py",
+      "role": "scientific_frozen",
+      "sha256": "81cc5f3004ba9f0f595d1fc9c0dd45352c5f893922f5d9322339f3e9036d3ab6"
+    },
+    {
+      "bytes": 29194,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k1_operator_transfer.py",
+      "role": "scientific_frozen",
+      "sha256": "b6d3c00e364a18233a79007b898cb7a49da1b5f8bb5eddf85b71b2c0f1a37acc"
+    },
+    {
+      "bytes": 22172,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k2_adjudication.py",
+      "role": "scientific_frozen",
+      "sha256": "2b2a1f92f84f44e3340f618d43540da0a61e1bfcee561862998b1fdd24f4010d"
+    },
+    {
+      "bytes": 19688,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k3_response_protocol_lock.py",
+      "role": "scientific_frozen",
+      "sha256": "39ff3de075c234884812348065d421a55f60196d7438098c3239c80165e45aaa"
+    },
+    {
+      "bytes": 38252,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k4_response_reference_controls.py",
+      "role": "scientific_frozen",
+      "sha256": "4511ba38b295693685dae8b0995757f7c6e1c362a4ef371d48d6c513c999749a"
+    },
+    {
+      "bytes": 10218,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k4r_coefficient_reproduction_repair.py",
+      "role": "scientific_frozen",
+      "sha256": "c83bfba936b01ea00faf3c697bf44c9361d81df954373da9b2bc4e436b0ad4b7"
+    },
+    {
+      "bytes": 28569,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k5_candidate_response_certification.py",
+      "role": "scientific_frozen",
+      "sha256": "8c3d26d7103b591afe1aece2558311a7a2682507dae3b403c112f389a99b501c"
+    },
+    {
+      "bytes": 21374,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k6_post_response_diagnostics.py",
+      "role": "scientific_frozen",
+      "sha256": "52df472b634500317a491653b4d779029aed6cee6f31671328889fa64b2eefa2"
+    },
+    {
+      "bytes": 11431,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s2_k7_formal_s2_freeze.py",
+      "role": "scientific_frozen",
+      "sha256": "eb64ae3545dc25b82d222f355431ff525ba28c6f548fe45e5d70730ad6f73c4b"
+    },
+    {
+      "bytes": 23518,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k0_presealed_lock.py",
+      "role": "scientific_frozen",
+      "sha256": "ea79dbcd06ae59bb25e4c1358684903a7e0437cce0ac1e09cf6cfde9a757f1ad"
+    },
+    {
+      "bytes": 59039,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k1_sealed_operator_transfer.py",
+      "role": "scientific_frozen",
+      "sha256": "c19656dcaf0310c77af91f764e36128d8bf1f1cc7db9aca666e095f765cb86f9"
+    },
+    {
+      "bytes": 45796,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k2_operator_adjudication.py",
+      "role": "scientific_frozen",
+      "sha256": "c25d16c281be44294cab865ebfdc1920a8820d33a63463677aa6788c35f5aa6f"
+    },
+    {
+      "bytes": 38871,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k3_sealed_response_reference_controls.py",
+      "role": "scientific_frozen",
+      "sha256": "1a0678f0d26492eb633a5591027632ed33774540ba3acbc87cd7bf81921acd62"
+    },
+    {
+      "bytes": 27600,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k4_candidate_response_certification.py",
+      "role": "scientific_frozen",
+      "sha256": "207d559c4417911d4064ba147f297159da39b905c20d12d1ee4cfbbbf32761bb"
+    },
+    {
+      "bytes": 36709,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k5_post_sealed_diagnostics.py",
+      "role": "scientific_frozen",
+      "sha256": "31f542c7ad08ebbb8e9940920d60a5d45393b534c9ba710200497c9fc2bd4eb4"
+    },
+    {
+      "bytes": 39189,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/src/p13rawxt/s3_k6_final_first_branch_freeze.py",
+      "role": "scientific_frozen",
+      "sha256": "96a6b253acd3043148abb79f58209a9471f3f223479b301c2ba11549dfa77fe2"
+    },
+    {
+      "bytes": 2809,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k0.py",
+      "role": "scientific_frozen",
+      "sha256": "cf859e184a50ff1df278ffd6c4206934e797d7c7af55f5b2955089e03ba32b22"
+    },
+    {
+      "bytes": 3088,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k1.py",
+      "role": "scientific_frozen",
+      "sha256": "204b9f9d01a9ce480e2d7bc5c8e0ca7064a51f47a1ad5a199700eb69bdc204d1"
+    },
+    {
+      "bytes": 7017,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2.py",
+      "role": "scientific_frozen",
+      "sha256": "dd5fb12c424f33a6d157d11ee6c192fdb9cbe609219e6e54a2cffdbaf261e1a7"
+    },
+    {
+      "bytes": 3971,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2r2.py",
+      "role": "scientific_frozen",
+      "sha256": "2530618553cab72ed6bc5737e651386c5ad5a9dda62f0812838fcf503c7fd613"
+    },
+    {
+      "bytes": 4013,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2r3.py",
+      "role": "scientific_frozen",
+      "sha256": "f9d9fe21e4a356b341e5c12569cf252240ec1ac24216286e1eaed92c31fade9b"
+    },
+    {
+      "bytes": 3411,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k2r4.py",
+      "role": "scientific_frozen",
+      "sha256": "ecdfd8219129a2cf2ef5a8b9bc22199312fe484c0359526833c2092a5226df52"
+    },
+    {
+      "bytes": 1518,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s0_k3.py",
+      "role": "scientific_frozen",
+      "sha256": "2375d186542df54aac674d11cdf8c8c3ad57948657ccde8f4c64d88c77b1054c"
+    },
+    {
+      "bytes": 2878,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s1_k0r.py",
+      "role": "scientific_frozen",
+      "sha256": "5b82e484d0da0df1a3b1b64224b9c9c766fa62fea6a1bd98d58b70043bdcc372"
+    },
+    {
+      "bytes": 3965,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s1_k2b.py",
+      "role": "scientific_frozen",
+      "sha256": "61ffc25349db4c3949ef38ad6fd6e50918d11c36b3221a4bec1d71fd93fadddc"
+    },
+    {
+      "bytes": 3471,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s1_k2c.py",
+      "role": "scientific_frozen",
+      "sha256": "5ca047fcf029e9a2cb32a0550ce0b78b4e25b5b1829602b99e9d54678bea1957"
+    },
+    {
+      "bytes": 3730,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s1_k3.py",
+      "role": "scientific_frozen",
+      "sha256": "93f2cd897b510e238dcda1429e111ce969cdcc80730fe88a76283158c0fe2a0c"
+    },
+    {
+      "bytes": 6789,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s1_pf0.py",
+      "role": "scientific_frozen",
+      "sha256": "4dd38f369d828803ec080390ff030b74789e44bc11b54978e6a22f4724ddc545"
+    },
+    {
+      "bytes": 2262,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s1_pf1.py",
+      "role": "scientific_frozen",
+      "sha256": "180481d3b9ce898b63a790f56a8a995590c859d0c977731d7ddf90825637c1f4"
+    },
+    {
+      "bytes": 5329,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s2_k0.py",
+      "role": "scientific_frozen",
+      "sha256": "0463d64ac4119c9952fe739e2df214b22e21fb95927265b9fe2ac1bb5fc2577c"
+    },
+    {
+      "bytes": 1615,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s2_k1.py",
+      "role": "scientific_frozen",
+      "sha256": "9d0762cfaf4f8993143043699023b18a2ad9e8551334444c3b7872a05793ec35"
+    },
+    {
+      "bytes": 1875,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s2_k2.py",
+      "role": "scientific_frozen",
+      "sha256": "11e4fb142adecd3df22f32a00cd3e0ada0e9d7f7787585da7980b28ae2470f9f"
+    },
+    {
+      "bytes": 2323,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s2_k3.py",
+      "role": "scientific_frozen",
+      "sha256": "31b4b2b42e3e1eca25e8a72f6011fabff9b0550760d26b9cead4f14f89378f25"
+    },
+    {
+      "bytes": 1565,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s2_k6.py",
+      "role": "scientific_frozen",
+      "sha256": "efa4ee94cf4ca28842fc11600366638591fedc6cc4105adcb549697eed45768f"
+    },
+    {
+      "bytes": 7263,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s3_k1.py",
+      "role": "scientific_frozen",
+      "sha256": "8fd712b41291e5545e8a343c521fc4de5c09d09fe9719a7f6c143b51720669cf"
+    },
+    {
+      "bytes": 6749,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s3_k2.py",
+      "role": "scientific_frozen",
+      "sha256": "4109fca02c4f69a47498abc9a9a01d84a53e39d8361c97622578caea08295c16"
+    },
+    {
+      "bytes": 4431,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s3_k5.py",
+      "role": "scientific_frozen",
+      "sha256": "232fe9fdeddc71590abd052163a91e661f833f3351690a98011a6739f72d4a3c"
+    },
+    {
+      "bytes": 5715,
+      "mode": 420,
+      "path": "phases/p13/coefficient_law_raw_xt/tests/test_p13_s3_k6.py",
+      "role": "scientific_frozen",
+      "sha256": "6f802c33615114021db6767b0599564df450a3c14b2f7247156f446b628c6f29"
+    },
+    {
+      "bytes": 345000,
+      "mode": 420,
+      "path": "provenance/S0_REAL_OUTPUT_SCHEMA.json",
+      "role": "publication_administration",
+      "sha256": "0983fd576f24a011e36a0e99bc248224ab0f814441e7cadd5ed78c1127c5e24d"
+    },
+    {
+      "bytes": 5100,
+      "mode": 420,
+      "path": "reproduce/PUBLIC_INPUT_MANIFEST.json",
+      "role": "publication_administration",
+      "sha256": "721807e604fac3bb9cfdbca64bf51144282b75ab9b3760f11f6150be45f04b51"
+    },
+    {
+      "bytes": 4913,
+      "mode": 420,
+      "path": "reproduce/PUBLIC_RELEASE_ASSETS.json",
+      "role": "publication_administration",
+      "sha256": "b9bae84bd8cb33def7a07ddbde363c059a07ac147e69b8854681e4d76f360eb7"
+    },
+    {
+      "bytes": 510,
+      "mode": 420,
+      "path": "reproduce/RELEASE_PROVENANCE.json",
+      "role": "publication_administration",
+      "sha256": "b0640f9bd0362b094a6ceb0aede605fa690b4fba569c992d559c1f8c0714364e"
+    },
+    {
+      "bytes": 125,
+      "mode": 420,
+      "path": "reproduce/__init__.py",
+      "role": "publication_administration",
+      "sha256": "c8ab3b5d0e1a156b6b05dfc6519b519a06c05fb3d76b60de0dc652524889f525"
+    },
+    {
+      "bytes": 625,
+      "mode": 420,
+      "path": "reproduce/_entry.sh",
+      "role": "publication_administration",
+      "sha256": "256f5a7ff8fe0d9ab105d7a391eb53bb3640e500cff2681b465a8d788ae51c29"
+    },
+    {
+      "bytes": 1937,
+      "mode": 420,
+      "path": "reproduce/common.py",
+      "role": "publication_administration",
+      "sha256": "0f15b6adba77d4edcd7662d25b291114c51f341a1d9e060e583da9402e390e5b"
+    },
+    {
+      "bytes": 2156,
+      "mode": 420,
+      "path": "reproduce/dispatch_fixture.py",
+      "role": "publication_administration",
+      "sha256": "a7c61f8f90e0938742e36627c8cbde52d28388ab5a52e98075a4b1e0d57bbfe3"
+    },
+    {
+      "bytes": 2612,
+      "mode": 420,
+      "path": "reproduce/frozen_unit_tests.py",
+      "role": "publication_administration",
+      "sha256": "7aa0b5df4c89a60e819760edcddf84b28432b95493e7bdf90c6d8925de8c0f9d"
+    },
+    {
+      "bytes": 12612,
+      "mode": 420,
+      "path": "reproduce/public_runner.py",
+      "role": "publication_administration",
+      "sha256": "23fb8e9b16c45bccc68e10a865ead590c7eb0003a40c7241255dd2599fd56633"
+    },
+    {
+      "bytes": 3033,
+      "mode": 420,
+      "path": "reproduce/public_scan.py",
+      "role": "publication_administration",
+      "sha256": "0e67fa2e6b0afc32785a33677bc50d98a83b22a5f8a6bde72eabed5a003bd597"
+    },
+    {
+      "bytes": 236,
+      "mode": 493,
+      "path": "reproduce/publication_python.sh",
+      "role": "publication_administration",
+      "sha256": "14637e5a0794fe53051180a21fbe29e38a160c8c92c8dc09c5c0a3fb57cc1302"
+    },
+    {
+      "bytes": 147,
+      "mode": 420,
+      "path": "reproduce/release_entry.py",
+      "role": "publication_administration",
+      "sha256": "6a511d08bbadc9827bbac16c4310e2d6180380176318225602f8478f4e49b1e7"
+    },
+    {
+      "bytes": 3433,
+      "mode": 420,
+      "path": "reproduce/release_integrity.py",
+      "role": "publication_administration",
+      "sha256": "093a7c6c3ba7584d56cadf87a6da4e63532acf1bb1fbb08d28f2441f74d891d7"
+    },
+    {
+      "bytes": 4162,
+      "mode": 420,
+      "path": "reproduce/resolve_inputs.py",
+      "role": "publication_administration",
+      "sha256": "f163931085c4f13f14d70420eeb5e67d93fc3a0ce08322fda68675447ee445a4"
+    },
+    {
+      "bytes": 148,
+      "mode": 420,
+      "path": "reproduce/run_public_reproduction.sh",
+      "role": "publication_administration",
+      "sha256": "b90cdae892c04c729872c7e4d30798ec9606e0b72d47188053a159c454a7a8fb"
+    },
+    {
+      "bytes": 143,
+      "mode": 420,
+      "path": "reproduce/run_s0.sh",
+      "role": "scientific_frozen",
+      "sha256": "e802ba643790c63fe920e60ead85bbfffd7973601894632e9ab802cb3f2268da"
+    },
+    {
+      "bytes": 143,
+      "mode": 420,
+      "path": "reproduce/run_s1.sh",
+      "role": "scientific_frozen",
+      "sha256": "b63008da6bd23db66646e23d2fb595d9db2fcb27bfae08ca753da50a6185cf10"
+    },
+    {
+      "bytes": 143,
+      "mode": 420,
+      "path": "reproduce/run_s2.sh",
+      "role": "scientific_frozen",
+      "sha256": "8a8a444af3b5e0dbb2d61b68b982183154855a9039fb695003ee2a0fd51594f3"
+    },
+    {
+      "bytes": 143,
+      "mode": 420,
+      "path": "reproduce/run_s3.sh",
+      "role": "scientific_frozen",
+      "sha256": "72c756aa188107712599707d707cf80781fc69c2cc8f6be906a594ad39c16b0a"
+    },
+    {
+      "bytes": 505,
+      "mode": 420,
+      "path": "reproduce/s0_bootstrap/sitecustomize.py",
+      "role": "publication_administration",
+      "sha256": "ae810dd76e35dc3b827947478d6242831440d925c7a7aa7678b0016901863cdd"
+    },
+    {
+      "bytes": 8001,
+      "mode": 420,
+      "path": "reproduce/s0_contract.py",
+      "role": "publication_administration",
+      "sha256": "e51971c7930c4679aa0f781dae6aa4036eef4de495a0f1b05af29b416c50ba8b"
+    },
+    {
+      "bytes": 1493,
+      "mode": 420,
+      "path": "reproduce/s0_handoff.py",
+      "role": "publication_administration",
+      "sha256": "17ac31502a0be9c8067cfe8df08d5380e000476e9975d2f5f9dea66bff05442f"
+    },
+    {
+      "bytes": 13274,
+      "mode": 420,
+      "path": "reproduce/s0_launcher.py",
+      "role": "scientific_frozen",
+      "sha256": "89d9533c48abd3025453d62d8896334bad4294853cd4af3f0b21ca39eb260ba3"
+    },
+    {
+      "bytes": 7285,
+      "mode": 420,
+      "path": "reproduce/s0_schema.py",
+      "role": "publication_administration",
+      "sha256": "7083b2d7361e089bd613b14c5ab364a549e78897bbc5c8439a0de633a9cc9203"
+    },
+    {
+      "bytes": 3790,
+      "mode": 420,
+      "path": "reproduce/s0_step.py",
+      "role": "publication_administration",
+      "sha256": "6a0e6a8a80b5f1fd66d4fe3d0b055d9a990702a8668626c9cb4caa2db1017835"
+    },
+    {
+      "bytes": 3466,
+      "mode": 420,
+      "path": "reproduce/s1_atomic_marker_fixture.py",
+      "role": "publication_administration",
+      "sha256": "34d688d0a46bf795430950226f05a6d37e363a9163e49b6d2ffc03408d47d937"
+    },
+    {
+      "bytes": 408,
+      "mode": 420,
+      "path": "reproduce/s1_bootstrap/sitecustomize.py",
+      "role": "publication_administration",
+      "sha256": "27551fedfaa12e1fdd4174ae85c2367f1e8b6eab06d2242750c1df998d0de935"
+    },
+    {
+      "bytes": 2821,
+      "mode": 420,
+      "path": "reproduce/s1_commitment.json",
+      "role": "publication_administration",
+      "sha256": "aaa1c190492aa66d5724e57fb338a97e8d24a5ee45eadddc88982165f7bc86df"
+    },
+    {
+      "bytes": 6671,
+      "mode": 420,
+      "path": "reproduce/s1_continuation.py",
+      "role": "publication_administration",
+      "sha256": "2a8222d992441aa1fd8a9594b15fbd5d6c5e3968b79efcc91bd73e7d45608eb9"
+    },
+    {
+      "bytes": 4575,
+      "mode": 420,
+      "path": "reproduce/s1_io.py",
+      "role": "publication_administration",
+      "sha256": "b500dbf1f12c4e2468639a0606fe8249bc78050b8995b114b321e3addf1fbac5"
+    },
+    {
+      "bytes": 786,
+      "mode": 420,
+      "path": "reproduce/s1_io_fixture.py",
+      "role": "publication_administration",
+      "sha256": "08b9c2e990fc271583daad15eee7c395bb61b218e20c419123a461837770297d"
+    },
+    {
+      "bytes": 2194,
+      "mode": 420,
+      "path": "reproduce/s1_k2a_cleanup_fixture.py",
+      "role": "publication_administration",
+      "sha256": "e38e795c47e4e64bd024457229c52c6ba6cb101afd1b11bd0ae012bb79aa30b1"
+    },
+    {
+      "bytes": 4317,
+      "mode": 420,
+      "path": "reproduce/s1_k2b_interface.py",
+      "role": "publication_administration",
+      "sha256": "bf4341a14a4e5080c300325245f2941a5128e0c8e43bb3dc02a441071b2a382e"
+    },
+    {
+      "bytes": 2114,
+      "mode": 420,
+      "path": "reproduce/s1_k2b_interface_fixture.py",
+      "role": "publication_administration",
+      "sha256": "1ae501b9f7c809d99093c7b4c18d156f05d68d34cf8d68e6cefc69f2f6bb59dd"
+    },
+    {
+      "bytes": 16551,
+      "mode": 420,
+      "path": "reproduce/s1_launcher.py",
+      "role": "scientific_frozen",
+      "sha256": "6cd8585ea36c300ba263f26f04d19baa2728a4e1254331598074d03ef10da854"
+    },
+    {
+      "bytes": 6755,
+      "mode": 420,
+      "path": "reproduce/s1_lineage.py",
+      "role": "publication_administration",
+      "sha256": "e6369dcb9b133975792ead2a687fddc1a7fc32eee1f17d141fd9ceb692c93305"
+    },
+    {
+      "bytes": 19930,
+      "mode": 420,
+      "path": "reproduce/s1_post.py",
+      "role": "publication_administration",
+      "sha256": "a6f7003b2d1e0568f2320bf04fc5fb057a713d3ed1aca1f8caa3aa52477adc41"
+    },
+    {
+      "bytes": 3932,
+      "mode": 420,
+      "path": "reproduce/s1_regression.py",
+      "role": "publication_administration",
+      "sha256": "93fa1a076696444013dc2f8938141ae56b46c8d9cbc5c9b466943d2e9e8af012"
+    },
+    {
+      "bytes": 2308,
+      "mode": 420,
+      "path": "reproduce/s1_scope.py",
+      "role": "publication_administration",
+      "sha256": "69e8fb736ce5a04b085599773908484abf56ee4b10e88ca44f5edab9bb1642a8"
+    },
+    {
+      "bytes": 7779,
+      "mode": 420,
+      "path": "reproduce/s1_step.py",
+      "role": "publication_administration",
+      "sha256": "f3e38cceab1d812a07427ff1fdca0943b2aad5937f64c5f489f80bbecd3bdac3"
+    },
+    {
+      "bytes": 409,
+      "mode": 420,
+      "path": "reproduce/s2_bootstrap/sitecustomize.py",
+      "role": "publication_administration",
+      "sha256": "fc1f3efa732db39a21f877dd41bf2e9e66baa8783e9c548da7ed8e206a31fc5c"
+    },
+    {
+      "bytes": 11409,
+      "mode": 420,
+      "path": "reproduce/s2_contract.py",
+      "role": "publication_administration",
+      "sha256": "610ab996a5a9eb50b981209dc0ad3b555f0242f738320a1986a0bb78be5ddaa5"
+    },
+    {
+      "bytes": 3742,
+      "mode": 420,
+      "path": "reproduce/s2_io.py",
+      "role": "publication_administration",
+      "sha256": "81acca59a6a781261b9a9c21a43574576bf5c642dcb7424d64b2cddebeef3b02"
+    },
+    {
+      "bytes": 2436,
+      "mode": 420,
+      "path": "reproduce/s2_io_fixture.py",
+      "role": "publication_administration",
+      "sha256": "f9f2acfa8f8fe7f968e6bc53142b47574fefbe1998a048093fd900a99c740015"
+    },
+    {
+      "bytes": 9851,
+      "mode": 420,
+      "path": "reproduce/s2_launcher.py",
+      "role": "scientific_frozen",
+      "sha256": "be91070bd0b569f56bb4b6277c9f571d168930640241828934f85fe591aca3a7"
+    },
+    {
+      "bytes": 31998,
+      "mode": 420,
+      "path": "reproduce/s2_step.py",
+      "role": "publication_administration",
+      "sha256": "b4a414812490734456eacd2689ad6ca27e94cee081ee64990a6dcb0d07e6baf1"
+    },
+    {
+      "bytes": 409,
+      "mode": 420,
+      "path": "reproduce/s3_bootstrap/sitecustomize.py",
+      "role": "publication_administration",
+      "sha256": "bd3e1cad40e9ea96b4c7b739c20808454e1da83922ca45c38eccd1ddb9c842aa"
+    },
+    {
+      "bytes": 8602,
+      "mode": 420,
+      "path": "reproduce/s3_contract.py",
+      "role": "publication_administration",
+      "sha256": "a1df97a101f396ca80f9e028388045aa7933857a978bbfd3ffc941e7e3c36ae1"
+    },
+    {
+      "bytes": 5307,
+      "mode": 420,
+      "path": "reproduce/s3_io.py",
+      "role": "publication_administration",
+      "sha256": "bd71edf4da98771f3d6a2eda6f47cd82b13024f0896d880d01eaacd4eac0414c"
+    },
+    {
+      "bytes": 2531,
+      "mode": 420,
+      "path": "reproduce/s3_io_fixture.py",
+      "role": "publication_administration",
+      "sha256": "ddc7cd02d1b226d67d3122e637e66359180af6d2f598cda54b3bff70bafe058d"
+    },
+    {
+      "bytes": 10121,
+      "mode": 420,
+      "path": "reproduce/s3_launcher.py",
+      "role": "scientific_frozen",
+      "sha256": "f351478b2fec4a91120ddd7192c7c6ae83b017c74b12b45cb7f900ee1a5e0772"
+    },
+    {
+      "bytes": 39148,
+      "mode": 420,
+      "path": "reproduce/s3_step.py",
+      "role": "publication_administration",
+      "sha256": "94858664f5666ff1abba23eb630494fc1822d88736c248d4fca564b77b2eaf93"
+    },
+    {
+      "bytes": 4138,
+      "mode": 420,
+      "path": "reproduce/scientific_compare.py",
+      "role": "publication_administration",
+      "sha256": "d3700879ed044c0334955aee47bc0bca3f0a4cc930dcb5b3677022b511a79150"
+    },
+    {
+      "bytes": 2146,
+      "mode": 420,
+      "path": "reproduce/stage_public_assets.py",
+      "role": "publication_administration",
+      "sha256": "eee9505bab5ae1871a6a017fd25f9ea258e455f3b4643e95d3dc82eb4ed561c0"
+    },
+    {
+      "bytes": 12563,
+      "mode": 420,
+      "path": "reproduce/test_public_release.py",
+      "role": "publication_administration",
+      "sha256": "1d0f8908f2effb4d1838df1faa57a863d0dd1e2b234f5c35033e27a0a061d4bd"
+    },
+    {
+      "bytes": 6670,
+      "mode": 420,
+      "path": "reproduce/test_release_integrity.py",
+      "role": "publication_administration",
+      "sha256": "ebac6641cb0db59f864261548d5d8fbae5244d7503984b260d907276911df60e"
+    },
+    {
+      "bytes": 5001,
+      "mode": 420,
+      "path": "reproduce/test_s0_dispatch.py",
+      "role": "publication_administration",
+      "sha256": "64a41253865d8efb38e42812be477dd89fd0dfdb10c4d0390e7af238a76ab41e"
+    },
+    {
+      "bytes": 13202,
+      "mode": 420,
+      "path": "reproduce/test_s0_wiring.py",
+      "role": "publication_administration",
+      "sha256": "d1f9787b0d92cb875966e8734226d75b212496ef550ad021b7245d9ff5ffd1a7"
+    },
+    {
+      "bytes": 33439,
+      "mode": 420,
+      "path": "reproduce/test_s1_wiring.py",
+      "role": "publication_administration",
+      "sha256": "f7ec35cecf52b85fbad228cc458ba4f5519ca9b04e09fb9154d6000e9b6868e5"
+    },
+    {
+      "bytes": 564,
+      "mode": 420,
+      "path": "reproduce/verify_baseline.py",
+      "role": "publication_administration",
+      "sha256": "db355e80e62f27b558120beded4f39ff54612d7ac128b4ac5c7d5a85140fd375"
+    },
+    {
+      "bytes": 3235,
+      "mode": 420,
+      "path": "reproduce/verify_public_assets.py",
+      "role": "publication_administration",
+      "sha256": "e83f1dac666fb0f4ec3123aff7a5cdec08b2cf5c664419bca3f9009a88fead1a"
+    }
+  ],
+  "opaque_asset_payloads_excluded": true,
+  "reference_results_excluded": true,
+  "schema": "PUBLIC_RELEASE_SOURCE_V1"
+}

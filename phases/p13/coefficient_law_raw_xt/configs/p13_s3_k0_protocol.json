@@ -1,0 +1,93 @@
+{
+  "program": "P13-Constructive-Coefficient-Law",
+  "stage": "P13-S3-K0",
+  "purpose": "Pre-SEALED parent reproducibility, post-Opus claim-boundary lock, TRAIN-only mechanism diagnostics, and S3 reporting/diagnostic-strata preregistration.",
+  "authorization": "S3-K0_ONLY_NO_SEALED_OPENING",
+  "parent": {
+    "portable_freeze_filename": "P13_S0_S1_S2_FINAL_FREEZE_20260901T054122Z.tar.xz",
+    "portable_freeze_sha256": "9a5d3e122433e9f8028639929a4982606f9380af6ba4bc1624d86bb7b61e574f",
+    "K7_semantic_output_digest": "03d2904f93ebb777bf8d76f1cc9cebc4745563041e9e5274090e81af8f5bb215",
+    "K6_semantic_output_digest": "ca02fc3a5c905038fd797b758492425d30a1e1593ea0e20c1ccb1b263bd7d3bf",
+    "formal_S2_certified_count": 1955,
+    "formal_S2_membership_sha256": "2eea886fb4f63bbdec65f2c97377da64788c0820c09d6f5930715f4609286985",
+    "K5_membership_path": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K5_complete_candidate_response_certification/K5_RESPONSE_PASS_MEMBERSHIP.jsonl",
+    "K2_decision_map_path": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K2_III_B_adjudication_response_entry_lock/K2_III_B_DECISION_MAP.jsonl",
+    "K2A_clear_locator_path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+    "K2C_branch_results_path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2C_theory_bridge/K2C_branch_results.jsonl",
+    "K2C_branch_results_sha256": "1c41d59cec620f064a5752281e2d1881bffd5dc19cbcd689d74110363f4eca99"
+  },
+  "frozen_claim_hierarchy": {
+    "III_A": "SUPPORTED",
+    "III_B": "SUPPORTED_DEVELOPMENT",
+    "III_C": "SUPPORTED_DEVELOPMENT",
+    "III_D": "UNTESTED_SEALED"
+  },
+  "frozen_operator_contract": {
+    "same_raw_AST": true,
+    "same_theta": true,
+    "same_deterministic_gauge": true,
+    "zero_refit": true,
+    "family_ratio_boundary": 0.5,
+    "tau_num": 0.005,
+    "tau_num_role": "NUMERICAL_AMBIGUITY_ONLY_NOT_THRESHOLD_RELAXATION",
+    "operator_grids": [33, 65]
+  },
+  "frozen_response_contract": {
+    "all_case_threshold": 0.15,
+    "reference_initial_pair": [513, 1025],
+    "reference_ladder": [[513, 1025], [1025, 2049], [2049, 4097]],
+    "reference_uncertainty_ceiling": 0.02,
+    "candidate_initial_pair": [129, 257],
+    "candidate_complete_cohort_escalation": [513, 1025],
+    "candidate_specific_rescue": false
+  },
+  "claim_boundary_lock": {
+    "current_branch": "CONSTRUCTIVE_ROUTE_FEASIBILITY_NOT_SEARCH_SATURATION_OR_NEAR_CAPACITY",
+    "J_capacity_R_att_postfreeze_role": "DESCRIPTIVE_ATTAINMENT_EVIDENCE_ONLY_ZERO_RETROACTIVE_MEMBERSHIP_AUTHORITY",
+    "pf0_theory_cosine_role": "WEAK_GEOMETRY_DIAGNOSTIC_NOT_INDEPENDENT_FULL_M2_RECOVERY_EVIDENCE",
+    "1955_semantics": "FORMAL_SCIENTIFIC_BRANCH_COHORT_NOT_1955_INDEPENDENT_TRANSFORMATION_LAWS",
+    "future_completeness": "SEPARATE_PREREGISTERED_BRANCH_NO_SILENT_REWRITE"
+  },
+  "diagnostics": {
+    "role": "DESCRIPTIVE_CALIBRATION_ONLY_ZERO_MEMBERSHIP_AUTHORITY",
+    "structural_derivative_order_census": true,
+    "nested_theory_subspaces": ["B3_ONLY_M0_POINT_VALUE", "THEORY_M_LE_1", "FULL_FROZEN_M_LE_2"],
+    "capacity_full_m2_frozen_J_G65": 0.0022936465892580485,
+    "capacity_full_m2_source": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k2r4_operational_fitter_20260827T031408Z/capacity_reuse_lock.json",
+    "fit_grid": 33,
+    "adjudication_grid": 65,
+    "optimizer": "frozen_S0_reference_optimizer_protocol",
+    "B3_theory_coefficient_in_b_basis": 0.5,
+    "PF0_B3_channel_index_zero_based": 2,
+    "no_historical_candidate_refit": true
+  },
+  "diagnostic_strata": {
+    "formal_cohort": {"decision": "OPERATOR_TRANSFER_PASS", "count": 1955, "membership_authority": true},
+    "negative_control": {"decision": "OPERATOR_TRANSFER_FAIL", "count": 348, "membership_authority": false},
+    "unresolved": {"decision": "OPERATOR_TRANSFER_UNRESOLVED", "count": 4, "membership_authority": false},
+    "report_by": ["paired_seed", "structural_hash", "exact_equivalence_class", "coefficient_ablation_stratum", "paired_per_case_candidate_identity_NULL"],
+    "all_reporting_descriptive": true
+  },
+  "forbidden": [
+    "SEALED_FINAL_COEF read/open/extract",
+    "SEALED_FINAL_RESPONSE read/open/extract",
+    "top-k or Pareto scientific membership",
+    "proxy labels",
+    "target survivor counts",
+    "candidate-specific rescue",
+    "response-aware refit",
+    "historical candidate refit/rescue/delete/reorder",
+    "DEVELOPMENT-to-SEALED tuning",
+    "new response threshold",
+    "new operator threshold",
+    "new grammar/representation order"
+  ],
+  "runtime": {
+    "default_workers": 1,
+    "BLAS_threads": 1,
+    "progress_every_items": 100,
+    "progress_every_seconds": 30,
+    "resume": true
+  },
+  "next_on_pass": "STOP_AFTER_K0_AWAIT_EXPLICIT_USER_AUTHORIZATION_FOR_S3_K1_SEALED_FINAL_COEF_OPENING"
+}

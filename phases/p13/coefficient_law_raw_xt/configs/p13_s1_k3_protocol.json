@@ -1,0 +1,49 @@
+{
+  "stage": "P13-S1-K3_FORMAL_S1_FREEZE",
+  "active_protocol": "phases/p13/coefficient_law_raw_xt/docs/P13_COMPREHENSIVE_CONTEXT_S1_ENTRY_REVIEW_LOCK_20260827.md",
+  "expected_active_protocol_sha256": "3db057955859653c35853b8b2dd2b281e1c4429312ac969e3b9a18b4e1d56db0",
+  "expected_K2C_semantic_digest": "910c1337fef9395610f809daff2de3b7f64deca691f0d1a6ca240e3ce3d9597f",
+  "expected_clear_membership_sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+  "expected_unresolved_membership_sha256": "4177feffe4417e157f17eb90578b1e749ec06fe0db7935a7ade315c33cbc4f67",
+  "expected_clear_count": 2307,
+  "expected_unresolved_count": 80,
+  "expected_first_rung_structural_proposals": 98304,
+  "expected_search_horizon_per_seed_arm": 8192,
+  "registry_files_per_unit": [
+    "proposal_ledger.jsonl",
+    "skeleton_registry.jsonl",
+    "branch_registry.jsonl",
+    "equivalence_map.jsonl",
+    "unit_summary.json"
+  ],
+  "paired_seeds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "arms": [
+    "NULL-V2",
+    "FULL-V1",
+    "FULL-V2"
+  ],
+  "s2_candidate_rule": "entire clear OPERATOR_QUALIFIED_TRAIN cohort only; exact equivalence may share execution but never removes scientific identity",
+  "s2_unresolved_rule": "retain as REFERENCE/UNRESOLVED lineage; not S2 eligible and not silently FAIL",
+  "forbidden_narrowing": [
+    "top-k",
+    "percentile",
+    "Pareto deletion",
+    "weighted score",
+    "target survivor count",
+    "diagnostic-transfer filter",
+    "epsilon-scaling filter",
+    "theory-alignment filter",
+    "response-aware filter",
+    "branch reselection"
+  ],
+  "K3_may_open_DEVELOPMENT": false,
+  "K3_may_open_SEALED": false,
+  "K3_may_run_new_search": false,
+  "next_action_on_pass": "P13-S2-K0_DEVELOPMENT_ZERO_SHOT_OPERATOR_TRANSFER",
+  "s0_k2r4_authoritative_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k2r4_operational_fitter_20260827T031408Z"
+}

@@ -1,0 +1,99 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S2-K1",
+  "protocol_version": "COMPLETE_ZERO_SHOT_OPERATOR_TRANSFER_V1",
+  "active_context": "P13_COMPREHENSIVE_CONTEXT_S2_ENTRY_PF0_LOCK_20260831.md",
+  "active_context_sha256": "6d6b5b0a8923e89df505a4d0c6744a76c395797664763d1177edfb245bb1a9ba",
+  "authoritative_s1_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z",
+  "k0_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_K0_RUN.txt",
+  "k0_dev_input_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_DEVELOPMENT_COEF_INPUT.txt",
+  "clear_membership": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+    "sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+    "count": 2307
+  },
+  "unresolved_reference": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_UNRESOLVED_MEMBERSHIP.jsonl",
+    "sha256": "4177feffe4417e157f17eb90578b1e749ec06fe0db7935a7ade315c33cbc4f67",
+    "count": 80,
+    "s2_eligible": false
+  },
+  "base_operator_protocol": "phases/p13/coefficient_law_raw_xt/configs/p13_s0_k2_protocol.json",
+  "development": {
+    "role": "DEVELOPMENT_COEF",
+    "field_count": 4,
+    "evaluation_grids": [33, 65],
+    "probe_grid": 65
+  },
+  "zero_shot_contract": {
+    "same_raw_AST": true,
+    "same_theta": true,
+    "same_deterministic_gauge": true,
+    "AST_refit": false,
+    "theta_refit": false,
+    "branch_reselection": false,
+    "amplitude_compensation": false
+  },
+  "hard_gate_frozen_for_K2": {
+    "family_ratio_boundary": 0.5,
+    "per_field_ratio_boundary": 1.0,
+    "tau_num": 0.005,
+    "tau_num_role": "NUMERICAL_AMBIGUITY_ONLY_NOT_THRESHOLD_RELAXATION",
+    "clear_pass_rule": "value < q*(1-tau_num)",
+    "unresolved_rule": "q*(1-tau_num) <= value <= q*(1+tau_num)",
+    "clear_fail_rule": "value > q*(1+tau_num)",
+    "K1_assigns_final_PASS_FAIL": false,
+    "K2_assigns_final_PASS_FAIL": true
+  },
+  "numerical_fidelity": {
+    "relative_grid_discrepancy_definition": "abs(J_G33-J_G65)/max(abs(J_G65),1e-15)",
+    "report_count_gt_tau_num": true,
+    "count_gt_tau_num_is_automatic_repair_trigger": false,
+    "posthoc_unresolved_fraction_trigger_forbidden": true,
+    "tau_num_may_be_widened": false,
+    "candidate_specific_rescue": false,
+    "if_repair_is_scientifically_required_after_K1_audit": "new explicit cohort-wide fidelity repair before K2 adjudication"
+  },
+  "descriptive_only": {
+    "rho_transfer_definition": "(DEV family ratio to DEV identity at G33)/(frozen TRAIN family ratio at G33)",
+    "rho_transfer_G65_definition": "(DEV family ratio to DEV identity at G65)/(frozen TRAIN family ratio at G33)",
+    "PF0_associations": [
+      "Spearman(radial_slack, log(rho_transfer))",
+      "Spearman(abs(log(lambda_star_on_grid)), log(rho_transfer))"
+    ],
+    "p_values": false,
+    "membership_authority": false
+  },
+  "candidate_governance": {
+    "complete_2307_required": true,
+    "top_k_forbidden": true,
+    "pareto_forbidden": true,
+    "percentile_forbidden": true,
+    "target_survivor_count_forbidden": true,
+    "PF0_K2B_K2C_filter_forbidden": true,
+    "historical_response_information_forbidden": true,
+    "exact_equivalence_execution_sharing_only": true,
+    "scientific_identity_preserved": true
+  },
+  "data_boundary": {
+    "DEVELOPMENT_COEF": "OPENED_BY_K0_AND_READ_IN_PLACE",
+    "DEVELOPMENT_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "SEALED_FINAL_COEF": "SEALED_COMMITTED_UNOPENED",
+    "SEALED_FINAL_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "K1_response_archive_access": "NONE",
+    "K1_sealed_archive_access": "NONE"
+  },
+  "runtime": {
+    "default_workers": 16,
+    "coordinator_cpus": 1,
+    "blas_threads": 1,
+    "progress_every_seconds": 60,
+    "checkpoint_every_completed": 32,
+    "walltime_design_hours": 20,
+    "restart_resume": true,
+    "authoritative_store_rule": "write K1 under the existing K0 S2 run; reuse opened DEV coefficient objects in place"
+  },
+  "next_on_pass_after_audit_review": "P13-S2-K2_III_B_ADJUDICATION_AND_RESPONSE_ENTRY_LOCK",
+  "next_on_failure": "BLOCK_P13_S2_AND_REPAIR_K1_IMPLEMENTATION_OR_PROVENANCE",
+  "response_stage_still_blocked": true
+}

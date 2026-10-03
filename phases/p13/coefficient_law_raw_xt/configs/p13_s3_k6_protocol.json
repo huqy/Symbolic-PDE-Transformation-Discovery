@@ -1,0 +1,153 @@
+{
+  "stage": "P13-S3-K6",
+  "protocol_version": "FINAL_CLAIM_III_P13_FIRST_BRANCH_FREEZE_V1",
+  "purpose": "Freeze the completed prospective P13 first branch after all formal S3 decision maps are immutable. K6 performs no search, refit, threshold change, rescue, ranking, or membership selection.",
+  "authorization": "EXPLICIT_USER_AUTHORIZATION_AFTER_K5_AUDIT_20260902",
+  "k5_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S3_K5_RUN.txt",
+  "expected_s3_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s3_k0_presealed_lock",
+  "expected_k5": {
+    "overall_status": "PASS",
+    "next_action": "P13-S3-K6_FINAL_CLAIM_III_P13_FIRST_BRANCH_FREEZE_REQUIRES_POST_K5_AUDIT",
+    "semantic_output_digest": "9aec1fa8e12dabe6ecf62dd930aa619e5f4b3153a5f101bc1dc4893cb35bc5de",
+    "branch_diagnostics_sha256": "147f72dddc4beeb16128510199aeaf8b3bdee91180a873ec04d95d1397b1aef7",
+    "complete_cohort": 423,
+    "response_pass": 3,
+    "response_unresolved": 0,
+    "response_fail": 420,
+    "pass_scientific_branch_ids": [
+      "158e7e49b2b2f3acc87ee798c0840aa3ff2690aeaed36ad1f026a8eedef52955",
+      "f1b42304dc8d8fd8215ad98aa7d529f670ceb40cd35c7d8083510dd1a7e97995",
+      "640b46f9cc9ed9097dac7c1d7eb8234a9ad438df23585bb73db27b83f5b16dbe"
+    ]
+  },
+  "frozen_lineage": {
+    "s1_clear_membership": {
+      "scope": "root",
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+      "sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+      "count": 2307
+    },
+    "s1_unresolved_membership": {
+      "scope": "root",
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_UNRESOLVED_MEMBERSHIP.jsonl",
+      "sha256": "4177feffe4417e157f17eb90578b1e749ec06fe0db7935a7ade315c33cbc4f67",
+      "count": 80
+    },
+    "s2_formal_membership": {
+      "scope": "root",
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K5_complete_candidate_response_certification/K5_RESPONSE_PASS_MEMBERSHIP.jsonl",
+      "sha256": "2eea886fb4f63bbdec65f2c97377da64788c0820c09d6f5930715f4609286985",
+      "count": 1955
+    },
+    "s2_k7_summary": {
+      "scope": "root",
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K7_formal_s2_freeze/K7_S2_FINAL_SCIENTIFIC_SUMMARY.json",
+      "sha256": "3e5862aa34b5c91b29a7c4240b3d9a6dc96087dd61bd2524696722e0f32cb2f4"
+    },
+    "k0_summary": {
+      "scope": "s3run",
+      "path": "K0_presealed_lock/K0_SCIENTIFIC_SUMMARY.json",
+      "sha256": "f206ddfcce9b34b3c5c37a6b8b621e0a8eafd1104a2635cbc1742bf5884c18ed"
+    },
+    "k0_order_census": {
+      "scope": "s3run",
+      "path": "K0_presealed_lock/K0C1_STRUCTURAL_DERIVATIVE_ORDER_CENSUS_SUMMARY.json",
+      "sha256": "3a5f322c9d329e74fd278b77e4c459576d541a065b0f45651d2aeb934b5bd0dc"
+    },
+    "k0_capacity_kappa": {
+      "scope": "s3run",
+      "path": "K0_presealed_lock/K0C2_C3_TRAIN_ONLY_CAPACITY_AND_KAPPA_DIAGNOSTIC.json",
+      "sha256": "a83c20e1758de78b7daa9f95cab655d5c1d97b15498bf3152b894ac693af5089"
+    },
+    "k2_formal_decision_map": {
+      "scope": "s3run",
+      "path": "K2_sealed_operator_adjudication_response_entry_lock/K2_FORMAL_1955_SEALED_OPERATOR_DECISION_MAP.jsonl",
+      "sha256": "f2fbb5dd38cb192d5c3f538fcec1517b2e58d4a640f6126b47777b12568dc096",
+      "count": 1955
+    },
+    "k2_response_eligible_membership": {
+      "scope": "s3run",
+      "path": "K2_sealed_operator_adjudication_response_entry_lock/K2_RESPONSE_ELIGIBLE_CLEAR_PASS_MEMBERSHIP.jsonl",
+      "sha256": "4261a3656acf6d450e12f970acf5a557d97e32618fcb71c601edccaf3296ad39",
+      "count": 423
+    },
+    "k3_reference_certification": {
+      "scope": "s3run",
+      "path": "K3_sealed_response_reference_control_first/K3_REFERENCE_CERTIFICATION.json",
+      "sha256": "75d89aae0c0712c332cdb7d782a40950c466ca37d9e4c3a7322c8aa130afe83f"
+    },
+    "k3_control_results": {
+      "scope": "s3run",
+      "path": "K3_sealed_response_reference_control_first/K3_CONTROL_FIRST_RESULTS.json",
+      "sha256": "7fdb24a17cf968019bd0f0786745460171445096384dd891f54d30007592b60c"
+    },
+    "k4_decision_map": {
+      "scope": "s3run",
+      "path": "K4_complete_candidate_response_certification/K4_RESPONSE_DECISION_MAP.jsonl",
+      "sha256": "95a5532ed32ff3f62d81415c82d0a6e39202775669a33cffb1b16af57ae83a6a",
+      "count": 423
+    },
+    "k4_pass_membership": {
+      "scope": "s3run",
+      "path": "K4_complete_candidate_response_certification/K4_RESPONSE_PASS_MEMBERSHIP.jsonl",
+      "sha256": "9c26841500340db305d4ef433884f3afff9e2f7c4cef2e78932085fa00cca2cd",
+      "count": 3
+    }
+  },
+  "expected_semantic_lineage": {
+    "s2_k7": "03d2904f93ebb777bf8d76f1cc9cebc4745563041e9e5274090e81af8f5bb215",
+    "s2_k6_diagnostic": "ca02fc3a5c905038fd797b758492425d30a1e1593ea0e20c1ccb1b263bd7d3bf",
+    "s3_k0": "5b4c58b85f007663c10fcc965a4b259f9f89b3d2f2508c1554ed516ec0dc9221",
+    "s3_k1": "76df2f5216cfc411112ccb6072f63b61090ff9876a6cb3270812af6fb03c2bf0",
+    "s3_k2": "2c15942ea6565ab4279b46608b5c48e728a3751bc04fa8ced640e25d34e2f3b9",
+    "s3_k3": "73d28b15d0639e7c67f51f527967c4514a949e08e8740f234aa58f520748fb9d",
+    "s3_k4": "000b0797f8755fb840186fb0eadf189b90f79bed8aa5957b33a80ad191052c0e",
+    "s3_k5": "9aec1fa8e12dabe6ecf62dd930aa619e5f4b3153a5f101bc1dc4893cb35bc5de"
+  },
+  "frozen_claim_decisions": {
+    "III-A": "SUPPORTED",
+    "III-B": "SUPPORTED_DEVELOPMENT",
+    "III-C": "SUPPORTED_DEVELOPMENT",
+    "III-D-OP": "SUPPORTED_SEALED",
+    "III-D-R": "SUPPORTED_SEALED"
+  },
+  "claim_boundary": {
+    "current_branch": "CONSTRUCTIVE_ROUTE_FEASIBILITY_NOT_SEARCH_SATURATION_OR_NEAR_CAPACITY",
+    "III_D_OP_scope": "A nonempty complete hard-gate PASS cohort exists under zero-refit SEALED operator transfer; this is not a population-completeness claim.",
+    "III_D_R_scope": "Three complete K4 clear-PASS scientific branches satisfy all 32 SEALED response intervals; this supports existence/feasibility, not universal reliability or search saturation.",
+    "diagnostic_role": "K0 and K5 diagnostics are post-freeze interpretation only and have zero membership authority."
+  },
+  "governance": {
+    "new_search": false,
+    "new_candidate_evaluation": false,
+    "new_threshold": false,
+    "tau_num_changed": false,
+    "response_gate_changed": false,
+    "candidate_refit": false,
+    "candidate_specific_rescue": false,
+    "engineering_compensation": false,
+    "proxy_label_or_rule": false,
+    "top_k_pareto_percentile_or_weighted_membership": false,
+    "target_survivor_count": false,
+    "diagnostic_promotion": false,
+    "K4_decision_map_modified": false,
+    "K4_pass_membership_modified": false
+  },
+  "future_completeness": {
+    "inside_current_branch": false,
+    "requires_new_prospective_commitments": true,
+    "requires_explicit_user_authorization": true,
+    "must_not_modify": [
+      "current S1/S2/S3 memberships or decisions",
+      "operator family/per-field gates or tau_num",
+      "response threshold or uncertainty semantics",
+      "current coefficient generator or SEALED population",
+      "current grammar, derivative cap m, chi, AST, theta, or deterministic gauge"
+    ]
+  },
+  "runtime": {
+    "mode": "single_coordinator_read_only_final_freeze",
+    "blas_openmp_threads": 1
+  },
+  "next_action_on_pass": "P13_FIRST_BRANCH_FROZEN_FUTURE_COMPLETENESS_REQUIRES_NEW_PROSPECTIVE_PROTOCOL_AND_EXPLICIT_AUTHORIZATION"
+}

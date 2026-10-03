@@ -1,0 +1,69 @@
+{
+  "archive_bytes": 1254608,
+  "archive_sha256": "d7fec79f4b9e59c395d4800d20519d4700f839436785068be86f1ae6a4908dd4",
+  "count": 2,
+  "family": "oblique_plane_wave_3mode",
+  "open_not_before": "complete response-blind S1 search horizon and continuation decision irreversibly frozen",
+  "payload_semantic_digest": "97d52780d96b198e753c702d3ee749dc6cd3903d42acc093d17a63eca4e4a871",
+  "private_payload_copied_into_active_tree": false,
+  "private_seed_material_exposed": false,
+  "public_row_commitments": [
+    {
+      "family": "oblique_plane_wave_3mode",
+      "field_id": "P13_WITHIN_FAMILY_TRANSFER_DIAGNOSTIC_01",
+      "generator_semantic_digest": "22c0779e6f446804cb9eb44c385bee2249aba88e4766c063133b2ee6c5d4ec8d",
+      "regime_certificate": {
+        "M_l1": 0.92,
+        "chi_exact": 0.6541806860465293,
+        "status": "PASS"
+      },
+      "role": "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC",
+      "search_object_commitments": [
+        {
+          "grid": 17,
+          "semantic_digest": "9317061f8b0d785a74ce3b4b1c15f4d34aed2a2eaffa736037182650b66cae17",
+          "sha256": "3d7ff72101385a90f912e14f6ec868cba17fcbb9ce244922149177894acf8ed5"
+        },
+        {
+          "grid": 33,
+          "semantic_digest": "08d633bc2869b8d3fefd2d79c886a8504018a410a3521c3d1644e130c74b0334",
+          "sha256": "964814d094e34744c29121d2535243a636cb4063c8c7457a6f180469d6b43cb8"
+        },
+        {
+          "grid": 65,
+          "semantic_digest": "7d8425ae518b3031d4a67bf1c85cfbb22b7a3e8e9638244ea76166e762d57b67",
+          "sha256": "c8c302e8aa98d7ebb1de609fa7ef0b0f33fca2a53cc495cc26f83573c66ed09b"
+        }
+      ]
+    },
+    {
+      "family": "oblique_plane_wave_3mode",
+      "field_id": "P13_WITHIN_FAMILY_TRANSFER_DIAGNOSTIC_02",
+      "generator_semantic_digest": "fde0a754f45669e376a297ecdfd9a1962cafb5bacb823757e4fe27331caee4ff",
+      "regime_certificate": {
+        "M_l1": 0.9200000000000003,
+        "chi_exact": 0.8270522770989762,
+        "status": "PASS"
+      },
+      "role": "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC",
+      "search_object_commitments": [
+        {
+          "grid": 17,
+          "semantic_digest": "4c8b73e49fd875552a9495fa4fb6c3bd95993bed4cd88fdb61cad41fbd284160",
+          "sha256": "5603851ea99f58bbc1c310d8ce49aa166cd95a46f110726c9d53cb901b9e5a7c"
+        },
+        {
+          "grid": 33,
+          "semantic_digest": "73bef43a7b16b5c05a111029f42f37dd67ec94e991091a2dadbbc243feed70c3",
+          "sha256": "ded53272a68f793d169de32fd5484736440674c4e9d17e0e1999b513a98471c6"
+        },
+        {
+          "grid": 65,
+          "semantic_digest": "27bf0d2a5661f26fa99799bdb02b6ee4b65c4dd4cb31d088698fe39333c51dfc",
+          "sha256": "d5d3b1e56b94e0014b58eaf1a7580f8f2ac76b35dfb749e23ffdfefc7f129d1d"
+        }
+      ]
+    }
+  ],
+  "role": "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC"
+}

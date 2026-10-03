@@ -1,0 +1,69 @@
+{
+  "R_A_local": "PASS_WITH_DOCUMENTED_ENGINEERING_REPAIR_LINEAGE",
+  "R_B": "PASS",
+  "R_C": "PASS_CLAIM_COMPATIBLE",
+  "R_D": "NOT_ACHIEVED_OPTIONAL",
+  "S3_claim_level_result": "CLAIM_COMPATIBLE",
+  "authority": "Accepted external final claim adjudication; not inferred by the launcher",
+  "claims": {
+    "III_A": "PASS_DECLARED_TRAIN_DISCOVERY_SCOPE",
+    "III_B": "PASS_ZERO_REFIT_DEVELOPMENT_OPERATOR_TRANSFER",
+    "III_C": "PASS_COMPLETE_DEVELOPMENT_RESPONSE_CERTIFICATION",
+    "III_D": "PASS_CLAIM_LEVEL_HISTORICAL_SEALED_OPERATOR_AND_RESPONSE_REPRODUCTION"
+  },
+  "count_order": "PASS_UNRESOLVED_FAIL",
+  "counts": {
+    "S1": {
+      "FULL_clear": 2444,
+      "FULL_unresolved": 89,
+      "NULL_clear": 0,
+      "NULL_unresolved": 0,
+      "continuation_32768": false
+    },
+    "S2": {
+      "operator": [
+        2038,
+        6,
+        400
+      ],
+      "references": [
+        32,
+        32
+      ],
+      "response": [
+        2038,
+        0,
+        0
+      ]
+    },
+    "S3": {
+      "diagnostic_DEV_FAIL": [
+        8,
+        0,
+        392
+      ],
+      "diagnostic_DEV_UNRESOLVED": [
+        2,
+        0,
+        4
+      ],
+      "formal_input": 2038,
+      "operator": [
+        451,
+        26,
+        1561
+      ],
+      "references": [
+        32,
+        32
+      ],
+      "response": [
+        4,
+        0,
+        447
+      ]
+    }
+  },
+  "public_heavy_full_chain_rerun": false,
+  "role": "DESCRIPTIVE_NON_RUNTIME_REFERENCE"
+}

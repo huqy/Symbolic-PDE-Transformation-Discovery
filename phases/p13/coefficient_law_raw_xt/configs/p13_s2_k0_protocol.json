@@ -1,0 +1,122 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S2-K0",
+  "protocol_version": "DEVELOPMENT_COEFFICIENT_OPENING_AND_PROTOCOL_LOCK_V1",
+  "active_context": "P13_COMPREHENSIVE_CONTEXT_S2_ENTRY_PF0_LOCK_20260831.md",
+  "active_context_sha256": "6d6b5b0a8923e89df505a4d0c6744a76c395797664763d1177edfb245bb1a9ba",
+  "final_s1_pf1_semantic_digest": "ee6cde6a4515e3868044f14afbed8b54de99123c73b194cdf8e749b5007b11fa",
+  "immutable_k3_discovery_digest": "0862640a856eed7d0321d8fa0597b96005293c9058836d686914b31f52e01997",
+  "pf0_descriptive_digest": "a6850d1d96aef495b631d065da5028e936de8f8939a2854d731b5b5eb3bfe431",
+  "authoritative_s1_run": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z",
+  "pf1_s2_active_input_manifest": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/PF1_final_freeze/PF1_S2_ACTIVE_INPUT_MANIFEST.json",
+    "sha256": "35d81936750448e8047b4a8b8f474379ec7dad3c9b662553073c842df8a3d87a"
+  },
+  "membership_lock": {
+    "clear": {
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_CLEAR_MEMBERSHIP.jsonl",
+      "sha256": "564134db0bee502198729463c64ffe29408b30081ec1af63d86afff0f4da0c84",
+      "count": 2307,
+      "s2_eligible": true
+    },
+    "unresolved": {
+      "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/K2A_FROZEN_FULL_UNRESOLVED_MEMBERSHIP.jsonl",
+      "sha256": "4177feffe4417e157f17eb90578b1e749ec06fe0db7935a7ade315c33cbc4f67",
+      "count": 80,
+      "s2_eligible": false,
+      "role": "REFERENCE_UNRESOLVED_NOT_FAIL"
+    },
+    "exact_equivalence_role": "execution_sharing_only",
+    "scientific_branch_identity_preserved": true,
+    "branch_reselection_forbidden": true
+  },
+  "development_coefficient_commitment": {
+    "role": "DEVELOPMENT_COEF",
+    "kind": "coefficient",
+    "archive_absolute_path": "/u/scratch/h/huqy/sMoEs_PDE_SR_solver_private/p13_s0_k1/p13_s0_k1_private_20260826T170957Z/P13_S0_K1_PRIVATE_COEFFICIENT_DEVELOPMENT_COEF.tar.xz",
+    "archive_bytes": 2517880,
+    "archive_sha256": "bbecbc2d04e595e052fbd65964bded58efb08b1bf18bcb7111a3524a55f506e0",
+    "payload_semantic_digest": "df87ec1cae920de0b2091c6bb472929cc3d1e1fa0e2809e9f608fdef6a262d42",
+    "row_count": 4,
+    "expected_grids": [17, 33, 65]
+  },
+  "data_boundary": {
+    "DEVELOPMENT_COEF": "OPEN_IN_K0_SEARCH_OBJECTS_ONLY",
+    "DEVELOPMENT_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "SEALED_FINAL_COEF": "SEALED_COMMITTED_UNOPENED",
+    "SEALED_FINAL_RESPONSE": "SEALED_COMMITTED_UNOPENED",
+    "private_generator_seed_material_persisted_into_active_tree": false,
+    "response_archive_stat_hash_or_extract_in_K0": false,
+    "sealed_archive_stat_hash_or_extract_in_K0": false
+  },
+  "zero_shot_contract": {
+    "same_raw_AST": true,
+    "same_theta": true,
+    "same_deterministic_gauge": true,
+    "theta_refit": false,
+    "AST_refit": false,
+    "branch_reselection": false,
+    "amplitude_compensation": false
+  },
+  "operator_transfer_protocol": {
+    "candidate_cohort": "all 2307 clear S1 branches",
+    "development_field_count": 4,
+    "evaluation_grids": [33, 65],
+    "tau_num": 0.005,
+    "tau_num_role": "ambiguity_only",
+    "relative_grid_discrepancy_definition": "abs(J_G33-J_G65)/max(abs(J_G65),1e-15)",
+    "hard_gate": {
+      "all_DEV_fields_F0_F4_valid": true,
+      "all_required_operator_quantities_resolved": true,
+      "family_ratio_boundary": 0.5,
+      "per_field_ratio_boundary": 1.0,
+      "clear_pass_rule": "value < q*(1-tau_num)",
+      "unresolved_rule": "q*(1-tau_num) <= value <= q*(1+tau_num)",
+      "clear_fail_rule": "value > q*(1+tau_num)",
+      "invalid_F0_F4_is_fail": true,
+      "numerical_unresolved_is_not_fail": true
+    },
+    "fidelity_policy": {
+      "tau_num_may_be_widened_on_DEVELOPMENT": false,
+      "candidate_specific_rescue": false,
+      "automatic_candidate_specific_escalation": false,
+      "if_explicit_fidelity_repair_is_needed": "new preregistered repair; same cohort receives the same added fidelity ladder",
+      "K0_does_not_invent_a_posthoc_unresolved_fraction_trigger": true
+    }
+  },
+  "descriptive_only": [
+    "rho_transfer=(R_DEV/R_TRAIN)",
+    "per-field absolute candidate and identity J",
+    "TRAIN-to-DEV degradation",
+    "PF0 radial/ASP association with transfer"
+  ],
+  "forbidden_membership_or_decision_rules": [
+    "proxy labels",
+    "historical response information",
+    "top-k",
+    "Pareto narrowing",
+    "percentile narrowing",
+    "target survivor count",
+    "PF0/K2B/K2C diagnostic filtering",
+    "candidate-specific hand rules",
+    "response-aware refit"
+  ],
+  "response_stage": {
+    "blocked": true,
+    "DEVELOPMENT_RESPONSE_may_open_in_K0": false,
+    "DEVELOPMENT_RESPONSE_may_open_in_K1": false,
+    "DEVELOPMENT_RESPONSE_may_open_in_K2": false,
+    "next_response_step_requires_explicit_confirmation": "S2-K3_RESPONSE_PROTOCOL_FIDELITY_AND_CONTROL_LOCK"
+  },
+  "runtime_policy": {
+    "heavy_allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "heavy_workers": 16,
+    "BLAS_OpenMP_threads": 1,
+    "K0_parallelism": "single coordinator; K0 is a small transactional opening/lock stage",
+    "K1_progress": "stage,processed/total,current branch/field,elapsed,rate,ETA",
+    "K1_restart_resume": true,
+    "authoritative_data_policy": "K0 opened DEVELOPMENT search objects are extracted once and reused in place by K1/K2; audits never duplicate them"
+  },
+  "next_on_pass": "P13-S2-K1_COMPLETE_ZERO_SHOT_OPERATOR_TRANSFER",
+  "next_on_failure": "BLOCK_P13_S2_AND_REPAIR_K0_PROVENANCE_OR_DATA_BOUNDARY_ONLY"
+}

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ROOT="${1:-$PWD}"
+cd "$ROOT"
+export PYTHONPATH="$ROOT/phases/p13/coefficient_law_raw_xt/src:$ROOT/phases/p11/raw_xt_td/src${PYTHONPATH:+:$PYTHONPATH}"
+python3 -m p13rawxt.s3_k6_final_first_branch_freeze --project-root "$ROOT" --verify-only

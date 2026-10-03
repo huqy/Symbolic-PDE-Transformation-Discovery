@@ -1,0 +1,76 @@
+{
+  "stage": "P13-S2-K4",
+  "purpose": "Open the committed DEVELOPMENT response payload, build candidate-independent original-PDE references, and execute identity + frozen NULL controls before any candidate response campaign.",
+  "k3_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_K3_RUN.txt",
+  "expected_k3_semantic_output_digest": "8e28506f18110efb6f80bea413ec12c481d34c2f5dee21f08973948a26ee2357",
+  "expected_k3_next_action": "P13-S2-K4_DEVELOPMENT_RESPONSE_OPEN_REFERENCE_BANK_CONTROL_FIRST_REQUIRES_POST_K3_USER_REVIEW",
+  "response_eligible_membership": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s2_k0_development_open_20260831T161109Z/K2_III_B_adjudication_response_entry_lock/K2_RESPONSE_ELIGIBLE_PASS_MEMBERSHIP.jsonl",
+    "sha256": "af97feead15e6868da5f9f19c7732dfdb9cf8383ffcdaf43694b9cbbe81601aa",
+    "count": 1955
+  },
+  "pf1_active_input_manifest": {
+    "path": "phases/p13/coefficient_law_raw_xt/runs/p13_s1_formal_search_20260827T200612Z/PF1_final_freeze/PF1_S2_ACTIVE_INPUT_MANIFEST.json",
+    "sha256": "35d81936750448e8047b4a8b8f474379ec7dad3c9b662553073c842df8a3d87a"
+  },
+  "k0_dev_input_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S2_DEVELOPMENT_COEF_INPUT.txt",
+  "case_types": [
+    "u0-global",
+    "u0-local",
+    "v0-global",
+    "v0-local",
+    "forcing-global",
+    "forcing-local",
+    "mixed-global",
+    "mixed-local"
+  ],
+  "absolute_response_gate": 0.15,
+  "reference_uncertainty_ceiling": 0.02,
+  "reference_solver": {
+    "method": "DOP853",
+    "rtol": 5e-12,
+    "atol": 5e-14,
+    "max_step": 0.005,
+    "provenance": "Inherited answer-independent source-domain original-PDE reference settings from the previously qualified P11 S3 reference solver. Formal certification is still determined by the K3-frozen nested self-convergence ladder."
+  },
+  "causal_solver_numerical": {
+    "source_A_tt_positive_floor": 1e-10,
+    "time_step_linear_residual_relative_tolerance": 1e-9,
+    "provenance": "Inherited from the P13 S0 response-blind causal response calibration; the frozen causal core itself is SHA-locked by K3."
+  },
+  "null_control_lock": {
+    "control_id": "S0_FROZEN_COEFFICIENT_BLIND_NULL_CALIBRATION",
+    "structural_hash": "ca7e02f81bbc114404cb24e2afe847059115c9f37c1b7e2f90fd5eac36423002",
+    "theta": [0.0, 0.0, 0.0, 0.005859375, -0.017578125, 0.0, -0.01171875, 0.01171875, 0.005859375, -0.0234375],
+    "refit": false,
+    "membership_authority": "NONE"
+  },
+  "runtime_workers": {
+    "129": 16,
+    "257": 16,
+    "513": 16,
+    "1025": 16,
+    "2049": 8,
+    "4097": 2
+  },
+  "runtime_policy": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "BLAS_OpenMP_threads_per_worker": 1,
+    "restart_resume": true,
+    "reference_arrays_single_authoritative_copy": true,
+    "progress_fields": ["stage", "processed/total", "current field/case/grid", "elapsed", "rate", "ETA"]
+  },
+  "governance": {
+    "candidate_response_executed_in_K4": false,
+    "candidate_membership_changed": false,
+    "top_k_pareto_percentile_target_survivor": false,
+    "proxy_or_PF0_filter": false,
+    "candidate_specific_rescue": false,
+    "response_refit": false,
+    "amplitude_compensation": false,
+    "reference_refinement_trigger": "reference own convergence only",
+    "identity_clear_pass_action": "NONDISCRIMINATIVE_ABSOLUTE_GATE_STOP_BEFORE_K5",
+    "identity_clear_fail_action": "DISCRIMINATIVE_ABSOLUTE_GATE; K5 remains blocked pending post-K4 review",
+    "sealed_remains_unopened": true
+  }
+}

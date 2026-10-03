@@ -1,0 +1,53 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S1-K2A",
+  "protocol_version": "TRAIN_ONLY_FIRST_RUNG_ADJUDICATION_V1",
+  "active_context": "phases/p13/coefficient_law_raw_xt/docs/P13_COMPREHENSIVE_CONTEXT_S1_ENTRY_REVIEW_LOCK_20260827.md",
+  "s1_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_FORMAL_RUN.txt",
+  "k1a_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_K1A_RUN.txt",
+  "k1b_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_K1B_RUN.txt",
+  "paired_seeds": [1, 2, 3, 4],
+  "arms": ["NULL-V2", "FULL-V1", "FULL-V2"],
+  "full_arms": ["FULL-V1", "FULL-V2"],
+  "first_rung_horizon": 8192,
+  "checkpoints": [2048, 4096, 6144, 8192],
+  "tau_num": 0.005,
+  "primary_objective": "J_family=sqrt(mean_i(J_i^2)) over six TRAIN_OPERATOR fields with shared theta",
+  "pairwise_comparisons": [
+    ["FULL-V1", "NULL-V2"],
+    ["FULL-V2", "NULL-V2"],
+    ["FULL-V2", "FULL-V1"]
+  ],
+  "fairness_axes": {
+    "equal_structural_proposals": "frozen checkpoints and terminal 8192 proposal prefix",
+    "equal_evaluator_calls": "per paired seed, chronological prefixes at the largest common cumulative evaluator-call budget across all three arms; descriptive only",
+    "equal_accumulated_CPU": "per paired seed, chronological prefixes at the largest common accumulated worker-CPU budget across all three arms; descriptive only"
+  },
+  "paired_effect_semantics": "ratio below 1-tau_num is clear left-arm advantage; above 1+tau_num is clear right-arm advantage; inside band is TIE_UNRESOLVED; 4/4 same direction=CONSISTENT, 3/4=DIRECTIONAL_UNSTABLE, <=2/4=NO_STABLE_ADVANTAGE",
+  "continuation_rule": {
+    "eligible_arms": ["NULL-V2", "FULL-V2"],
+    "FULL-V1_frozen_at": 8192,
+    "continuation_total_horizon": 32768,
+    "additional_proposals_per_seed_per_eligible_arm": 24576,
+    "requires_no_clear_FULL_operator_qualified_branch": true,
+    "FULL_V2_progress_from": 4096,
+    "FULL_V2_progress_to": 8192,
+    "median_progress_min": 0.10,
+    "requires_integrity_pass": true,
+    "forbidden_decision_inputs": ["J_capacity", "R_att", "F4_yield", "new_qualified_yield", "transfer_diagnostic", "response_outcome", "target_survivor_count"]
+  },
+  "membership_policy": {
+    "complete_F4_branches": true,
+    "no_topk": true,
+    "no_percentile": true,
+    "no_pareto_membership": true,
+    "no_weighted_score_membership": true,
+    "no_target_survivor_count": true,
+    "exact_equivalence_execution_sharing_only": true,
+    "freeze_clear_FULL_membership_only_if_continuation_not_authorized": true
+  },
+  "data_boundary": {
+    "allowed": ["authoritative S1 proposal/branch/skeleton ledgers", "K1A/K1B integrity summaries", "frozen K1 protocol/context locks"],
+    "forbidden": ["OPENED_TRANSFER_DIAGNOSTIC payload/outcomes", "WITHIN_FAMILY_TRANSFER_DIAGNOSTIC payload/outcomes", "DEVELOPMENT", "SEALED", "historical response outcomes", "S0 capacity witness values as decision input"]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "program": "P11-RawXT",
+  "stage": "P11-RawXT-S0-K1",
+  "ontology": {
+    "components": ["X", "T"],
+    "construction_mode": "independent_complete_raw_root_expressions",
+    "forced_root_wrapper": false,
+    "forced_terminal_inclusion": false,
+    "global_baseline": null,
+    "anchored_correction": null,
+    "initial_curve_constraint_in_K1": null,
+    "amplitude": 1
+  },
+  "terminals": [
+    {"kind": "variable", "name": "x", "type": "scalar"},
+    {"kind": "variable", "name": "t", "type": "scalar"},
+    {"kind": "coefficient", "name": "a", "type": "positive_scalar_field"},
+    {"kind": "coefficient", "name": "q", "type": "scalar_field"},
+    {"kind": "integer_constant", "value": -1, "type": "scalar"},
+    {"kind": "integer_constant", "value": 0, "type": "scalar"},
+    {"kind": "integer_constant", "value": 1, "type": "scalar"},
+    {"kind": "parameter", "name_pattern": "theta_<positive_integer>", "type": "real_scalar"}
+  ],
+  "operators": [
+    {"name": "Add", "arity": 2, "commutative": true},
+    {"name": "Sub", "arity": 2, "commutative": false},
+    {"name": "Mul", "arity": 2, "commutative": true},
+    {"name": "Div", "arity": 2, "commutative": false, "domain_rule": "denominator_nonzero_on_formal_domain"},
+    {"name": "Inv", "arity": 1, "domain_rule": "argument_nonzero_on_formal_domain"},
+    {"name": "Sqrt", "arity": 1, "domain_rule": "argument_positive_on_formal_domain"},
+    {"name": "Log", "arity": 1, "domain_rule": "argument_positive_on_formal_domain"},
+    {"name": "PowInt", "arity": 1, "attribute": "exponent", "allowed_exponents": [-3, -2, -1, 2, 3]},
+    {"name": "PowParam", "arity": 2, "second_argument_type": "parameter_terminal", "domain_rule": "base_positive_on_formal_domain"},
+    {"name": "Dx", "arity": 1, "derivative_axis": "x"},
+    {"name": "Dt", "arity": 1, "derivative_axis": "t"}
+  ],
+  "active_caps": {
+    "nodes_X_max": 23,
+    "nodes_T_max": 23,
+    "total_nodes_max": 42,
+    "depth_max": 9,
+    "unique_theta_total_max": 6,
+    "unique_theta_component_max": 4,
+    "theta_occurrences_total_max": 12,
+    "derivative_nesting_max": 1
+  },
+  "cap_ladder": [
+    {"level": "L0_complete_census_fixture", "nodes_component_max": 3, "total_nodes_max": 4, "depth_max": 2, "unique_theta_total_max": 1, "derivative_nesting_max": 0, "formal_search": false},
+    {"level": "L1_formal_initial", "nodes_X_max": 23, "nodes_T_max": 23, "total_nodes_max": 42, "depth_max": 9, "unique_theta_total_max": 6, "unique_theta_component_max": 4, "derivative_nesting_max": 1},
+    {"level": "L2_preregistered_extension", "nodes_X_max": 31, "nodes_T_max": 31, "total_nodes_max": 56, "depth_max": 11, "unique_theta_total_max": 8, "unique_theta_component_max": 5, "derivative_nesting_max": 1},
+    {"level": "L3_requires_new_protocol_confirmation", "nodes_X_max": 41, "nodes_T_max": 41, "total_nodes_max": 72, "depth_max": 13, "unique_theta_total_max": 10, "unique_theta_component_max": 6, "derivative_nesting_max": 2}
+  ],
+  "cap_transition_rule": {
+    "response_outcomes_may_trigger_transition": false,
+    "operator_only_plateau_and_coverage_audit_required": true,
+    "L3_requires_explicit_new_protocol": true
+  },
+  "canonicalization": {
+    "stage": "structural_only_before_K2_gauge",
+    "flatten_associative_Add_Mul": true,
+    "sort_commutative_children_by_canonical_serialization": true,
+    "exact_integer_constant_folding": true,
+    "neutral_element_elimination": true,
+    "Div_rewritten_as_Mul_Inv": true,
+    "Sub_rewritten_as_Add_Neg": true,
+    "parameter_renumber_order": "canonical_preorder_X_then_T",
+    "benchmark_specific_rewrites": false,
+    "translation_gauge_applied": false,
+    "common_scale_gauge_applied": false,
+    "rationalize_fitted_parameters": false
+  },
+  "parameter_identity": {
+    "same_parameter_name_within_pair_means_shared_parameter": true,
+    "canonical_renumbering_is_bijective": true,
+    "unused_parameters_removed_after_structural_reduction": true,
+    "raw_parameter_identity_retained_in_lineage": true,
+    "gauge_null_parameter_detection_deferred_to_K2": true
+  },
+  "known_motif_denylist": [
+    "alpha", "beta", "F_alpha", "F_beta", "x-t", "x+t", "x-c*t", "x+c*t",
+    "x+t*G_X", "t+t*G_T", "characteristic", "travel_time", "liouville",
+    "a^(-1/2)", "a^(-1/4)", "a_t/a", "global_baseline", "anchored_transform"
+  ],
+  "historical_seed_policy": {
+    "P10_candidate_seed_count": 0,
+    "named_initial_population_count": 0,
+    "replacement_subtree_library": null,
+    "low_order_census_may_enter_search_parent_pool": false
+  },
+  "execution": {
+    "formal_search_run": false,
+    "formal_candidate_generation_run": false,
+    "parameter_fitting_run": false,
+    "PDE_solve_run": false
+  }
+}

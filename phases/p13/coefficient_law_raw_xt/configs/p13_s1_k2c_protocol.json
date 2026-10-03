@@ -1,0 +1,142 @@
+{
+  "program": "P13-Constructive-Coefficient-Law-Discovery",
+  "stage": "P13-S1-K2C",
+  "protocol_version": "POST_MEMBERSHIP_THEORY_BRIDGE_V1",
+  "active_context": "phases/p13/coefficient_law_raw_xt/docs/P13_COMPREHENSIVE_CONTEXT_S1_ENTRY_REVIEW_LOCK_20260827.md",
+  "s1_run_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_FORMAL_RUN.txt",
+  "k2b_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S1_K2B_RUN.txt",
+  "k1_open_marker": "phases/p13/coefficient_law_raw_xt/runs/LATEST_P13_S0_K1_RUN.txt",
+  "entry_requires": {
+    "K2B_status": "PASS",
+    "K2B_next_action": "P13-S1-K2C_POST_MEMBERSHIP_THEORY_BRIDGE",
+    "K2A_search_horizon": 8192,
+    "clear_membership_frozen": true
+  },
+  "candidate_cohort": {
+    "include": [
+      "K2A_FROZEN_FULL_CLEAR_MEMBERSHIP",
+      "K2A_FROZEN_FULL_UNRESOLVED_MEMBERSHIP"
+    ],
+    "primary_S2_prediction_population": "K2A_FROZEN_FULL_CLEAR_MEMBERSHIP",
+    "unresolved_role": "mechanism evidence only; remains ineligible for S2 and cannot be rescued by K2C"
+  },
+  "epsilon_scaling": {
+    "TRAIN_shape_source": "six frozen authoritative TRAIN_OPERATOR search-facing coefficient-jet objects; scaled shape is a_eps = a_0.2^(epsilon/0.2) via local Taylor-jet algebra",
+    "epsilon_values": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "neutral_epsilon_auxiliary": 0.0,
+    "grid": 65,
+    "same_AST": true,
+    "same_theta": true,
+    "same_deterministic_gauge": true,
+    "refit": false,
+    "persistent_scaled_coefficient_arrays": false,
+    "reported": [
+      "per-epsilon J_i/J_family/J_max",
+      "relative RMS to identity",
+      "log-slope 0.05->0.10",
+      "log-slope 0.10->0.20",
+      "neutral epsilon=0 auxiliary J when resolved"
+    ],
+    "two_term_Aeps2_Beps_fit": "NOT_USED_IN_V1; avoids overinterpreting a zero-intercept model when a discovered law has a nonzero neutral-medium operator baseline",
+    "claim_boundary": "empirical J_princ amplitude scaling only; no Claim-II coordinate-remainder bound is asserted for J_princ"
+  },
+  "functional_alignment": {
+    "grid": 65,
+    "derivative_estimator": "second-order one-sided derivative at epsilon=0: (-3 Phi(0)+4 Phi(0.05)-Phi(0.10))/(0.10)",
+    "candidate_map": "deterministically gauge-canonicalized discovered X,T; same frozen AST/theta",
+    "require_F4_for_derivative": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "basis_name": "CLAIM_II_M2_FIRST_ORDER_LOCAL_CHARACTERISTIC_JET",
+    "raw_basis": [
+      "B1=(t^2*b_x,0)",
+      "B2=(t^3*b_xt,0)",
+      "B3=(0,t*b)",
+      "B4=(0,t^2*b_t)",
+      "B5=(0,t^3*b_tt)",
+      "B6=(0,t^3*b_xx)"
+    ],
+    "theory_coefficients": [
+      0.25,
+      -0.16666666666666666,
+      0.5,
+      -0.25,
+      0.08333333333333333,
+      0.08333333333333333
+    ],
+    "gauge_linearization": "G(h)_X=h_X-h_X(0,0)-s*x; G(h)_T=h_T-h_T(0,0)-s*t; s=0.5*(h_Xx(0,0)+h_Tt(0,0))",
+    "projection_weighting": "equal weight over six TRAIN shapes and X/T components with tensor-trapezoid source-grid quadrature",
+    "rank_tolerance": "1e-8*sigma_max",
+    "if_nonidentifiable": "ALIGNMENT_UNRESOLVED",
+    "reported": [
+      "fitted six basis coefficients",
+      "basis rank/condition",
+      "projection relative residual",
+      "cosine with Claim-II theory tangent",
+      "theory-tangent relative residual",
+      "theory amplitude coefficient",
+      "relative coefficient error"
+    ],
+    "no_alignment_PASS_FAIL_threshold": true,
+    "membership_authority": false
+  },
+  "deferred_trigger_adjudication": {
+    "PLCP": "NOT_TRIGGERED: K2A route is Pattern A+B, not structural-under-attainment Pattern C",
+    "reverse_fitter_regret": "NOT_TRIGGERED: current route has 2307 clear TRAIN-qualified branches and no fitter-accessibility blocker",
+    "observability": "DEFERRED: no preregistered numeric within-vs-cross divergence threshold exists; do not invent one post hoc. Execute if later S2 operator transfer fails, as already preregistered.",
+    "S2_J_vs_response": "DEFERRED_TO_S2"
+  },
+  "S2_mechanistic_predictions": {
+    "freeze_before_DEVELOPMENT": true,
+    "predictions_are_not_gates": true,
+    "prediction_schema": [
+      "P1_population_operator_advantage: complete clear cohort is predicted to retain a population-level operator advantage over identity on DEVELOPMENT without refit",
+      "P2_transfer_heterogeneity: not every TRAIN-clear branch is predicted to outperform identity on every unseen coefficient",
+      "P3_theory_bridge: stronger small-epsilon/theory-alignment evidence is predicted to associate descriptively with stronger DEVELOPMENT operator transfer, but cannot select candidates",
+      "P4_response_dynamic_range: physical response may be non-discriminating in the weak/local regime; apply preregistered identity+NULL controls and NONDISCRIMINATIVE_ABSOLUTE_GATE semantics"
+    ]
+  },
+  "data_boundary": {
+    "now_allowed": [
+      "TRAIN_OPERATOR authoritative search-facing coefficient-jet arrays",
+      "frozen S1/K2A membership/branch ledgers",
+      "K2B diagnostic summaries as prior-stage mechanism evidence"
+    ],
+    "still_forbidden": [
+      "DEVELOPMENT",
+      "SEALED_FINAL",
+      "response data/outcomes",
+      "historical response outcomes",
+      "candidate refit",
+      "theory/alignment/epsilon-based candidate selection",
+      "new search budget or search-kernel redesign"
+    ]
+  },
+  "membership_governance": {
+    "clear_membership_immutable": true,
+    "unresolved_membership_immutable": true,
+    "K2C_can_add_or_remove_S2_candidates": false,
+    "top_k_forbidden": true,
+    "percentile_forbidden": true,
+    "pareto_membership_forbidden": true,
+    "weighted_score_forbidden": true,
+    "target_survivor_count_forbidden": true,
+    "theory_alignment_filter_forbidden": true,
+    "epsilon_scaling_filter_forbidden": true
+  },
+  "runtime": {
+    "allocation": "17 CPUs = 16 workers + 1 coordinator",
+    "workers": 16,
+    "BLAS_OpenMP_threads": 1,
+    "progress": "processed/total,current branch,elapsed,rate,ETA",
+    "restart": "K2C_work/partial_results.jsonl in the authoritative S1 store; final output is deterministic and work state is removed on PASS"
+  },
+  "next_on_pass": "P13-S1-K3_FORMAL_S1_FREEZE",
+  "next_on_failure": "REPAIR_P13_S1_K2C_IMPLEMENTATION_OR_PROVENANCE_ONLY"
+}
