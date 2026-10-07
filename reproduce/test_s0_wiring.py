@@ -21,7 +21,7 @@ from .verify_baseline import verify
 
 class S0WiringTests(unittest.TestCase):
     def setUp(self):
-        self.tmp=tempfile.TemporaryDirectory(dir=os.environ['P13_PREFLIGHT_TMPDIR']);self.base=Path(self.tmp.name)
+        self.tmp=tempfile.TemporaryDirectory(dir=os.environ.get('P13_PREFLIGHT_TMPDIR'));self.base=Path(self.tmp.name)
         self.root=self.base/'execution';self.project=self.root/'project';self.project.mkdir(parents=True)
         replay=commitment_metadata('fixture-id');write(self.project/'s0_commitment_replay.json',replay)
         write(self.root/'execution_lock.json',{'schema':'P13_S0_EXECUTION_LOCK_V1','execution_id':'fixture-id','source_commit':'fixture-source','source_files':{},'commitment_replay_sha256':file_sha256(self.project/'s0_commitment_replay.json')})

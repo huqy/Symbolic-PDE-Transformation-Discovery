@@ -9,6 +9,12 @@ operator transfer and causal numerical responses. This first release contains th
 frozen P13 first-branch study. It preserves the accepted scientific implementation
 and uses independent public Git history with local SHA-256 authentication.
 
+Use `v1.0.1-paper-submission` for complete reproduction. The immutable v1.0.0
+release has a known S1-to-S2 runtime dependency blocker and an overly strict
+cross-node resume identity. v1.0.1 repairs publication/runtime plumbing only;
+the scientific protocol and all five input archives are unchanged. No heavy
+end-to-end v1.0.1 run has completed yet. See `docs/reproducibility/HOTFIX_V1_0_1.md`.
+
 ## Quick start
 
 Use Linux x86_64, Git, Bash, and the canonical conda-forge environment. The accepted
@@ -19,13 +25,13 @@ The explicit package lock includes build identifiers and hashes.
 ```bash
 git clone https://github.com/huqy/Symbolic-PDE-Transformation-Discovery.git
 cd Symbolic-PDE-Transformation-Discovery
-git checkout v1.0.0-paper-submission
+git checkout v1.0.1-paper-submission
 conda create -n td-repro --file environment/public-release-explicit.txt
 conda activate td-repro
 export PYTHONDONTWRITEBYTECODE=1
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
 python -B -m reproduce.verify_baseline
-python -B -m unittest reproduce.test_public_release reproduce.test_release_integrity -v
+python -B -m unittest discover -s reproduce -t . -p 'test*.py' -v
 python -B -m reproduce.frozen_unit_tests
 ```
 
@@ -56,7 +62,11 @@ bash reproduce/run_public_reproduction.sh --execute --resume --work-root /tmp/td
 
 The coordinator invokes the accepted stage launchers, preserves failure evidence,
 and stops on protocol ambiguity. Resume requires the same source, environment,
-staging identity, and authenticated parent receipts. Do not substitute historical
+staging identity, and authenticated parent receipts. Exact installed conda builds,
+Python/package/OpenBLAS versions and one-thread settings are checked on every
+invocation. Compatible Linux x86_64 scheduler nodes may report different OpenBLAS
+CPU architectures; full runtime observations are recorded for each invocation.
+Start v1.0.1 in a fresh work root; v1.0.0 roots are diagnostic only. Do not substitute historical
 outputs as parents. Use the shell entry points or public coordinator; direct
 `python -m reproduce.s0_launcher` execution is disabled at its obsolete ancestry
 check. `python -m reproduce.release_entry` provides the equivalent public S0 entry.
@@ -101,7 +111,8 @@ interface; S3 atomic marker write permissions. See
 `docs/reproducibility/ENGINEERING_LINEAGE.md`. Local reproduction passed with this
 lineage; byte/mode integrity passed; external claim review passed as CLAIM_COMPATIBLE.
 An independent heavy integrated run from this new public commit has not been
-performed. Integrated orchestration is tested with synthetic control flow only.
+performed. Integrated orchestration has synthetic control-flow tests and lightweight authenticated
+stage-boundary tests. These do not establish heavy end-to-end success.
 
 ## Licenses and citation
 

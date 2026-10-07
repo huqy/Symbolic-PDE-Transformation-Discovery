@@ -149,8 +149,8 @@ class ReleaseTests(unittest.TestCase):
         with patch.object(r,'verify_assets',return_value=v.verify_assets(self.staging,self.assets)):
             with self.assertRaises(ValueError): r.dry_plan(self.work,self.staging,r.STAGES,True,{'synthetic':True})
     def test_canonical_environment_rejects_numeric_drift_and_oversubscription(self):
-        env={'python':'3.10.19','packages':{'numpy':'2.2.6','scipy':'1.15.2','threadpoolctl':'3.6.0'},
-             'threads':dict.fromkeys(r.THREADS,'1'),'threadpools':[{'internal_api':'openblas','version':'0.3.30','num_threads':1}]}
+        from .test_portable_resume import canonical_fixture
+        env=canonical_fixture()
         r.require_canonical(env)
         env['threadpools'][0]['num_threads']=16
         with self.assertRaises(ValueError): r.require_canonical(env)

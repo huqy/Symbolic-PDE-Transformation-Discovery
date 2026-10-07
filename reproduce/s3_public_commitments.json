@@ -1,0 +1,287 @@
+{
+  "commitments": {
+    "coefficient:SEALED_FINAL_COEF": {
+      "archive_bytes": 2503628,
+      "archive_sha256": "a17650bf096a00d5523d82fc71163382c944deed5fd9c6675c839fe919ad16af",
+      "kind": "coefficient",
+      "payload_semantic_digest": "242bc12de28667443833696b7ebdb361c48d3b186b4161d899e5961a5bee269b",
+      "private_payload_copied_into_active_tree": false,
+      "private_seed_material_exposed": false,
+      "public_row_commitments": [
+        {
+          "family": "mixed_plane_tensor_4term",
+          "field_id": "P13_SEALED_FINAL_COEF_01",
+          "generator_semantic_digest": "bd84f4888dd5344b275ced6d4358c69891bfd4cdf275ec81ae334aa0a9294bac",
+          "role": "SEALED_FINAL_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "224ceadf6902a4845c495682d4e67f539edc21348ed595336fb5ee42899f3037",
+              "sha256": "eeef16b6cc38fb1dd2521f2a18a22fda54ca06adbd83e4f8455235823f34936c"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "94cd565257e3a998413629fef7e77f701223f30bf1da5feb98045a4ea80e7541",
+              "sha256": "bd345609d5e31d789c6b1bab745e380516542ac3346d5ca6497f012e67139714"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "33da4da2157af886084fe47b90d92fca19475b50ba8480eaf61686ba9beaa933",
+              "sha256": "314c219e8f3945f0fc6743c12c031642e1a5358c0050a7a76df3c6f807648b3a"
+            }
+          ]
+        },
+        {
+          "family": "mixed_plane_tensor_4term",
+          "field_id": "P13_SEALED_FINAL_COEF_02",
+          "generator_semantic_digest": "1ae2b44ba36cd6a5797de6ae5c141b0a230bb50dba28cddba4b6d758e608bbb5",
+          "role": "SEALED_FINAL_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "22a5325604e789679b9e17723a563310966848eb683f3cf2369c5ec097d82e87",
+              "sha256": "a1fd13376e36d10364578295bcf85e7217332556934840b254f8ff78ab6d5a83"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "6aadb92e69a495225dd56e5ac59548076e90076b234aa2aad1fd02e2bce48e48",
+              "sha256": "ca1b4e2f9538fa5a4be9b118685e66eef8111b06e31ec07208cc18c28cd006fd"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "1e9183d4068eee12dd2f17689612e00d454130a61bf246e2bf80e6e3a9e3d4b3",
+              "sha256": "cfc4b7c40e9ab7a0b623489648fce0e91071141472d3670402ebe60dff4cd3a3"
+            }
+          ]
+        },
+        {
+          "family": "mixed_plane_tensor_4term",
+          "field_id": "P13_SEALED_FINAL_COEF_03",
+          "generator_semantic_digest": "0a4f2d57518a779428cee6bd9ac21d9d9e5d58a69f3f00c40ea7be5d54a2c6dd",
+          "role": "SEALED_FINAL_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "adac2152378afb36bc7d6dc46de4de883cecfbf2ae8dc28e9ab491109cda9a84",
+              "sha256": "d2232c79b152e0901b68e9751bdbce3b8eb9502106eba9c34ebd942738446de4"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "c5c03715196f9120729be2135b91e60f2f5b670cc55ad552f388a01dd414e535",
+              "sha256": "92eb5658bba141386ffdc7bf92fe6d3837b148c8471265ad91a0b5c62e89c127"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "227ea7919fbcfc5c05ba1aacc0ad50ff8096c15e1a462bac78df6c5e0453a465",
+              "sha256": "85edd07b55b7a73b25fcc57c46b1f54f6f4e6e6c431c9f04a976e609841e80c8"
+            }
+          ]
+        },
+        {
+          "family": "mixed_plane_tensor_4term",
+          "field_id": "P13_SEALED_FINAL_COEF_04",
+          "generator_semantic_digest": "60b1ff5ed0885b0d4ac393afcb9101d677272af0835878c5de3e47e6351434a3",
+          "role": "SEALED_FINAL_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "c4bae63fe6d9eaad1a47037c8e797448968f45b6dcd5e86964327829b9b914f1",
+              "sha256": "be90d2513c365180c2acfc2303c53a3e17637d50269782c90b497e461e833b44"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "f527eaaa7009e870ebbc231c9202a717cf58a69b7641b6398aa5d5b20b62de33",
+              "sha256": "ce33ce7126a255f80791f78174b2710f74719bd32d108aae2c4808d3126627f1"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "74f0ecd7d1f5eefc8931a82775082d1bee9494f4bd11958d664ba2877255937d",
+              "sha256": "7a8fbcc62915cf532ccbf2b4ee21b7c79bf48d6a92730326dbe30f9f0cab1f8b"
+            }
+          ]
+        }
+      ],
+      "role": "SEALED_FINAL_COEF",
+      "row_count": 4
+    },
+    "response:SEALED_FINAL_COEF": {
+      "archive_bytes": 2772,
+      "archive_sha256": "0b3df73bda831a3217a3f4228d3761b449188cebecf00ac23afc40b225006a37",
+      "kind": "response",
+      "payload_semantic_digest": "feaad2e77ee683683787b3230d81b11008b0d41c2995c404741d49c31a2ca946",
+      "private_payload_copied_into_active_tree": false,
+      "private_seed_material_exposed": false,
+      "public_row_commitments": [
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_SEALED_FINAL_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_SEALED_FINAL_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_SEALED_FINAL_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_SEALED_FINAL_COEF_04"
+        }
+      ],
+      "role": "SEALED_FINAL_COEF",
+      "row_count": 32
+    }
+  },
+  "provenance": {
+    "capsule_sha256": "307a454173dfcb79d1150187d622053f42df5317d0688e6f0e4a22126fce2fa4",
+    "member": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/private_payload_commitments.json",
+    "member_sha256": "76cd1449a5a54947c3b619379378e64b8adb9dc95257c65524b649063124aad7",
+    "private_payload_opened": false
+  },
+  "schema": "P13_S3_PUBLIC_COMMITMENT_METADATA_V1"
+}

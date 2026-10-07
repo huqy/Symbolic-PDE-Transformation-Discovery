@@ -1,6 +1,6 @@
 # Archival release
 
-The paper-associated release tag `v1.0.0-paper-submission` is immutable. Archive its
+The paper-associated release tag `v1.0.1-paper-submission` is immutable. Archive its
 exact code and five licensed input assets in Zenodo or an equivalent persistent
 research repository later. Review archived file hashes and license metadata, then
 add the assigned DOI to README, accurate citation metadata, and the manuscript

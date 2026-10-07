@@ -1,0 +1,287 @@
+{
+  "commitments": {
+    "coefficient:DEVELOPMENT_COEF": {
+      "archive_bytes": 2517880,
+      "archive_sha256": "bbecbc2d04e595e052fbd65964bded58efb08b1bf18bcb7111a3524a55f506e0",
+      "kind": "coefficient",
+      "payload_semantic_digest": "df87ec1cae920de0b2091c6bb472929cc3d1e1fa0e2809e9f608fdef6a262d42",
+      "private_payload_copied_into_active_tree": false,
+      "private_seed_material_exposed": false,
+      "public_row_commitments": [
+        {
+          "family": "tensor_product_trig_3term",
+          "field_id": "P13_DEVELOPMENT_COEF_01",
+          "generator_semantic_digest": "03b9d15f3de521b03963519ce5c9d79d17f6ea7b0d56c693c54f0c896572eaca",
+          "role": "DEVELOPMENT_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "922e250cda3634ffa30e2cdb065a01f04f1afaeeb2caf6b66776edccc3f44b1c",
+              "sha256": "647aa295a5f7a50041cd16089d8cb923cff930b1b84c07cb2a36f3a876c526ab"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "b063a3c258084d9d27d9b0724bac533a259167af49e74868ee6babea443c0ec4",
+              "sha256": "daa18c4118fe45a3107e6cc0df90edfa0d1b322e3479b4308d93edc3ab6039c1"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "4bc51d5dcbb832762a1486a376845a3891f743723c51903e10735e67bd2ed4fa",
+              "sha256": "c739efb8ae4b6488c2e7a82ea409b922322aaef7412285b4b988a2c6a87a63e4"
+            }
+          ]
+        },
+        {
+          "family": "tensor_product_trig_3term",
+          "field_id": "P13_DEVELOPMENT_COEF_02",
+          "generator_semantic_digest": "4afae49ee386ec3536d8a6cde1623730b88e953ced276240d931cd57846d5a7c",
+          "role": "DEVELOPMENT_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "a3ea30653299f175d0b3de5dc42ccd7d94da5e269870ed8f55d6d69aaee45ed7",
+              "sha256": "b6d243b03940ea8f2be6a31e19f1edf8032141b029f3f64fdade294470e9decf"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "9a9e2b834a39f3449a195c40556467ada18ffaec0c0ba42eed4949d4938593c0",
+              "sha256": "3d4fe8f4e50a2215bf03d10680e6335e3b16124e53e5ae4915208ee8d6318efc"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "e2ed465364870e2bd67ebb790bac2a68246f2221a69e5cfcf1b1d459e09762a8",
+              "sha256": "4c512f1780ea53eea3cbd9d457e8c4f05541d9b46f9b740e0c6ccaf560ba9a9a"
+            }
+          ]
+        },
+        {
+          "family": "tensor_product_trig_3term",
+          "field_id": "P13_DEVELOPMENT_COEF_03",
+          "generator_semantic_digest": "85f8303fed66f5f3ff6aa49359238c16ae43af243b296a504e24a5ce9080d435",
+          "role": "DEVELOPMENT_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "6bcae59e9b9946c1bf383492bc88ee24a8666d3ff374d93c7c2962bb4152037c",
+              "sha256": "0297896a92919108ff5cb96c8738ec2ef36e6d7a483604820e7c753481ce534d"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "faa226dfbc7f0efa0bfcb4b34220ef15f94d78aacc17ed31033d691941192adc",
+              "sha256": "1e69dc52ed00263f0cf17b437e7b6a87b550af32a3685dd1af21eb7474e80f6b"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "357031832166c17c16fd76d36484b957b13b4a2dcda335a68e2b3d00c1ea321a",
+              "sha256": "a999c92791765de3851a3426a68cd201c9c270d9f451704793cbdb2120462a73"
+            }
+          ]
+        },
+        {
+          "family": "tensor_product_trig_3term",
+          "field_id": "P13_DEVELOPMENT_COEF_04",
+          "generator_semantic_digest": "6276e905220bd1d53d214f31645dadb8f7fb851bcf09f7280ad9987796d289be",
+          "role": "DEVELOPMENT_COEF",
+          "search_object_commitments": [
+            {
+              "grid": 17,
+              "semantic_digest": "e5bfc3253631abd14ce5ba10f945d830d237cd652c1a1d0de7af386534793053",
+              "sha256": "b6865a4db44267e0144f8a64bf06958ce2a9e529b07b58f7ae0ec027f5141b98"
+            },
+            {
+              "grid": 33,
+              "semantic_digest": "156209eb8a4980cf374a5b11068fa95d4411da859dbe979ae3e5c1e628450ce9",
+              "sha256": "abeb8329db713111f0bd81ed3758d7fb9fa9247c1e5a12c2a30080058c188119"
+            },
+            {
+              "grid": 65,
+              "semantic_digest": "490ca1a3316e081464d1c9a362620c1ec089a5899488282ad7a8a9228d1d0f30",
+              "sha256": "15bc86a8bdd492d315a6885a5e99f7bab88664e155e2a9b3af429541580d46d6"
+            }
+          ]
+        }
+      ],
+      "role": "DEVELOPMENT_COEF",
+      "row_count": 4
+    },
+    "response:DEVELOPMENT_COEF": {
+      "archive_bytes": 2724,
+      "archive_sha256": "6ad783f8cd392e3bb389cf2499fb17991dc9ae6122706e4e6b23a61c23ebaf89",
+      "kind": "response",
+      "payload_semantic_digest": "2230db4f1b15071c49fc4be77696dff5b61bd4530950c2582101adaa5b3bf27d",
+      "private_payload_copied_into_active_tree": false,
+      "private_seed_material_exposed": false,
+      "public_row_commitments": [
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_DEVELOPMENT_COEF_01"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_DEVELOPMENT_COEF_02"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_DEVELOPMENT_COEF_03"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "u0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-global",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "v0-local",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-global",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "forcing-local",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-global",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        },
+        {
+          "boundary_condition": "homogeneous_dirichlet",
+          "case_type": "mixed-local",
+          "field_id": "P13_DEVELOPMENT_COEF_04"
+        }
+      ],
+      "role": "DEVELOPMENT_COEF",
+      "row_count": 32
+    }
+  },
+  "provenance": {
+    "capsule_sha256": "307a454173dfcb79d1150187d622053f42df5317d0688e6f0e4a22126fce2fa4",
+    "member": "phases/p13/coefficient_law_raw_xt/runs/p13_s0_k1_commit_20260826T170957Z/private_payload_commitments.json",
+    "member_sha256": "76cd1449a5a54947c3b619379378e64b8adb9dc95257c65524b649063124aad7",
+    "private_payload_opened": false
+  },
+  "schema": "P13_S2_PUBLIC_COMMITMENT_METADATA_V1"
+}

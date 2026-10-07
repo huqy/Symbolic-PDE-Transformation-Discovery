@@ -12,7 +12,7 @@
       "mode": 420,
       "path": "CITATION.md",
       "role": "publication_administration",
-      "sha256": "feecbfdbd9b643dbc0270a664ce16e942be26a995447c7a0e03d29460fea132d"
+      "sha256": "3761adf6abb8960f0aeaf6edff7c9d74d0a4aa5f694ae76ed4b471c1b5f9962d"
     },
     {
       "bytes": 1533,
@@ -29,18 +29,18 @@
       "sha256": "3e7e97eacea5099adfa89059357cff1633a70bb8d376831bf007d6a81f113171"
     },
     {
-      "bytes": 5891,
+      "bytes": 6693,
       "mode": 420,
       "path": "README.md",
       "role": "publication_administration",
-      "sha256": "c827d939422106adf1fa956608428a802e48cfea9974d16a08d734eedd9bb822"
+      "sha256": "5820926eef71c7894d193698fc4f2d1fe66e87256e81db3d5c5eb111e167cecc"
     },
     {
       "bytes": 550,
       "mode": 420,
       "path": "docs/ARCHIVAL_RELEASE.md",
       "role": "publication_administration",
-      "sha256": "d80aa92261ae8aaa4bdf25901d93acefb46554b23dcded0bf93e420c59238c60"
+      "sha256": "4c9b841d3ac03ce2edf6633a6400869be3f7dab26b722df636823e5654b4c549"
     },
     {
       "bytes": 1596,
@@ -48,6 +48,13 @@
       "path": "docs/reproducibility/ENGINEERING_LINEAGE.md",
       "role": "publication_administration",
       "sha256": "3670643d1130f1f213f0292b69e597b28878fcc6f2a56600d196c92085726395"
+    },
+    {
+      "bytes": 2008,
+      "mode": 420,
+      "path": "docs/reproducibility/HOTFIX_V1_0_1.md",
+      "role": "publication_administration",
+      "sha256": "49c192ffb32af5ae1ae2189c62cfb6278b5b99230f612c7dbb969c25630588b7"
     },
     {
       "bytes": 2231,
@@ -1436,6 +1443,13 @@
       "sha256": "b0640f9bd0362b094a6ceb0aede605fa690b4fba569c992d559c1f8c0714364e"
     },
     {
+      "bytes": 36370,
+      "mode": 420,
+      "path": "reproduce/RUNTIME_DEPENDENCIES.json",
+      "role": "publication_administration",
+      "sha256": "b9362c8e1da16ff86e71475e7b2dc74e9a107a60d8069dbd732ef647c7a76ff0"
+    },
+    {
       "bytes": 125,
       "mode": 420,
       "path": "reproduce/__init__.py",
@@ -1448,6 +1462,13 @@
       "path": "reproduce/_entry.sh",
       "role": "publication_administration",
       "sha256": "256f5a7ff8fe0d9ab105d7a391eb53bb3640e500cff2681b465a8d788ae51c29"
+    },
+    {
+      "bytes": 4624,
+      "mode": 420,
+      "path": "reproduce/boundary_fixture.py",
+      "role": "publication_administration",
+      "sha256": "8dd2c207e42550922f48408e81a27b8b139283ba808f7851ee73ba57a8debaaa"
     },
     {
       "bytes": 1937,
@@ -1471,11 +1492,11 @@
       "sha256": "7aa0b5df4c89a60e819760edcddf84b28432b95493e7bdf90c6d8925de8c0f9d"
     },
     {
-      "bytes": 12612,
+      "bytes": 15024,
       "mode": 420,
       "path": "reproduce/public_runner.py",
       "role": "publication_administration",
-      "sha256": "23fb8e9b16c45bccc68e10a865ead590c7eb0003a40c7241255dd2599fd56633"
+      "sha256": "46911a49a626095c8f98b83d86a5d19549ee3c1fc75d5a83db71d51e27827bb3"
     },
     {
       "bytes": 3033,
@@ -1499,11 +1520,11 @@
       "sha256": "6a511d08bbadc9827bbac16c4310e2d6180380176318225602f8478f4e49b1e7"
     },
     {
-      "bytes": 3433,
+      "bytes": 3580,
       "mode": 420,
       "path": "reproduce/release_integrity.py",
       "role": "publication_administration",
-      "sha256": "093a7c6c3ba7584d56cadf87a6da4e63532acf1bb1fbb08d28f2441f74d891d7"
+      "sha256": "ed1b10620a8cbd504481052f83c88ea455f82fb52d3f071e86b1d4a043b29181"
     },
     {
       "bytes": 4162,
@@ -1546,6 +1567,13 @@
       "path": "reproduce/run_s3.sh",
       "role": "scientific_frozen",
       "sha256": "72c756aa188107712599707d707cf80781fc69c2cc8f6be906a594ad39c16b0a"
+    },
+    {
+      "bytes": 2775,
+      "mode": 420,
+      "path": "reproduce/runtime_dependencies.py",
+      "role": "publication_administration",
+      "sha256": "693f3f398c98d4d3e033c9c428e076bcc03504bf967d9f37d6487016f38b1f8c"
     },
     {
       "bytes": 505,
@@ -1730,6 +1758,13 @@
       "sha256": "be91070bd0b569f56bb4b6277c9f571d168930640241828934f85fe591aca3a7"
     },
     {
+      "bytes": 10887,
+      "mode": 420,
+      "path": "reproduce/s2_public_commitments.json",
+      "role": "publication_administration",
+      "sha256": "d13c864ca93c68181c08803f125ac94572082dc942ad38f85810b2e0dc148cbf"
+    },
+    {
       "bytes": 31998,
       "mode": 420,
       "path": "reproduce/s2_step.py",
@@ -1772,6 +1807,13 @@
       "sha256": "f351478b2fec4a91120ddd7192c7c6ae83b017c74b12b45cb7f900ee1a5e0772"
     },
     {
+      "bytes": 10927,
+      "mode": 420,
+      "path": "reproduce/s3_public_commitments.json",
+      "role": "publication_administration",
+      "sha256": "7b422ffae54feea5eb7a6ee8ec06f7b396b5ce99bf5eb2cfc6ac8e1cbfb50a53"
+    },
+    {
       "bytes": 39148,
       "mode": 420,
       "path": "reproduce/s3_step.py",
@@ -1793,11 +1835,18 @@
       "sha256": "eee9505bab5ae1871a6a017fd25f9ea258e455f3b4643e95d3dc82eb4ed561c0"
     },
     {
-      "bytes": 12563,
+      "bytes": 4478,
+      "mode": 420,
+      "path": "reproduce/test_portable_resume.py",
+      "role": "publication_administration",
+      "sha256": "89af664308bce3b65f4d66c12d40daf0336f5a52b936506e1da9497ccf167355"
+    },
+    {
+      "bytes": 12420,
       "mode": 420,
       "path": "reproduce/test_public_release.py",
       "role": "publication_administration",
-      "sha256": "1d0f8908f2effb4d1838df1faa57a863d0dd1e2b234f5c35033e27a0a061d4bd"
+      "sha256": "663f4c7a89633785a3f6d7b11bbc96725f0e4f70a6808a80b56526f26a4ed37e"
     },
     {
       "bytes": 6670,
@@ -1807,18 +1856,25 @@
       "sha256": "ebac6641cb0db59f864261548d5d8fbae5244d7503984b260d907276911df60e"
     },
     {
-      "bytes": 5001,
+      "bytes": 6270,
+      "mode": 420,
+      "path": "reproduce/test_runtime_closure.py",
+      "role": "publication_administration",
+      "sha256": "624410aec5e547c4010a28a11f1a072f42e4ba0e8b36f11574175effbd92e4db"
+    },
+    {
+      "bytes": 5005,
       "mode": 420,
       "path": "reproduce/test_s0_dispatch.py",
       "role": "publication_administration",
-      "sha256": "64a41253865d8efb38e42812be477dd89fd0dfdb10c4d0390e7af238a76ab41e"
+      "sha256": "87a4e65d761c83bfc731c503a5a80e08f07b80e53799d1691890fd31ab27aacb"
     },
     {
-      "bytes": 13202,
+      "bytes": 13206,
       "mode": 420,
       "path": "reproduce/test_s0_wiring.py",
       "role": "publication_administration",
-      "sha256": "d1f9787b0d92cb875966e8734226d75b212496ef550ad021b7245d9ff5ffd1a7"
+      "sha256": "2a091d16c533d374f3359f92221b849c47f0018c082c5a64a4e46419cc9112ba"
     },
     {
       "bytes": 33439,

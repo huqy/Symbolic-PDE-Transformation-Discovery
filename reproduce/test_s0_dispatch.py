@@ -13,7 +13,7 @@ from .s0_step import dispatch_module
 
 class DispatchTests(unittest.TestCase):
     def setUp(self):
-        self.tmp=tempfile.TemporaryDirectory(dir=os.environ['P13_PREFLIGHT_TMPDIR'])
+        self.tmp=tempfile.TemporaryDirectory(dir=os.environ.get('P13_PREFLIGHT_TMPDIR'))
         self.base=Path(self.tmp.name);self.project=self.base/'execution/project'
         self.project.mkdir(parents=True)
         shutil.copytree(SOURCE_ROOT/'reproduce',self.project/'reproduce',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))

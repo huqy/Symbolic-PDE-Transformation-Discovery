@@ -31,6 +31,8 @@ def verify(root=SOURCE_ROOT):
             raise ValueError('release source drift: '+r['path'])
         if (p.stat().st_mode & 0o777) != r['mode']:
             raise ValueError('release source mode drift: '+r['path'])
+    from .runtime_dependencies import audit
+    if audit(root)['status']!='PASS': raise ValueError('incomplete public runtime dependency closure')
     return {'status':'PASS', 'verification_mode':'RELEASE_LOCAL_EXACT_SHA256',
             'protected_scientific_files':len(scientific), 'release_files':len(rows),
             'release_semantic_digest':digest(scientific), 'scientific_files_changed':0,
