@@ -29,11 +29,11 @@
       "sha256": "3e7e97eacea5099adfa89059357cff1633a70bb8d376831bf007d6a81f113171"
     },
     {
-      "bytes": 6693,
+      "bytes": 7538,
       "mode": 420,
       "path": "README.md",
       "role": "publication_administration",
-      "sha256": "5820926eef71c7894d193698fc4f2d1fe66e87256e81db3d5c5eb111e167cecc"
+      "sha256": "84fe5a51f440336b02f2be95df7c2e69db29b4ab3683101f45017c46859c4550"
     },
     {
       "bytes": 550,
@@ -48,6 +48,13 @@
       "path": "docs/reproducibility/ENGINEERING_LINEAGE.md",
       "role": "publication_administration",
       "sha256": "3670643d1130f1f213f0292b69e597b28878fcc6f2a56600d196c92085726395"
+    },
+    {
+      "bytes": 3328,
+      "mode": 420,
+      "path": "docs/reproducibility/HISTORICAL_REPLAY_BRANCH_B.md",
+      "role": "publication_administration",
+      "sha256": "09c83a76fa446bf4c8035df6c2ff1529bf13c65a16be2448c5fbed3cd64b3703"
     },
     {
       "bytes": 2008,
@@ -1422,6 +1429,13 @@
       "sha256": "0983fd576f24a011e36a0e99bc248224ab0f814441e7cadd5ed78c1127c5e24d"
     },
     {
+      "bytes": 1160,
+      "mode": 420,
+      "path": "reproduce/HISTORICAL_REPLAY_POLICY.json",
+      "role": "publication_administration",
+      "sha256": "a1a30ce63f65d23bd1130a5702e8af7a2d7a5889bc7466228d5f0c38575f4409"
+    },
+    {
       "bytes": 5100,
       "mode": 420,
       "path": "reproduce/PUBLIC_INPUT_MANIFEST.json",
@@ -1492,11 +1506,18 @@
       "sha256": "7aa0b5df4c89a60e819760edcddf84b28432b95493e7bdf90c6d8925de8c0f9d"
     },
     {
-      "bytes": 15024,
+      "bytes": 10657,
+      "mode": 420,
+      "path": "reproduce/historical_replay.py",
+      "role": "publication_administration",
+      "sha256": "95940ca73d14d54df0bb96915952ba703d4081c11829396cba824120309ca212"
+    },
+    {
+      "bytes": 16846,
       "mode": 420,
       "path": "reproduce/public_runner.py",
       "role": "publication_administration",
-      "sha256": "46911a49a626095c8f98b83d86a5d19549ee3c1fc75d5a83db71d51e27827bb3"
+      "sha256": "f67cf0ba75bddfa16f735dd43c3de6c706f424ac119fa33c1a056dd88b8a3544"
     },
     {
       "bytes": 3033,
@@ -1525,6 +1546,13 @@
       "path": "reproduce/release_integrity.py",
       "role": "publication_administration",
       "sha256": "ed1b10620a8cbd504481052f83c88ea455f82fb52d3f071e86b1d4a043b29181"
+    },
+    {
+      "bytes": 7299,
+      "mode": 420,
+      "path": "reproduce/replay_boundary_fixture.py",
+      "role": "publication_administration",
+      "sha256": "727e57968cd8427443c5551fbabad0cd3740576a554af73ff42126c0f78ec8c4"
     },
     {
       "bytes": 4162,
@@ -1835,6 +1863,13 @@
       "sha256": "eee9505bab5ae1871a6a017fd25f9ea258e455f3b4643e95d3dc82eb4ed561c0"
     },
     {
+      "bytes": 11860,
+      "mode": 420,
+      "path": "reproduce/test_historical_replay.py",
+      "role": "publication_administration",
+      "sha256": "93396f39712ae60eaef0af273bdaf4a3f249c4ca31b091a3a645869f18a2b4dd"
+    },
+    {
       "bytes": 4478,
       "mode": 420,
       "path": "reproduce/test_portable_resume.py",
@@ -1842,11 +1877,11 @@
       "sha256": "89af664308bce3b65f4d66c12d40daf0336f5a52b936506e1da9497ccf167355"
     },
     {
-      "bytes": 12420,
+      "bytes": 12620,
       "mode": 420,
       "path": "reproduce/test_public_release.py",
       "role": "publication_administration",
-      "sha256": "663f4c7a89633785a3f6d7b11bbc96725f0e4f70a6808a80b56526f26a4ed37e"
+      "sha256": "f28ad0d3b684b5489cdd136ef7764d32c0b16021399999a7927befb2024cf983"
     },
     {
       "bytes": 6670,

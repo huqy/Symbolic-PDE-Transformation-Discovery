@@ -15,6 +15,7 @@ from .release_integrity import source_identity, source_clean, verify as verify_r
 from .s0_contract import load, write
 from .s0_launcher import check_execution_root, check_source, git
 from .verify_public_assets import verify_assets, no_symlinks
+from . import historical_replay as replay
 
 STAGES = ('S0','S1','S2','S3')
 FINAL = {'S0':'K3','S1':'PF1','S2':'K7','S3':'K6'}
@@ -72,8 +73,9 @@ def resume_fingerprint(env):
             **{k:env[k] for k in ('python','packages','builds','system','machine','threads','canonical_lock_sha256')},
             'threadpools':sorted(pools,key=lambda p:json.dumps(p,sort_keys=True))}
 
-def execution_identity(work, staging, env, assets, source=None):
-    return {'source_commit':source or source_identity(), 'environment':resume_fingerprint(env),
+def execution_identity(work, staging, env, assets, source=None, authorize_historical_sealed_replay=False):
+    source = source or source_identity()
+    return {'source_commit':source, 'historical_replay_authorization':replay.authorization(source,authorize_historical_sealed_replay), 'environment':resume_fingerprint(env),
             'work_root':str(work), 'staging_root':str(staging), 'asset_verification':assets,
             'asset_manifest_sha256':file_sha256(SOURCE_ROOT/'reproduce/PUBLIC_RELEASE_ASSETS.json')}
 
@@ -87,8 +89,9 @@ def command(stage, work, staging, execute=False, resume=False):
 
 def selected(stage): return STAGES if stage=='all' else (stage,)
 
-def boundary(stage, work, source):
+def boundary(stage, work, source, replay_authorization=None):
     """Delegate receipt authentication to unchanged stage contracts; inspect metadata."""
+    readiness = None
     root=work/stage; project=root/'project'
     if stage=='S0':
         from .s0_contract import context, parent
@@ -110,15 +113,21 @@ def boundary(stage, work, source):
             if s['OVERALL_STATUS']!='PASS' or s.get('stop_reason'):
                 raise ProtocolStop(stage+' '+step+' protocol stop: '+str(s.get('stop_reason',s['OVERALL_STATUS'])))
         evidence=s.get('claim_contract_evidence',{})
-        if evidence.get('status')!='CLAIM_COMPATIBLE_CANDIDATE':
+        if stage=='S2':
+            readiness = replay.readiness(work,source)
+            if replay_authorization is not None:
+                replay.require_authorization(replay_authorization,source,readiness)
+        elif evidence.get('status')!='CLAIM_COMPATIBLE_CANDIDATE':
             raise ProtocolStop(stage+' claim evidence requires external review: '+str(evidence.get('status')))
     if ctx['source_commit']!=source: raise ValueError('stage source commit differs from integrated source')
     if stage!='S0':
         prior=STAGES[STAGES.index(stage)-1]; header=ctx[prior.lower()]
         if Path(header['root'])!=work/prior: raise ValueError('historical/external generated parent refused')
     path=root/'receipts'/(FINAL[stage]+'.json')
-    return {'execution_id':ctx['execution_id'],'receipt':str(path),'sha256':file_sha256(path),
-            'receipt_digest':r.get('digest',r.get('receipt_digest'))}
+    pin = {'execution_id':ctx['execution_id'],'receipt':str(path),'sha256':file_sha256(path),
+           'receipt_digest':r.get('digest',r.get('receipt_digest'))}
+    if readiness is not None: pin['readiness'] = readiness
+    return pin
 
 def launch(cmd):
     env=os.environ.copy(); env['P13_PYTHON']=sys.executable
@@ -133,18 +142,21 @@ def launch(cmd):
 
 def orchestrate(work, staging, stages, resume, identity, launch_child=launch, check_boundary=boundary, runtime_observation=None):
     """Persist identity first; completed stages reauthenticate, incomplete stages resume."""
+    auth=identity.get('historical_replay_authorization')
+    if auth != replay.authorization(identity['source_commit'],auth.get('opt_in',False) if isinstance(auth,dict) else False):
+        raise ValueError('missing/altered preregistered replay identity')
     path=work/LOCK_NAME
     no_symlinks(path)
     if work.exists():
         if not resume: raise FileExistsError('existing integrated root requires --resume')
         if not path.is_file(): raise ValueError('root lacks integrated lock; historical output fallback forbidden')
         state=load(path)
-        if state.get('schema')!='P13_PUBLIC_EXECUTION_V2': raise ValueError('legacy execution diagnostic only; start a clean v1.0.1 run')
+        if state.get('schema')!='P13_PUBLIC_EXECUTION_V3': raise ValueError('legacy execution diagnostic only; start a clean v1.0.2 run')
         if state['identity']!=identity: raise ValueError('source/environment/input drift on resume')
     else:
         if stages[0]!='S0': raise ValueError('start S0 in a fresh integrated root before later stages')
         if resume: raise ValueError('--resume requires an existing integrated root')
-        work.mkdir(parents=True); state={'schema':'P13_PUBLIC_EXECUTION_V2','identity':identity,'completed':{},'events':[]}
+        work.mkdir(parents=True); state={'schema':'P13_PUBLIC_EXECUTION_V3','identity':identity,'completed':{},'events':[]}
         write(path,state)
     no_symlinks(path)
     for stage in stages[:1]:
@@ -172,6 +184,14 @@ def coordinate(work,staging,stages,state,path,launch_child,check_boundary,runtim
                 prior=STAGES[index-1]
                 if prior not in state['completed'] or check_boundary(prior,work,state['identity']['source_commit'])!=state['completed'][prior]:
                     raise ValueError('fresh parent incomplete or changed')
+            if stage=='S3':
+                try:
+                    decision=replay.require_authorization(state['identity']['historical_replay_authorization'],state['identity']['source_commit'],state['completed']['S2'].get('readiness'))
+                except replay.AuthorizationStop as exc:
+                    state['events'].append({'stage':'S3','status':'AUTHORIZATION_STOP','reason':str(exc)})
+                    write(path,state); raise
+                state['events'].append({'stage':'S2_TO_S3','status':'BOUNDARY_AUTHORIZED',**decision})
+                write(path,state)
             if stage in state['completed']:
                 if check_boundary(stage,work,state['identity']['source_commit'])!=state['completed'][stage]: raise ValueError('completed receipt changed')
                 print('[PUBLIC] verified; skip '+stage,flush=True); continue
@@ -196,8 +216,8 @@ def dry_plan(work, staging, stages, resume, env):
         no_symlinks(work/LOCK_NAME)
         if not resume or not (work/LOCK_NAME).is_file(): raise ValueError('existing root requires --resume and integrated lock')
         state=load(work/LOCK_NAME); identity=state['identity']
-        if state.get('schema')!='P13_PUBLIC_EXECUTION_V2': raise ValueError('legacy execution diagnostic only; start a clean v1.0.1 run')
-        if identity!=execution_identity(work,staging,env,assets):
+        if state.get('schema')!='P13_PUBLIC_EXECUTION_V3': raise ValueError('legacy execution diagnostic only; start a clean v1.0.2 run')
+        if identity!=execution_identity(work,staging,env,assets,authorize_historical_sealed_replay=identity.get('historical_replay_authorization',{}).get('opt_in',False)):
             raise ValueError('source/environment/input drift on resume dry-run')
         for pin in state['completed'].values():
             path=Path(pin['receipt']); no_symlinks(path)
@@ -218,14 +238,16 @@ def main():
     g.add_argument('--dry-run',action='store_true'); g.add_argument('--execute',action='store_true')
     p.add_argument('--work-root',type=Path,required=True); p.add_argument('--staging-root',type=Path,required=True)
     p.add_argument('--stage',choices=('all',)+STAGES,default='all'); p.add_argument('--resume',action='store_true')
+    p.add_argument('--authorize-historical-sealed-replay',action='store_true',help='Preregister historical-only SEALED replay consent before S0; preserve exactly on resume')
     a=p.parse_args()
     try:
+        if a.dry_run and a.authorize_historical_sealed_replay: raise ValueError('replay opt-in is supported only with --execute')
         work,staging=roots(a.work_root,a.staging_root); env=runtime(); require_canonical(env); stages=selected(a.stage)
         if a.dry_run: report=dry_plan(work,staging,stages,a.resume,env)
         else:
             source,files,baseline=check_source(); assets=verify_assets(staging)
             if assets['status']!='PASS': raise ValueError('five exact staged archives required; no download/substitution')
-            identity=execution_identity(work,staging,env,assets,source)
+            identity=execution_identity(work,staging,env,assets,source,a.authorize_historical_sealed_replay)
             signal.signal(signal.SIGTERM,lambda sig,frame: (_ for _ in ()).throw(KeyboardInterrupt()))
             report=orchestrate(work,staging,stages,a.resume,identity,runtime_observation=env)
         print(json.dumps(report,indent=2,sort_keys=True)); return 0

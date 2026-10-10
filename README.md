@@ -9,11 +9,19 @@ operator transfer and causal numerical responses. This first release contains th
 frozen P13 first-branch study. It preserves the accepted scientific implementation
 and uses independent public Git history with local SHA-256 authentication.
 
-Use `v1.0.1-paper-submission` for complete reproduction. The immutable v1.0.0
-release has a known S1-to-S2 runtime dependency blocker and an overly strict
-cross-node resume identity. v1.0.1 repairs publication/runtime plumbing only;
-the scientific protocol and all five input archives are unchanged. No heavy
-end-to-end v1.0.1 run has completed yet. See `docs/reproducibility/HOTFIX_V1_0_1.md`.
+Use `v1.0.2-paper-submission` for the explicitly approved historical SEALED replay
+continuation policy B. Read [the additive policy declaration](docs/reproducibility/HISTORICAL_REPLAY_BRANCH_B.md)
+before execution. Opt in before S0 with `--authorize-historical-sealed-replay`
+and retain that flag on every resume. All five public frozen inputs were already
+opened in historical development; this is historical replay, not prospective
+holdout validation. Frozen science, gates, membership, fidelity and assets remain
+unchanged. R-C still requires external post-run audit. No heavy v1.0.2 S0-to-S3
+run has been performed; external patch audit precedes a fresh manual heavy run.
+
+The immutable v1.0.0 has an S1-to-S2 dependency blocker and strict cross-node
+resume identity. v1.0.1 fixes those engineering issues but stops at S2-to-S3 on a
+missing claim-status field. Prior release tags and diagnostic executions remain
+unchanged. See `docs/reproducibility/HOTFIX_V1_0_1.md` for earlier lineage.
 
 ## Quick start
 
@@ -25,7 +33,7 @@ The explicit package lock includes build identifiers and hashes.
 ```bash
 git clone https://github.com/huqy/Symbolic-PDE-Transformation-Discovery.git
 cd Symbolic-PDE-Transformation-Discovery
-git checkout v1.0.1-paper-submission
+git checkout v1.0.2-paper-submission
 conda create -n td-repro --file environment/public-release-explicit.txt
 conda activate td-repro
 export PYTHONDONTWRITEBYTECODE=1
@@ -56,8 +64,8 @@ accepted S0 alone took 19,667 seconds; later stages include complete cohort and
 32-case response evaluations. Plan persistent storage and scheduler time accordingly.
 
 ```bash
-bash reproduce/run_public_reproduction.sh --execute --work-root /tmp/td-work --staging-root /tmp/td-inputs
-bash reproduce/run_public_reproduction.sh --execute --resume --work-root /tmp/td-work --staging-root /tmp/td-inputs
+bash reproduce/run_public_reproduction.sh --execute --authorize-historical-sealed-replay --work-root /tmp/td-work --staging-root /tmp/td-inputs
+bash reproduce/run_public_reproduction.sh --execute --authorize-historical-sealed-replay --resume --work-root /tmp/td-work --staging-root /tmp/td-inputs
 ```
 
 The coordinator invokes the accepted stage launchers, preserves failure evidence,
@@ -66,7 +74,9 @@ staging identity, and authenticated parent receipts. Exact installed conda build
 Python/package/OpenBLAS versions and one-thread settings are checked on every
 invocation. Compatible Linux x86_64 scheduler nodes may report different OpenBLAS
 CPU architectures; full runtime observations are recorded for each invocation.
-Start v1.0.1 in a fresh work root; v1.0.0 roots are diagnostic only. Do not substitute historical
+Start v1.0.2 in a fresh work root; all prior version roots are diagnostic only.
+Without opt-in, S0/S1/S2 completion is preserved and S3 is deliberately blocked.
+Consent cannot be added or removed after S0; start a new root to change consent. Do not substitute historical
 outputs as parents. Use the shell entry points or public coordinator; direct
 `python -m reproduce.s0_launcher` execution is disabled at its obsolete ancestry
 check. `python -m reproduce.release_entry` provides the equivalent public S0 entry.

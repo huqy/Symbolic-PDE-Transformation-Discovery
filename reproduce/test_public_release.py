@@ -20,7 +20,7 @@ class ReleaseTests(unittest.TestCase):
             data=('opaque synthetic transport '+str(i)).encode(); name='synthetic_'+str(i)+'.tar.xz'
             (self.staging/name).write_bytes(data)
             self.assets['assets'].append({'id':str(i),'filename':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
-        self.identity={'source_commit':'mock-commit','environment':{'synthetic':True},'staging_root':str(self.staging)}
+        self.identity={'source_commit':'mock-commit','historical_replay_authorization':r.replay.authorization('mock-commit',True),'environment':{'synthetic':True},'staging_root':str(self.staging)}
         self.calls=[]
     def fake_child(self,cmd):
         stage=next(s for s in r.STAGES if 'run_'+s.lower()+'.sh' in cmd[1]); self.calls.append((stage,cmd))
@@ -29,8 +29,10 @@ class ReleaseTests(unittest.TestCase):
         return 0
     def fake_boundary(self,stage,work,source):
         obj=json.loads((work/stage/'synthetic_complete.json').read_text()); self.assertEqual(obj['source'],source)
-        return {'execution_id':'synthetic-'+stage,'receipt':str(work/stage/'synthetic_complete.json'),
+        pin = {'execution_id':'synthetic-'+stage,'receipt':str(work/stage/'synthetic_complete.json'),
                 'sha256':hashlib.sha256((work/stage/'synthetic_complete.json').read_bytes()).hexdigest()}
+        if stage=='S2': pin['readiness']={'decision':'S2_FROZEN_GLOBAL_READINESS_PASS','synthetic':True}
+        return pin
     def run_mock(self,stages=r.STAGES,resume=False,child=None,boundary=None):
         with contextlib.redirect_stdout(io.StringIO()):
             return r.orchestrate(self.work,self.staging,stages,resume,self.identity,child or self.fake_child,boundary or self.fake_boundary)

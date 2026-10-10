@@ -1,0 +1,23 @@
+{
+  "policy": {
+    "approval_record": "P13_PUBLIC_HISTORICAL_SEALED_REPLAY_BRANCH_B_APPROVAL_20261010.md",
+    "approval_record_sha256": "040070f9e4d6ecebcc00a2d01b1eafab9e8a32f62d3800437a21b3a0d934da90",
+    "diagnostic_UNRESOLVED_retained_without_promotion": true,
+    "external_R_C_auto_assigned": false,
+    "frozen_S2_global_readiness_required": true,
+    "historical_counts_are_not_targets": true,
+    "opt_in_before_S0_required": true,
+    "parent_public_commit": "ccd00f1e88735778fd6a028e04c3561235eb8f7d",
+    "parent_public_tag": "v1.0.1-paper-submission",
+    "previous_executions_are_diagnostic_only": true,
+    "prospective_holdout_authority": false,
+    "protected_scientific_digest": "e8730a1eeb77dc3a2dd2438962bb84863d59b8189e032fa73185486bd2f20b23",
+    "release_tag": "v1.0.2-paper-submission",
+    "resume_opt_in_change_forbidden": true,
+    "schema": "P13_PUBLIC_HISTORICAL_REPLAY_POLICY_V1",
+    "scientific_K7_explicit_authorization_lock_preserved": true,
+    "scope": "ALREADY_OPENED_PUBLIC_HISTORICAL_ARCHIVES_ONLY",
+    "version": "1.0.0"
+  },
+  "semantic_digest": "67732ede2fef112da9b8071ed059f5892721a473db6d9e3ce34dd809c02012d7"
+}
