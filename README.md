@@ -1,132 +1,334 @@
 # Symbolic PDE Transformation Discovery
 
-Reproduction software and exact frozen inputs associated with
+Reproduction software and frozen inputs for
 **A Symbolic-Learning Framework for PDE Transformation Discovery**.
-Paper/preprint/DOI: pending final metadata.
 
-The framework discovers symbolic finite-local PDE transformations and tests
-operator transfer and causal numerical responses. This first release contains the
-frozen P13 first-branch study. It preserves the accepted scientific implementation
-and uses independent public Git history with local SHA-256 authentication.
+## Verified release and scope
 
-Use `v1.0.2-paper-submission` for the explicitly approved historical SEALED replay
-continuation policy B. Read [the additive policy declaration](docs/reproducibility/HISTORICAL_REPLAY_BRANCH_B.md)
-before execution. Opt in before S0 with `--authorize-historical-sealed-replay`
-and retain that flag on every resume. All five public frozen inputs were already
-opened in historical development; this is historical replay, not prospective
-holdout validation. Frozen science, gates, membership, fidelity and assets remain
-unchanged. R-C still requires external post-run audit. No heavy v1.0.2 S0-to-S3
-run has been performed; external patch audit precedes a fresh manual heavy run.
+Use **`v1.0.2-paper-submission`**, commit
+`39da3f998de8653d7bdf314bfd0d6abb74d3c438`, to reproduce the paper-associated P13
+study. A fresh public clone of this exact release completed the full S0-S3
+workflow in October 2026, including a scheduler restart, with no source repair or
+manual scientific-state change during the execution lineage. Post-run review
+accepted its claim-level result under the frozen numerical criteria.
 
-The immutable v1.0.0 has an S1-to-S2 dependency blocker and strict cross-node
-resume identity. v1.0.1 fixes those engineering issues but stops at S2-to-S3 on a
-missing claim-status field. Prior release tags and diagnostic executions remain
-unchanged. See `docs/reproducibility/HOTFIX_V1_0_1.md` for earlier lineage.
+This README on `main` is updated documentation. The tested executable authority
+is the immutable tag above, not an untested later `main` commit. Checkout the tag
+before running. No private repository, author-specific HPC path, or historical
+generated result is required.
 
-## Quick start
+The workflow studies constructive discovery of finite-local symbolic coordinate
+transformations, zero-refit coefficient transfer, and solution-field accuracy.
+The historical SEALED inputs are already public. Replaying them is **not a new
+prospective holdout experiment or an independent statistical replication**.
+Identical historical candidate counts are not acceptance targets.
 
-Use Linux x86_64, Git, Bash, and the canonical conda-forge environment. The accepted
-staged campaign used Python 3.10.19, NumPy 2.2.6, SciPy 1.15.2, threadpoolctl 3.6.0,
-and OpenBLAS 0.3.30 (pthreads). Other numerical environments have not been validated.
-The explicit package lock includes build identifiers and hashes.
+Code is BSD-3-Clause; the five frozen input archives are CC BY 4.0.
+Paper authors, preprint and DOI: see `CITATION.md` for current metadata.
 
-```bash
-git clone https://github.com/huqy/Symbolic-PDE-Transformation-Discovery.git
-cd Symbolic-PDE-Transformation-Discovery
-git checkout v1.0.2-paper-submission
-conda create -n td-repro --file environment/public-release-explicit.txt
-conda activate td-repro
-export PYTHONDONTWRITEBYTECODE=1
-export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
-python -B -m reproduce.verify_baseline
-python -B -m unittest discover -s reproduce -t . -p 'test*.py' -v
-python -B -m reproduce.frozen_unit_tests
-```
+## Requirements
 
-Choose absolute paths outside the cloned source tree. Assets, source, and work must
-be separate. Replace the example `/tmp` paths with persistent storage for execution.
+- Linux x86_64, Bash, Git, and conda or mamba.
+- The exact public conda-forge package lock:
+  `environment/public-release-explicit.txt`.
+- 17 allocated CPUs for stages using 16 workers and one coordinator.
+  One BLAS/OpenMP thread per process is mandatory.
+- Persistent storage shared across scheduler allocations. Do not use a
+  node-local temporary directory for the environment, staged inputs or work root.
 
-```bash
-python -B -m reproduce.stage_public_assets --destination /tmp/td-inputs
-python -B -m reproduce.verify_public_assets --staging-root /tmp/td-inputs
-bash reproduce/run_public_reproduction.sh --dry-run --work-root /tmp/td-work --staging-root /tmp/td-inputs
-```
+The validated numerical environment uses Python 3.10.19, NumPy 2.2.6,
+SciPy 1.15.2, threadpoolctl 3.6.0 and OpenBLAS 0.3.30 (pthreads). The package
+lock also records exact build identities. Other environments are not certified
+by the completed run. Setting `NSLOTS` does not allocate CPUs; obtain resources
+through your site's scheduler or use a suitably provisioned workstation.
 
-Staging copies opaque exact archives without parsing or extraction. Their legacy
-`PRIVATE` basename token records the original preregistration role; it is not a
-current access restriction. Runtime capabilities still enforce their data roles.
+This is a substantial scientific computation, not a quick demonstration.
+The completed run used two coordinator invocations. Observed elapsed spans
+include scheduler waits and are not portable CPU-time estimates.
 
-## Execute and resume
+## 1. Fresh clone, environment and checks
 
-Execution is substantial scientific computation. Allocate 17 CPUs (16 workers and
-one coordinator where applicable) with one BLAS/OpenMP thread per process. The
-accepted S0 alone took 19,667 seconds; later stages include complete cohort and
-32-case response evaluations. Plan persistent storage and scheduler time accordingly.
+Run the following in a Bash session with the CPU resources described above.
+Set `TD_RUN_PARENT` to an absolute persistent scratch/storage directory when
+appropriate; the default is a new directory under your home folder.
+Site-specific commands such as `module load mamba` belong before this block.
+
+The block runs in a subshell: a failed check stops setup without closing an
+interactive allocation. It creates a unique run directory and prints the exact
+`RUN_INFO` path needed for execution and every later resume.
 
 ```bash
-bash reproduce/run_public_reproduction.sh --execute --authorize-historical-sealed-replay --work-root /tmp/td-work --staging-root /tmp/td-inputs
-bash reproduce/run_public_reproduction.sh --execute --authorize-historical-sealed-replay --resume --work-root /tmp/td-work --staging-root /tmp/td-inputs
+(
+set -euo pipefail
+umask 022
+
+RUN_PARENT="${TD_RUN_PARENT:-$HOME/td-reproduction-runs}"
+case "$RUN_PARENT" in
+  /*) ;;
+  *) echo "TD_RUN_PARENT must be absolute" >&2; exit 2 ;;
+esac
+mkdir -p "$RUN_PARENT"
+BASE="$(mktemp -d "$RUN_PARENT/p13-v102-XXXXXXXX")"
+
+SRC="$BASE/Symbolic-PDE-Transformation-Discovery"
+ENV_DIR="$BASE/td-repro-env"
+ASSET_STAGE="$BASE/public-inputs"
+WORK_ROOT="$BASE/public-work"
+LOG="$BASE/public-e2e.log"
+RUN_INFO="$BASE/P13_PUBLIC_V102_RUN_INFO.env"
+PUBLIC_TAG="v1.0.2-paper-submission"
+PUBLIC_COMMIT="39da3f998de8653d7bdf314bfd0d6abb74d3c438"
+
+git clone https://github.com/huqy/Symbolic-PDE-Transformation-Discovery.git "$SRC"
+git -C "$SRC" checkout --detach "$PUBLIC_TAG"
+test "$(git -C "$SRC" rev-parse HEAD)" = "$PUBLIC_COMMIT"
+test -z "$(git -C "$SRC" status --porcelain)"
+
+if command -v mamba >/dev/null 2>&1; then
+  mamba create -y -p "$ENV_DIR" --file "$SRC/environment/public-release-explicit.txt"
+elif command -v conda >/dev/null 2>&1; then
+  conda create -y -p "$ENV_DIR" --file "$SRC/environment/public-release-explicit.txt"
+else
+  echo "Load or install conda/mamba before setup" >&2
+  exit 2
+fi
+
+export P13_PYTHON="$ENV_DIR/bin/python"
+export PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+export MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+export NSLOTS="${SLURM_CPUS_PER_TASK:-${NSLOTS:-17}}"
+
+{
+  for var in BASE SRC ENV_DIR ASSET_STAGE WORK_ROOT LOG PUBLIC_TAG PUBLIC_COMMIT; do
+    printf 'export %s=%q\n' "$var" "${!var}"
+  done
+} > "$RUN_INFO"
+
+cd "$SRC"
+"$P13_PYTHON" -B -m reproduce.verify_baseline
+"$P13_PYTHON" -B -m unittest discover -s reproduce -t . -p 'test*.py' -v \
+  2>&1 | tee "$BASE/public-tests.log"
+"$P13_PYTHON" -B -m reproduce.frozen_unit_tests \
+  2>&1 | tee "$BASE/frozen-tests.log"
+"$P13_PYTHON" -B -m reproduce.stage_public_assets --destination "$ASSET_STAGE"
+"$P13_PYTHON" -B -m reproduce.verify_public_assets --staging-root "$ASSET_STAGE"
+test -z "$(git status --porcelain)"
+
+bash reproduce/run_public_reproduction.sh \
+  --dry-run --work-root "$WORK_ROOT" --staging-root "$ASSET_STAGE" \
+  2>&1 | tee "$BASE/public-dry-run.log"
+
+printf '\nSETUP=PASS\nRUN_INFO=%s\n' "$RUN_INFO"
+)
 ```
 
-The coordinator invokes the accepted stage launchers, preserves failure evidence,
-and stops on protocol ambiguity. Resume requires the same source, environment,
-staging identity, and authenticated parent receipts. Exact installed conda builds,
-Python/package/OpenBLAS versions and one-thread settings are checked on every
-invocation. Compatible Linux x86_64 scheduler nodes may report different OpenBLAS
-CPU architectures; full runtime observations are recorded for each invocation.
-Start v1.0.2 in a fresh work root; all prior version roots are diagnostic only.
-Without opt-in, S0/S1/S2 completion is preserved and S3 is deliberately blocked.
-Consent cannot be added or removed after S0; start a new root to change consent. Do not substitute historical
-outputs as parents. Use the shell entry points or public coordinator; direct
-`python -m reproduce.s0_launcher` execution is disabled at its obsolete ancestry
-check. `python -m reproduce.release_entry` provides the equivalent public S0 entry.
+The release has 118 public engineering tests and 62 frozen pure tests.
+All must pass. Setup and dry-run do not perform the full scientific computation.
+The five archives are copied and hashed as opaque bytes, not extracted by staging.
+Their legacy `PRIVATE` filename token describes their original experiment role,
+not their present access restrictions.
 
-Stages: S0 qualification and commitments; S1 TRAIN discovery; S2 DEVELOPMENT
-operator transfer and complete response certification; S3 historical SEALED replay.
-Progress includes processed/total, stage/candidate/case, elapsed time, rate, and ETA
-where supported by the accepted campaign. Frozen worker policies remain unchanged.
+**Source, environment, input staging and generated work are separate directories.**
+Do not pre-create `public-work`, substitute an old stage output, or reuse a work
+root from a previous release.
 
-## Scientific scope
+## 2. Execute S0-S3
 
-III-A: constructive TRAIN discovery in the frozen finite-local primitive grammar.
-III-B: same AST, shared parameters, deterministic gauge, and zero-refit DEVELOPMENT
-operator transfer. III-C: independent complete DEVELOPMENT response certification.
-III-D: zero-refit historical SEALED operator and complete response reproduction.
-The full claim is constructive feasibility within the declared representation.
+Set `RUN_INFO` to the absolute filename printed by successful setup. Keep it
+outside the source repository and retain it until all review is complete.
 
-This is not a search completeness theorem, capacity attainment claim, broad
-population reliability estimate, or new untouched sealed-holdout validation.
-Historical SEALED data had already been opened. Diagnostic branches never acquire
-formal membership authority. Preserve UNRESOLVED; there is no response-aware
-refit, target survivor count, candidate rescue, or diagnostic promotion.
+Read `docs/reproducibility/HISTORICAL_REPLAY_BRANCH_B.md` in the tagged clone.
+The explicit opt-in below authorizes historical SEALED replay before S0 begins.
+It is stored in immutable execution identity. It does not assign a scientific
+claim PASS, and it cannot be added or changed later.
 
-## Descriptive frozen evidence
+```bash
+RUN_INFO="/absolute/path/printed/by/setup/P13_PUBLIC_V102_RUN_INFO.env"
 
-| Evidence | Fresh accepted census |
-| --- | --- |
-| S1 TRAIN FULL clear / unresolved | 2444 / 89 |
-| S1 TRAIN NULL clear / unresolved | 0 / 0 |
-| S2 DEVELOPMENT operator PASS / UNRESOLVED / FAIL | 2038 / 6 / 400 |
-| S2 DEVELOPMENT response PASS / UNRESOLVED / FAIL | 2038 / 0 / 0 |
-| S3 historical SEALED operator PASS / UNRESOLVED / FAIL | 451 / 26 / 1561 |
-| S3 historical SEALED response PASS / UNRESOLVED / FAIL | 4 / 0 / 447 |
+(
+set -euo pipefail
+source "$RUN_INFO"
+export P13_PYTHON="$ENV_DIR/bin/python"
+export PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+export MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+export NSLOTS="${SLURM_CPUS_PER_TASK:-${NSLOTS:-17}}"
 
-These observations are descriptive, never expected counts, tolerances, or runtime
-targets. `reference_results/` is excluded from runtime source snapshots and integrity
-inputs. No candidate arrays or historical generated stores are published.
+test "$(git -C "$SRC" rev-parse HEAD)" = "$PUBLIC_COMMIT"
+test -z "$(git -C "$SRC" status --porcelain)"
+test ! -e "$WORK_ROOT"
+cd "$SRC"
 
-The accepted staged campaign includes documented engineering repairs: S0 dispatcher
-compatibility; S1 atomic administrative markers, scoped cleanup, and projected K0
-interface; S3 atomic marker write permissions. See
-`docs/reproducibility/ENGINEERING_LINEAGE.md`. Local reproduction passed with this
-lineage; byte/mode integrity passed; external claim review passed as CLAIM_COMPATIBLE.
-An independent heavy integrated run from this new public commit has not been
-performed. Integrated orchestration has synthetic control-flow tests and lightweight authenticated
-stage-boundary tests. These do not establish heavy end-to-end success.
+{
+  echo "START_UTC=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+  echo "PUBLIC_TAG=$PUBLIC_TAG"
+  echo "PUBLIC_COMMIT=$PUBLIC_COMMIT"
+  echo "HOST=$(hostname)"
+  echo "NSLOTS=$NSLOTS"
+  echo "WORK_ROOT=$WORK_ROOT"
+} | tee "$LOG"
 
-## Licenses and citation
+set +e
+bash reproduce/run_public_reproduction.sh \
+  --execute --authorize-historical-sealed-replay \
+  --work-root "$WORK_ROOT" --staging-root "$ASSET_STAGE" \
+  2>&1 | tee -a "$LOG"
+rc=${PIPESTATUS[0]}
+printf 'RUN_RC=%s\n' "$rc" | tee -a "$LOG"
+exit "$rc"
+)
+```
 
-Software: BSD-3-Clause (`LICENSE`). Five frozen input archives: CC BY 4.0
-(`public_assets/DATA_LICENSE.md`). Manuscript licensing is separate.
-Please cite the associated paper and tagged release (`CITATION.md`). Archive this
-immutable tag later as described in `docs/ARCHIVAL_RELEASE.md`.
+The coordinator runs S0 qualification, S1 TRAIN discovery, S2 DEVELOPMENT
+operator/response certification, then S3 historical SEALED replay.
+
+At S2-to-S3 it verifies frozen readiness and records
+`HISTORICAL_SEALED_REPLAY_ENTRY_AUTHORIZED`. Legitimate diagnostic
+operator-UNRESOLVED branches remain unpromoted; uncertainty in mandatory global
+readiness still stops entry. Without initial opt-in, S3 is deliberately blocked.
+
+Stage-local messages such as `S1_COMPLETE; STOP before S2` describe the isolated
+stage launcher. The public coordinator handles the authorized transitions.
+
+## 3. Resume after a scheduler time limit
+
+Obtain another suitable allocation. Use the same `RUN_INFO`, source, environment,
+input staging and work root. Do not clone again, reinstall, change code, or copy
+outputs from another run. Compatible Linux x86_64 nodes can have different
+OpenBLAS CPU architecture observations; package/build/thread and input identity
+remain locked and full observations are recorded.
+
+**Dry-run must not include the opt-in flag. Every execute/resume must include it.**
+
+```bash
+RUN_INFO="/absolute/path/from/your/original/setup/P13_PUBLIC_V102_RUN_INFO.env"
+
+(
+set -euo pipefail
+source "$RUN_INFO"
+export P13_PYTHON="$ENV_DIR/bin/python"
+export PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+export MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+export NSLOTS="${SLURM_CPUS_PER_TASK:-${NSLOTS:-17}}"
+
+test "$(git -C "$SRC" rev-parse HEAD)" = "$PUBLIC_COMMIT"
+test -z "$(git -C "$SRC" status --porcelain)"
+cd "$SRC"
+bash reproduce/run_public_reproduction.sh \
+  --dry-run --resume --work-root "$WORK_ROOT" --staging-root "$ASSET_STAGE"
+
+{
+  echo "RESUME_UTC=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+  echo "HOST=$(hostname)"
+  echo "NSLOTS=$NSLOTS"
+} | tee -a "$LOG"
+
+set +e
+bash reproduce/run_public_reproduction.sh \
+  --execute --authorize-historical-sealed-replay --resume \
+  --work-root "$WORK_ROOT" --staging-root "$ASSET_STAGE" \
+  2>&1 | tee -a "$LOG"
+rc=${PIPESTATUS[0]}
+printf 'RUN_RC=%s\n' "$rc" | tee -a "$LOG"
+exit "$rc"
+)
+```
+
+A scheduler interruption is not a scientific FAIL. A missing receipt, source or
+input drift, failed numerical prerequisite, or unresolved mandatory gate is
+different: preserve the log and work root and inspect the stated reason.
+Do not edit locks, relax thresholds, force membership, or patch a running release.
+
+## 4. Inspect completion and preserve evidence
+
+A successful coordinator traversal prints
+`COMPLETE_PENDING_EXTERNAL_CLAIM_AUDIT`. Check the recorded chain:
+
+```bash
+(
+set -euo pipefail
+source "$RUN_INFO"
+"$ENV_DIR/bin/python" -B - <<'PY'
+import json
+import os
+from pathlib import Path
+
+state = json.loads(
+    (Path(os.environ["WORK_ROOT"]) / "public_execution.json").read_text()
+)
+assert state["schema"] == "P13_PUBLIC_EXECUTION_V3"
+assert state["identity"]["source_commit"] == os.environ["PUBLIC_COMMIT"]
+assert state["identity"]["historical_replay_authorization"]["opt_in"] is True
+assert list(state["completed"]) == ["S0", "S1", "S2", "S3"]
+assert any(
+    e.get("decision") == "HISTORICAL_SEALED_REPLAY_ENTRY_AUTHORIZED"
+    for e in state["events"]
+)
+print("PUBLIC_E2E_CHAIN=COMPLETE")
+print("R_C=REQUIRES_POST_RUN_SCIENTIFIC_REVIEW")
+PY
+)
+```
+
+This is a completion check, not a substitute for scientific adjudication.
+Review the receipt-bound operator/response decision maps, complete eligible
+cohort, all 32 cases, reference/control certification, uncertainty intervals and
+diagnostic roles. The frozen response criterion uses a numerical error envelope,
+not a rigorous analytic error bound. Preserve PASS, FAIL and UNRESOLVED.
+
+Retain `public_execution.json`, all stage receipts, source identities, result
+manifests and the log. Large generated stores need not be copied into Git.
+Any published compact result pack is reference evidence only and must never be
+used by the runner as a membership target or historical-output fallback.
+
+## Observed results and interpretation
+
+These are frozen observations, not required output counts:
+
+| Evidence | Original prospective study | Staged reconstruction | Clean public v1.0.2 |
+| --- | --- | --- | --- |
+| TRAIN FULL clear / unresolved | 2307 / 80 | 2444 / 89 | 2444 / 89 |
+| TRAIN NULL clear / unresolved | 0 / 0 | 0 / 0 | 0 / 0 |
+| DEVELOPMENT operator P/U/F | 1955 / 4 / 348 | 2038 / 6 / 400 | 2038 / 6 / 400 |
+| DEVELOPMENT response P/U/F | 1955 / 0 / 0 | 2038 / 0 / 0 | 2038 / 0 / 0 |
+| Historical SEALED operator P/U/F | 423 / 27 / 1505 | 451 / 26 / 1561 | 451 / 26 / 1561 |
+| Historical SEALED response P/U/F | 3 / 0 / 420 | 4 / 0 / 447 | 4 / 0 / 447 |
+
+The clean public run recovered the same four certified branches as the staged
+reconstruction, including the three originally certified branches. The fourth
+has a different structure from the original point-power family. The four
+branches are not four independent statistical discoveries.
+
+The original prospective study remains the primary scientific evidence.
+Subsequent runs test computational reproducibility on the same historical
+populations, seeds and numerical criteria. They cannot be pooled as independent
+holdout samples. Exact equality of all generated artifacts has not been
+established; specific matching censuses and branch identities do not imply it.
+
+The claim is constructive feasibility under the declared finite-local grammar
+and coefficient regime. It is not search completeness, near-capacity attainment,
+arbitrary-coefficient universality, broad population reliability, or a demonstrated
+speedup from an independently implemented reduced solver.
+
+## Versions, data and citation
+
+- `v1.0.2-paper-submission` is the completed public E2E execution authority.
+- `v1.0.0` has a known S1-to-S2 dependency blocker.
+- `v1.0.1` repairs dependency/resume issues but stops at S2-to-S3 on a missing
+  claim-status field. These earlier immutable tags remain historical references.
+- Documentation on `main` may be updated without changing any existing tag.
+  Always record the exact tag and commit actually executed.
+
+See [Releases](https://github.com/huqy/Symbolic-PDE-Transformation-Discovery/releases)
+for published reference evidence when available. A tag and a GitHub Release
+attachment are distinct: the tested code tag remains fixed when evidence is added.
+The five exact inputs are already in `public_assets/`; no private download is
+needed.
+
+Software: [BSD-3-Clause](LICENSE).
+Input archives: [CC BY 4.0](public_assets/DATA_LICENSE.md).
+Citation instructions: [CITATION.md](CITATION.md).
+The manuscript is licensed separately. An archival DOI may be added later;
+none is implied here.
