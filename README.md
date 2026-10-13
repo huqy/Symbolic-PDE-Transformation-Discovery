@@ -321,11 +321,25 @@ speedup from an independently implemented reduced solver.
 - Documentation on `main` may be updated without changing any existing tag.
   Always record the exact tag and commit actually executed.
 
-See [Releases](https://github.com/huqy/Symbolic-PDE-Transformation-Discovery/releases)
-for published reference evidence when available. A tag and a GitHub Release
-attachment are distinct: the tested code tag remains fixed when evidence is added.
-The five exact inputs are already in `public_assets/`; no private download is
-needed.
+The [v1.0.2 Release](https://github.com/huqy/Symbolic-PDE-Transformation-Discovery/releases/tag/v1.0.2-paper-submission) provides the
+[complete compact scientific evidence capsule](https://github.com/huqy/Symbolic-PDE-Transformation-Discovery/releases/download/v1.0.2-paper-submission/P13_V102_VALIDATED_E2E_COMPACT_EVIDENCE_20261012.tar.xz),
+[member manifest](https://github.com/huqy/Symbolic-PDE-Transformation-Discovery/releases/download/v1.0.2-paper-submission/P13_V102_VALIDATED_E2E_COMPACT_EVIDENCE_20261012.manifest.json), and
+[SHA-256 sidecar](https://github.com/huqy/Symbolic-PDE-Transformation-Discovery/releases/download/v1.0.2-paper-submission/P13_V102_VALIDATED_E2E_COMPACT_EVIDENCE_20261012.sha256).
+The capsule is 12,937,836 bytes and contains 436 files. Its SHA-256 is
+`10ec4f6d5abec9d997eb5912b91d5c9c9b8a12f88e353ede16e1b278bcb63ba9`.
+
+It includes complete formal and diagnostic decisions, retained clear/unresolved
+identities and AST/theta values, all eligible response scalar measurements,
+reference/control certificates and four final dossiers. Private paths are mapped
+to logical identifiers with separate original/projected hashes. Projected receipts
+are reference derivatives, never resume inputs or runtime membership targets.
+Large arrays and bulk unselected registries remain outside this compact capsule.
+User-owned result data are CC BY 4.0; included notices preserve existing attribution.
+
+Authenticated and anonymous downloads were verified against all member hashes.
+A tag and a GitHub Release attachment are distinct: the tested code tag remains
+fixed when evidence is added. The five exact inputs are already in
+`public_assets/`; no private download is needed.
 
 Software: [BSD-3-Clause](LICENSE).
 Input archives: [CC BY 4.0](public_assets/DATA_LICENSE.md).

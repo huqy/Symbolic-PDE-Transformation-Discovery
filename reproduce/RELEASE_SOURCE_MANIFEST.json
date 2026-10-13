@@ -4,7 +4,7 @@
     {"bytes":525,"mode":420,"path":"CITATION.md","role":"publication_administration","sha256":"94534534d271bf04fca109cedf68d231c6aef26ed1e3cc0028e584b879b7b522"},
     {"bytes":1533,"mode":420,"path":"LICENSE","role":"publication_administration","sha256":"6a59670da746f768387a03fc44fc3f7ec91473d86cd1b579a00f5cf998cd95aa"},
     {"bytes":5820,"mode":420,"path":"PUBLIC_REPRODUCTION_CONTRACT.md","role":"scientific_frozen","sha256":"3e7e97eacea5099adfa89059357cff1633a70bb8d376831bf007d6a81f113171"},
-    {"bytes":13802,"mode":420,"path":"README.md","role":"publication_administration","sha256":"5d919f9693d9619e6d91fa27eee3a72551c3dfb5b2f31966d0187ffb9b772cfd"},
+    {"bytes":15165,"mode":420,"path":"README.md","role":"publication_administration","sha256":"9dc9425b848812f1d94a86bd57fa864f5225926426d9407651fa49323b89809c"},
     {"bytes":550,"mode":420,"path":"docs/ARCHIVAL_RELEASE.md","role":"publication_administration","sha256":"4c9b841d3ac03ce2edf6633a6400869be3f7dab26b722df636823e5654b4c549"},
     {"bytes":1596,"mode":420,"path":"docs/reproducibility/ENGINEERING_LINEAGE.md","role":"publication_administration","sha256":"3670643d1130f1f213f0292b69e597b28878fcc6f2a56600d196c92085726395"},
     {"bytes":3328,"mode":420,"path":"docs/reproducibility/HISTORICAL_REPLAY_BRANCH_B.md","role":"publication_administration","sha256":"09c83a76fa446bf4c8035df6c2ff1529bf13c65a16be2448c5fbed3cd64b3703"},
