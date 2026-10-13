@@ -1,7 +1,7 @@
 {
   "files": [
     {"bytes":48,"mode":420,"path":".gitignore","role":"publication_administration","sha256":"780f56bf2163ddfddb74a518f90677b6177943d6fb772cf5f93b055aad293e41"},
-    {"bytes":525,"mode":420,"path":"CITATION.md","role":"publication_administration","sha256":"3761adf6abb8960f0aeaf6edff7c9d74d0a4aa5f694ae76ed4b471c1b5f9962d"},
+    {"bytes":525,"mode":420,"path":"CITATION.md","role":"publication_administration","sha256":"94534534d271bf04fca109cedf68d231c6aef26ed1e3cc0028e584b879b7b522"},
     {"bytes":1533,"mode":420,"path":"LICENSE","role":"publication_administration","sha256":"6a59670da746f768387a03fc44fc3f7ec91473d86cd1b579a00f5cf998cd95aa"},
     {"bytes":5820,"mode":420,"path":"PUBLIC_REPRODUCTION_CONTRACT.md","role":"scientific_frozen","sha256":"3e7e97eacea5099adfa89059357cff1633a70bb8d376831bf007d6a81f113171"},
     {"bytes":13802,"mode":420,"path":"README.md","role":"publication_administration","sha256":"5d919f9693d9619e6d91fa27eee3a72551c3dfb5b2f31966d0187ffb9b772cfd"},
